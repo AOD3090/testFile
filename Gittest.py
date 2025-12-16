@@ -6,3 +6,6 @@ print('Test complete. Ready to commit changes.')
 print('Adding more lines to see how Git tracks changes.')
 print('This is the fifth change to the file.')
 print('This is the sixth change to the file.')
+
+
+print('This is branch2')
