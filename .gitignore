@@ -1,0 +1,12 @@
+build/
+install/
+log/
+
+# common
+*.o
+*.so
+*.a
+*.out
+*.pyc
+__pycache__/
+
