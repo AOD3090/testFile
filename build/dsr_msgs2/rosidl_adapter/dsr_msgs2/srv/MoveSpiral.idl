@@ -1,0 +1,75 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/motion/MoveSpiral.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__3[3];
+    typedef double double__2[2];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " move_spiral  " "\n"
+      "____________________________________________________________________________________________")
+    struct MoveSpiral_Request {
+      @verbatim (language="comment", text=
+        "Total number of revolutions")
+      double revolution;
+
+      @verbatim (language="comment", text=
+        "Final spiral radius")
+      @unit (value="mm")
+      double max_radius;
+
+      @verbatim (language="comment", text=
+        "Distance moved in the axis direction")
+      @unit (value="mm")
+      double max_length;
+
+      @verbatim (language="comment", text=
+        "Target position. If used, max_radius and max_length are ignored")
+      @unit (value="mm")
+      double__3 target_pos;
+
+      @verbatim (language="comment", text=
+        "set velocity: [mm/sec], [deg/sec]")
+      double__2 vel;
+
+      @verbatim (language="comment", text=
+        "set acceleration: [mm/sec2], [deg/sec2]")
+      double__2 acc;
+
+      @verbatim (language="comment", text=
+        "= 0.0      # Total execution time <sec>")
+      double time;
+
+      @verbatim (language="comment", text=
+        "TASK_AXIS_X = 0, TASK_AXIS_Y = 1, TASK_AXIS_Z = 2")
+      int8 task_axis;
+
+      @verbatim (language="comment", text=
+        "= 1        # DR_BASE(0), DR_TOOL(1), DR_WORLD(2)" "\n"
+        " <DR_WORLD is only available in M2.40 or later")
+      int8 ref;
+
+      @verbatim (language="comment", text=
+        "= 0        # MOVE_MODE_ABSOLUTE=0, MOVE_MODE_RELATIVE=1")
+      int8 mode;
+
+      @verbatim (language="comment", text=
+        "= 0  # MOVE_SPIRAL_OUTWARD=0, MOVE_SPIRAL_INWARD=1")
+      int8 spiral_dir;
+
+      @verbatim (language="comment", text=
+        "=0      # MOVE_SPIRAL_FORWARD=0, MOVE_SPIRAL_REVERSE=1")
+      int8 rot_dir;
+
+      @verbatim (language="comment", text=
+        "=0    # SYNC = 0, ASYNC = 1")
+      int8 sync_type;
+    };
+    struct MoveSpiral_Response {
+      boolean success;
+    };
+  };
+};

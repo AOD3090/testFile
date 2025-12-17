@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/force/IsDoneBoltTightening.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " is_done_bolt_tightening  " "\n"
+      "____________________________________________________________________________________________")
+    struct IsDoneBoltTightening_Request {
+      @verbatim (language="comment", text=
+        "Target torque")
+      double m;
+
+      @verbatim (language="comment", text=
+        "Monitoring duration")
+      @unit (value="sec")
+      double timeout;
+
+      @verbatim (language="comment", text=
+        "DR_AXIS_X(0), DR_AXIS_Y(1), DR_AXIS_Z(2)")
+      int8 axis;
+    };
+    struct IsDoneBoltTightening_Response {
+      boolean success;
+    };
+  };
+};

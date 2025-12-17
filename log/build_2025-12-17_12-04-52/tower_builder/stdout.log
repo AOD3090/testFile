@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/tower_builder/tower_builder.egg-info
+writing ../../build/tower_builder/tower_builder.egg-info/PKG-INFO
+writing dependency_links to ../../build/tower_builder/tower_builder.egg-info/dependency_links.txt
+writing entry points to ../../build/tower_builder/tower_builder.egg-info/entry_points.txt
+writing requirements to ../../build/tower_builder/tower_builder.egg-info/requires.txt
+writing top-level names to ../../build/tower_builder/tower_builder.egg-info/top_level.txt
+writing manifest file '../../build/tower_builder/tower_builder.egg-info/SOURCES.txt'
+reading manifest file '../../build/tower_builder/tower_builder.egg-info/SOURCES.txt'
+writing manifest file '../../build/tower_builder/tower_builder.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/user/Jina/build/tower_builder/build
+creating /home/user/Jina/build/tower_builder/build/lib
+creating /home/user/Jina/build/tower_builder/build/lib/tower_builder
+copying tower_builder/final_ver1.py -> /home/user/Jina/build/tower_builder/build/lib/tower_builder
+copying tower_builder/__init__.py -> /home/user/Jina/build/tower_builder/build/lib/tower_builder
+running install
+running install_lib
+creating /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder
+copying /home/user/Jina/build/tower_builder/build/lib/tower_builder/final_ver1.py -> /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder
+copying /home/user/Jina/build/tower_builder/build/lib/tower_builder/__init__.py -> /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder
+byte-compiling /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/final_ver1.py to final_ver1.cpython-310.pyc
+byte-compiling /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/user/Jina/install/tower_builder/share/ament_index
+creating /home/user/Jina/install/tower_builder/share/ament_index/resource_index
+creating /home/user/Jina/install/tower_builder/share/ament_index/resource_index/packages
+copying resource/tower_builder -> /home/user/Jina/install/tower_builder/share/ament_index/resource_index/packages
+copying package.xml -> /home/user/Jina/install/tower_builder/share/tower_builder
+running install_egg_info
+Copying ../../build/tower_builder/tower_builder.egg-info to /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder-0.0.0-py3.10.egg-info
+running install_scripts
+Installing stb script to /home/user/Jina/install/tower_builder/lib/tower_builder
+writing list of installed files to '/home/user/Jina/build/tower_builder/install.log'

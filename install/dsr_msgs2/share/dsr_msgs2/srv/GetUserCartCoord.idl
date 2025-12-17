@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/force/GetUserCartCoord.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " posx, ref = get_user_cart_coord(id)   " "\n"
+      "____________________________________________________________________________________________" "\n"
+      " This service is only available in M2.50 or later")
+    struct GetUserCartCoord_Request {
+      @verbatim (language="comment", text=
+        "ID of user coord")
+      int8 id;
+    };
+    typedef double double__6[6];
+    struct GetUserCartCoord_Response {
+      @verbatim (language="comment", text=
+        "task pos(posx)")
+      double__6 conv_posx;
+
+      @verbatim (language="comment", text=
+        "Reference coordinate of the coordinate to get")
+      int8 ref;
+
+      boolean success;
+    };
+  };
+};

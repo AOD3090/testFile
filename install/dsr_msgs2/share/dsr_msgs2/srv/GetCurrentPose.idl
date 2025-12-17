@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/system/GetCurrentPose.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " get_current_pose" "\n"
+      "____________________________________________________________________________________________")
+    struct GetCurrentPose_Request {
+      @verbatim (language="comment", text=
+        "0=ROBOT_SPACE_JOINT, 1=ROBOT_SPACE_TASK")
+      int8 space_type;
+    };
+    typedef double double__6[6];
+    struct GetCurrentPose_Response {
+      double__6 pos;
+
+      boolean success;
+    };
+  };
+};

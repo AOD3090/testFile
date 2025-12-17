@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/system/ChangeCollisionSensitivity.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " change_collision_sensitivity" "\n"
+      "____________________________________________________________________________________________")
+    struct ChangeCollisionSensitivity_Request {
+      @verbatim (language="comment", text=
+        "0 ~ 100")
+      int8 sensitivity;
+    };
+    struct ChangeCollisionSensitivity_Response {
+      boolean success;
+    };
+  };
+};

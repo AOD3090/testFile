@@ -1,0 +1,130 @@
+// generated from rosidl_generator_cpp/resource/idl__builder.hpp.em
+// with input from dsr_msgs2:srv/Fkin.idl
+// generated code does not contain a copyright notice
+
+#ifndef DSR_MSGS2__SRV__DETAIL__FKIN__BUILDER_HPP_
+#define DSR_MSGS2__SRV__DETAIL__FKIN__BUILDER_HPP_
+
+#include <algorithm>
+#include <utility>
+
+#include "dsr_msgs2/srv/detail/fkin__struct.hpp"
+#include "rosidl_runtime_cpp/message_initialization.hpp"
+
+
+namespace dsr_msgs2
+{
+
+namespace srv
+{
+
+namespace builder
+{
+
+class Init_Fkin_Request_ref
+{
+public:
+  explicit Init_Fkin_Request_ref(::dsr_msgs2::srv::Fkin_Request & msg)
+  : msg_(msg)
+  {}
+  ::dsr_msgs2::srv::Fkin_Request ref(::dsr_msgs2::srv::Fkin_Request::_ref_type arg)
+  {
+    msg_.ref = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::dsr_msgs2::srv::Fkin_Request msg_;
+};
+
+class Init_Fkin_Request_pos
+{
+public:
+  Init_Fkin_Request_pos()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_Fkin_Request_ref pos(::dsr_msgs2::srv::Fkin_Request::_pos_type arg)
+  {
+    msg_.pos = std::move(arg);
+    return Init_Fkin_Request_ref(msg_);
+  }
+
+private:
+  ::dsr_msgs2::srv::Fkin_Request msg_;
+};
+
+}  // namespace builder
+
+}  // namespace srv
+
+template<typename MessageType>
+auto build();
+
+template<>
+inline
+auto build<::dsr_msgs2::srv::Fkin_Request>()
+{
+  return dsr_msgs2::srv::builder::Init_Fkin_Request_pos();
+}
+
+}  // namespace dsr_msgs2
+
+
+namespace dsr_msgs2
+{
+
+namespace srv
+{
+
+namespace builder
+{
+
+class Init_Fkin_Response_success
+{
+public:
+  explicit Init_Fkin_Response_success(::dsr_msgs2::srv::Fkin_Response & msg)
+  : msg_(msg)
+  {}
+  ::dsr_msgs2::srv::Fkin_Response success(::dsr_msgs2::srv::Fkin_Response::_success_type arg)
+  {
+    msg_.success = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::dsr_msgs2::srv::Fkin_Response msg_;
+};
+
+class Init_Fkin_Response_conv_posx
+{
+public:
+  Init_Fkin_Response_conv_posx()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_Fkin_Response_success conv_posx(::dsr_msgs2::srv::Fkin_Response::_conv_posx_type arg)
+  {
+    msg_.conv_posx = std::move(arg);
+    return Init_Fkin_Response_success(msg_);
+  }
+
+private:
+  ::dsr_msgs2::srv::Fkin_Response msg_;
+};
+
+}  // namespace builder
+
+}  // namespace srv
+
+template<typename MessageType>
+auto build();
+
+template<>
+inline
+auto build<::dsr_msgs2::srv::Fkin_Response>()
+{
+  return dsr_msgs2::srv::builder::Init_Fkin_Response_conv_posx();
+}
+
+}  // namespace dsr_msgs2
+
+#endif  // DSR_MSGS2__SRV__DETAIL__FKIN__BUILDER_HPP_

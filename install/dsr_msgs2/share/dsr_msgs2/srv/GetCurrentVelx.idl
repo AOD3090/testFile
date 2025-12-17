@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/aux_control/GetCurrentVelx.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " get_current_velx(ref)  " "\n"
+      "____________________________________________________________________________________________" "\n"
+      " This service returns the current tool velocity based on the ref coordinate.")
+    struct GetCurrentVelx_Request {
+      @verbatim (language="comment", text=
+        "DR_BASE(0), DR_WORLD(2)")
+      int8 ref;
+    };
+    typedef double double__6[6];
+    struct GetCurrentVelx_Response {
+      @verbatim (language="comment", text=
+        "Tool velocity")
+      double__6 vel;
+
+      boolean success;
+    };
+  };
+};

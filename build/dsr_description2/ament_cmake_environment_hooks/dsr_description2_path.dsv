@@ -1,0 +1,10 @@
+# Adding /home/user/Jina/install/dsr_description2/share/ without the dsr_description2 allows both gazebo and resource_retriever to
+# resoolve URIs of type packace://
+prepend-non-duplicate;GZ_SIM_RESOURCE_PATH;/home/user/Jina/install/dsr_description2/share/dsr_description2/
+prepend-non-duplicate;GZ_SIM_RESOURCE_PATH;/home/user/Jina/install/dsr_description2/share/
+prepend-non-duplicate;GZ_SIM_SYSTEM_PLUGIN_PATH;/home/user/Jina/install/dsr_description2/lib
+prepend-non-duplicate;IGN_GAZEBO_RESOURCE_PATH;/home/user/Jina/install/dsr_description2/share/dsr_description2/
+prepend-non-duplicate;IGN_GAZEBO_SYSTEM_PLUGIN_PATH;/home/user/Jina/install/dsr_description2/lib
+prepend-non-duplicate;IGN_GAZEBO_RESOURCE_PATH;/home/user/Jina/install/dsr_description2/share/
+prepend-non-duplicate;GAZEBO_MODEL_PATH;/home/user/Jina/install/dsr_description2/share/dsr_description2/
+prepend-non-duplicate;GAZEBO_MODEL_PATH;/home/user/Jina/install/dsr_description2/share

@@ -1,0 +1,70 @@
+[0.778s] Invoking command in '/home/user/Jina/src/doosan-robot2/dsr_example2/dsr_visualservoing': PYTHONPATH=/home/user/Jina/build/dsr_visualservoing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/dsr_visualservoing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/dsr_visualservoing build --build-base /home/user/Jina/build/dsr_visualservoing/build install --record /home/user/Jina/build/dsr_visualservoing/install.log --single-version-externally-managed install_data
+[0.928s] running egg_info
+[0.929s] creating ../../../../build/dsr_visualservoing/dsr_visualservoing.egg-info
+[0.929s] writing ../../../../build/dsr_visualservoing/dsr_visualservoing.egg-info/PKG-INFO
+[0.929s] writing dependency_links to ../../../../build/dsr_visualservoing/dsr_visualservoing.egg-info/dependency_links.txt
+[0.929s] writing entry points to ../../../../build/dsr_visualservoing/dsr_visualservoing.egg-info/entry_points.txt
+[0.929s] writing requirements to ../../../../build/dsr_visualservoing/dsr_visualservoing.egg-info/requires.txt
+[0.929s] writing top-level names to ../../../../build/dsr_visualservoing/dsr_visualservoing.egg-info/top_level.txt
+[0.929s] writing manifest file '../../../../build/dsr_visualservoing/dsr_visualservoing.egg-info/SOURCES.txt'
+[0.931s] reading manifest file '../../../../build/dsr_visualservoing/dsr_visualservoing.egg-info/SOURCES.txt'
+[0.931s] writing manifest file '../../../../build/dsr_visualservoing/dsr_visualservoing.egg-info/SOURCES.txt'
+[0.931s] running build
+[0.931s] running build_py
+[0.931s] creating /home/user/Jina/build/dsr_visualservoing/build
+[0.931s] creating /home/user/Jina/build/dsr_visualservoing/build/lib
+[0.932s] creating /home/user/Jina/build/dsr_visualservoing/build/lib/dsr_visualservoing
+[0.932s] copying dsr_visualservoing/send_pose_servol_gz.py -> /home/user/Jina/build/dsr_visualservoing/build/lib/dsr_visualservoing
+[0.932s] copying dsr_visualservoing/camera_publisher.py -> /home/user/Jina/build/dsr_visualservoing/build/lib/dsr_visualservoing
+[0.932s] copying dsr_visualservoing/detect_marker_gz.py -> /home/user/Jina/build/dsr_visualservoing/build/lib/dsr_visualservoing
+[0.932s] copying dsr_visualservoing/__init__.py -> /home/user/Jina/build/dsr_visualservoing/build/lib/dsr_visualservoing
+[0.932s] copying dsr_visualservoing/joint90.py -> /home/user/Jina/build/dsr_visualservoing/build/lib/dsr_visualservoing
+[0.932s] running install
+[0.932s] running install_lib
+[0.932s] creating /home/user/Jina/install/dsr_visualservoing/lib/python3.10/site-packages/dsr_visualservoing
+[0.933s] copying /home/user/Jina/build/dsr_visualservoing/build/lib/dsr_visualservoing/send_pose_servol_gz.py -> /home/user/Jina/install/dsr_visualservoing/lib/python3.10/site-packages/dsr_visualservoing
+[0.933s] copying /home/user/Jina/build/dsr_visualservoing/build/lib/dsr_visualservoing/camera_publisher.py -> /home/user/Jina/install/dsr_visualservoing/lib/python3.10/site-packages/dsr_visualservoing
+[0.933s] copying /home/user/Jina/build/dsr_visualservoing/build/lib/dsr_visualservoing/detect_marker_gz.py -> /home/user/Jina/install/dsr_visualservoing/lib/python3.10/site-packages/dsr_visualservoing
+[0.933s] copying /home/user/Jina/build/dsr_visualservoing/build/lib/dsr_visualservoing/__init__.py -> /home/user/Jina/install/dsr_visualservoing/lib/python3.10/site-packages/dsr_visualservoing
+[0.933s] copying /home/user/Jina/build/dsr_visualservoing/build/lib/dsr_visualservoing/joint90.py -> /home/user/Jina/install/dsr_visualservoing/lib/python3.10/site-packages/dsr_visualservoing
+[0.933s] byte-compiling /home/user/Jina/install/dsr_visualservoing/lib/python3.10/site-packages/dsr_visualservoing/send_pose_servol_gz.py to send_pose_servol_gz.cpython-310.pyc
+[0.934s] byte-compiling /home/user/Jina/install/dsr_visualservoing/lib/python3.10/site-packages/dsr_visualservoing/camera_publisher.py to camera_publisher.cpython-310.pyc
+[0.934s] byte-compiling /home/user/Jina/install/dsr_visualservoing/lib/python3.10/site-packages/dsr_visualservoing/detect_marker_gz.py to detect_marker_gz.cpython-310.pyc
+[0.935s] byte-compiling /home/user/Jina/install/dsr_visualservoing/lib/python3.10/site-packages/dsr_visualservoing/__init__.py to __init__.cpython-310.pyc
+[0.935s] byte-compiling /home/user/Jina/install/dsr_visualservoing/lib/python3.10/site-packages/dsr_visualservoing/joint90.py to joint90.cpython-310.pyc
+[0.935s] running install_data
+[0.935s] creating /home/user/Jina/install/dsr_visualservoing/share/ament_index
+[0.935s] creating /home/user/Jina/install/dsr_visualservoing/share/ament_index/resource_index
+[0.935s] creating /home/user/Jina/install/dsr_visualservoing/share/ament_index/resource_index/packages
+[0.936s] copying resource/dsr_visualservoing -> /home/user/Jina/install/dsr_visualservoing/share/ament_index/resource_index/packages
+[0.936s] copying package.xml -> /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing
+[0.936s] creating /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing/launch
+[0.936s] copying launch/rgbd_camera.launch.py -> /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing/launch
+[0.936s] copying launch/dsr_gazebo_visual_servoing.launch.py -> /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing/launch
+[0.936s] copying launch/camera_calibration.launch.py -> /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing/launch
+[0.936s] copying launch/visual_servoing_gz.launch.py -> /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing/launch
+[0.936s] copying launch/dsr_bringup2_visual_servoing_gazebo.launch.py -> /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing/launch
+[0.936s] creating /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing/config
+[0.936s] copying config/rgbd_camera_gz.yaml -> /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing/config
+[0.936s] copying config/real_camera.yaml -> /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing/config
+[0.936s] creating /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing/description
+[0.936s] copying description/visual_servoing.sdf -> /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing/description
+[0.936s] copying description/camera_calibration.sdf -> /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing/description
+[0.936s] copying description/checker_board.sdf -> /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing/description
+[0.936s] copying description/markerbox2.sdf -> /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing/description
+[0.937s] copying description/markerbox3.sdf -> /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing/description
+[0.937s] copying description/markerbox1.sdf -> /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing/description
+[0.937s] creating /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing/description/textures
+[0.937s] copying description/textures/4x4_1000-2_115.png -> /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing/description/textures
+[0.937s] copying description/textures/4x4_1000-0.png -> /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing/description/textures
+[0.937s] copying description/textures/4x4_1000-3_115.png -> /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing/description/textures
+[0.937s] copying description/textures/4x4_1000-1_115.png -> /home/user/Jina/install/dsr_visualservoing/share/dsr_visualservoing/description/textures
+[0.937s] running install_egg_info
+[0.938s] Copying ../../../../build/dsr_visualservoing/dsr_visualservoing.egg-info to /home/user/Jina/install/dsr_visualservoing/lib/python3.10/site-packages/dsr_visualservoing-0.0.0-py3.10.egg-info
+[0.938s] running install_scripts
+[0.955s] Installing camera_publisher script to /home/user/Jina/install/dsr_visualservoing/lib/dsr_visualservoing
+[0.956s] Installing detect_marker_gz script to /home/user/Jina/install/dsr_visualservoing/lib/dsr_visualservoing
+[0.956s] Installing joint90 script to /home/user/Jina/install/dsr_visualservoing/lib/dsr_visualservoing
+[0.956s] Installing send_pose_servol_gz script to /home/user/Jina/install/dsr_visualservoing/lib/dsr_visualservoing
+[0.956s] writing list of installed files to '/home/user/Jina/build/dsr_visualservoing/install.log'
+[0.999s] Invoked command in '/home/user/Jina/src/doosan-robot2/dsr_example2/dsr_visualservoing' returned '0': PYTHONPATH=/home/user/Jina/build/dsr_visualservoing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/dsr_visualservoing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/dsr_visualservoing build --build-base /home/user/Jina/build/dsr_visualservoing/build install --record /home/user/Jina/build/dsr_visualservoing/install.log --single-version-externally-managed install_data

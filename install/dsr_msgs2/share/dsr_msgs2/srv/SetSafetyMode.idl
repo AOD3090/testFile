@@ -1,0 +1,33 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/system/SetSafetyMode.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " set_safety_mode" "\n"
+      " safety_mode:" "\n"
+      " 0: SAFETY_MODE_MANUAL" "\n"
+      " 1: SAFETY_MODE_AUTONOMOUS" "\n"
+      " 2: SAFETY_MODE_RECOVERY" "\n"
+      " 3: SAFETY_MODE_BACKDRIVE" "\n"
+      " 4: SAFETY_MODE_MEASURE" "\n"
+      " 5: SAFETY_MODE_INITIALIZE" "\n"
+      " safety_event:" "\n"
+      " 0: SAFETY_MODE_EVENT_ENTER" "\n"
+      " 1: SAFETY_MODE_EVENT_MOVE" "\n"
+      " 2: SAFETY_MODE_EVENT_STOP" "\n"
+      " 3: SAFETY_MODE_EVENT_LAST" "\n"
+      "____________________________________________________________________________________________")
+    struct SetSafetyMode_Request {
+      int8 safety_mode;
+
+      int8 safety_event;
+    };
+    struct SetSafetyMode_Response {
+      boolean success;
+    };
+  };
+};

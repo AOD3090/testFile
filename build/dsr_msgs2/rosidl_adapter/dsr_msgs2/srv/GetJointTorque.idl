@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/aux_control/GetJointTorque.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " get_joint_torque()" "\n"
+      " returns the sensor torque value of the current joint." "\n"
+      "____________________________________________________________________________________________" "\n"
+      " This service returns the sensor torque value of the current joint.")
+    struct GetJointTorque_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    typedef double double__6[6];
+    struct GetJointTorque_Response {
+      @verbatim (language="comment", text=
+        "value of JTS(Joint Torque Sensor)")
+      double__6 jts;
+
+      boolean success;
+    };
+  };
+};

@@ -1,0 +1,29 @@
+[0.214s] Invoking command in '/home/user/Jina/build/dsr_realtime_control': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/Jina/build/dsr_realtime_control -- -j12 -l12
+[0.277s] [100%] Built target dsr_realtime_control
+[0.297s] Invoked command in '/home/user/Jina/build/dsr_realtime_control' returned '0': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/Jina/build/dsr_realtime_control -- -j12 -l12
+[0.299s] Invoking command in '/home/user/Jina/build/dsr_realtime_control': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/Jina/build/dsr_realtime_control
+[0.309s] -- Install configuration: ""
+[0.309s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/lib/dsr_realtime_control/dsr_realtime_control
+[0.309s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/include/dsr_realtime_control
+[0.309s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/include/dsr_realtime_control/dsr_realtime_control
+[0.309s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/include/dsr_realtime_control/dsr_realtime_control/command_line_options.hpp
+[0.309s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/include/dsr_realtime_control/dsr_realtime_control/rusage_utils.hpp
+[0.309s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/include/dsr_realtime_control/dsr_realtime_control/sched_utils.hpp
+[0.310s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/include/dsr_realtime_control/dsr_realtime_control/burn_cpu_cycles.hpp
+[0.310s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/include/dsr_realtime_control/dsr_realtime_control/realtime_control.hpp
+[0.310s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/share/ament_index/resource_index/package_run_dependencies/dsr_realtime_control
+[0.310s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/share/ament_index/resource_index/parent_prefix_path/dsr_realtime_control
+[0.310s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/environment/ament_prefix_path.sh
+[0.310s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/environment/ament_prefix_path.dsv
+[0.310s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/environment/path.sh
+[0.310s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/environment/path.dsv
+[0.310s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/local_setup.bash
+[0.310s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/local_setup.sh
+[0.310s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/local_setup.zsh
+[0.310s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/local_setup.dsv
+[0.310s] -- Installing: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/package.dsv
+[0.310s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/share/ament_index/resource_index/packages/dsr_realtime_control
+[0.310s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/cmake/dsr_realtime_controlConfig.cmake
+[0.310s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/cmake/dsr_realtime_controlConfig-version.cmake
+[0.310s] -- Up-to-date: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/package.xml
+[0.318s] Invoked command in '/home/user/Jina/build/dsr_realtime_control' returned '0': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/Jina/build/dsr_realtime_control

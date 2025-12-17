@@ -1,0 +1,63 @@
+[0.413s] Invoking command in '/home/user/Jina/src/doosan-robot2/dsr_bringup2': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2 LD_LIBRARY_PATH=/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/build/dsr_bringup2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages:/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/dsr_bringup2 build --build-base /home/user/Jina/build/dsr_bringup2/build install --record /home/user/Jina/build/dsr_bringup2/install.log --single-version-externally-managed install_data
+[0.561s] running egg_info
+[0.561s] creating ../../../build/dsr_bringup2/dsr_bringup2.egg-info
+[0.561s] writing ../../../build/dsr_bringup2/dsr_bringup2.egg-info/PKG-INFO
+[0.562s] writing dependency_links to ../../../build/dsr_bringup2/dsr_bringup2.egg-info/dependency_links.txt
+[0.562s] writing entry points to ../../../build/dsr_bringup2/dsr_bringup2.egg-info/entry_points.txt
+[0.562s] writing requirements to ../../../build/dsr_bringup2/dsr_bringup2.egg-info/requires.txt
+[0.562s] writing top-level names to ../../../build/dsr_bringup2/dsr_bringup2.egg-info/top_level.txt
+[0.562s] writing manifest file '../../../build/dsr_bringup2/dsr_bringup2.egg-info/SOURCES.txt'
+[0.563s] reading manifest file '../../../build/dsr_bringup2/dsr_bringup2.egg-info/SOURCES.txt'
+[0.563s] writing manifest file '../../../build/dsr_bringup2/dsr_bringup2.egg-info/SOURCES.txt'
+[0.563s] running build
+[0.563s] running build_py
+[0.563s] creating /home/user/Jina/build/dsr_bringup2/build
+[0.564s] creating /home/user/Jina/build/dsr_bringup2/build/lib
+[0.564s] creating /home/user/Jina/build/dsr_bringup2/build/lib/dsr_bringup2
+[0.564s] copying dsr_bringup2/gazebo_connection.py -> /home/user/Jina/build/dsr_bringup2/build/lib/dsr_bringup2
+[0.564s] copying dsr_bringup2/gazebo_connection_pos.py -> /home/user/Jina/build/dsr_bringup2/build/lib/dsr_bringup2
+[0.564s] copying dsr_bringup2/run_emulator.py -> /home/user/Jina/build/dsr_bringup2/build/lib/dsr_bringup2
+[0.564s] copying dsr_bringup2/utils.py -> /home/user/Jina/build/dsr_bringup2/build/lib/dsr_bringup2
+[0.564s] copying dsr_bringup2/__init__.py -> /home/user/Jina/build/dsr_bringup2/build/lib/dsr_bringup2
+[0.564s] copying dsr_bringup2/dsr_mujoco_bridge.py -> /home/user/Jina/build/dsr_bringup2/build/lib/dsr_bringup2
+[0.564s] copying dsr_bringup2/moveit_connection.py -> /home/user/Jina/build/dsr_bringup2/build/lib/dsr_bringup2
+[0.564s] running install
+[0.564s] running install_lib
+[0.564s] creating /home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2
+[0.564s] copying /home/user/Jina/build/dsr_bringup2/build/lib/dsr_bringup2/gazebo_connection.py -> /home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2
+[0.564s] copying /home/user/Jina/build/dsr_bringup2/build/lib/dsr_bringup2/gazebo_connection_pos.py -> /home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2
+[0.564s] copying /home/user/Jina/build/dsr_bringup2/build/lib/dsr_bringup2/run_emulator.py -> /home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2
+[0.564s] copying /home/user/Jina/build/dsr_bringup2/build/lib/dsr_bringup2/utils.py -> /home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2
+[0.565s] copying /home/user/Jina/build/dsr_bringup2/build/lib/dsr_bringup2/__init__.py -> /home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2
+[0.565s] copying /home/user/Jina/build/dsr_bringup2/build/lib/dsr_bringup2/dsr_mujoco_bridge.py -> /home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2
+[0.565s] copying /home/user/Jina/build/dsr_bringup2/build/lib/dsr_bringup2/moveit_connection.py -> /home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2
+[0.565s] byte-compiling /home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2/gazebo_connection.py to gazebo_connection.cpython-310.pyc
+[0.565s] byte-compiling /home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2/gazebo_connection_pos.py to gazebo_connection_pos.cpython-310.pyc
+[0.566s] byte-compiling /home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2/run_emulator.py to run_emulator.cpython-310.pyc
+[0.566s] byte-compiling /home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2/utils.py to utils.cpython-310.pyc
+[0.566s] byte-compiling /home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2/__init__.py to __init__.cpython-310.pyc
+[0.566s] byte-compiling /home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2/dsr_mujoco_bridge.py to dsr_mujoco_bridge.cpython-310.pyc
+[0.567s] byte-compiling /home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2/moveit_connection.py to moveit_connection.cpython-310.pyc
+[0.567s] running install_data
+[0.567s] creating /home/user/Jina/install/dsr_bringup2/share/ament_index
+[0.568s] creating /home/user/Jina/install/dsr_bringup2/share/ament_index/resource_index
+[0.568s] creating /home/user/Jina/install/dsr_bringup2/share/ament_index/resource_index/packages
+[0.568s] copying resource/dsr_bringup2 -> /home/user/Jina/install/dsr_bringup2/share/ament_index/resource_index/packages
+[0.568s] copying package.xml -> /home/user/Jina/install/dsr_bringup2/share/dsr_bringup2
+[0.568s] creating /home/user/Jina/install/dsr_bringup2/share/dsr_bringup2/launch
+[0.568s] copying launch/dsr_bringup2_rviz.launch.py -> /home/user/Jina/install/dsr_bringup2/share/dsr_bringup2/launch
+[0.568s] copying launch/dsr_bringup2_moveit.launch.py -> /home/user/Jina/install/dsr_bringup2/share/dsr_bringup2/launch
+[0.568s] copying launch/dsr_bringup2_mujoco.launch.py -> /home/user/Jina/install/dsr_bringup2/share/dsr_bringup2/launch
+[0.568s] copying launch/dsr_bringup2_spawn_on_gazebo.launch.py -> /home/user/Jina/install/dsr_bringup2/share/dsr_bringup2/launch
+[0.568s] copying launch/dsr_bringup2_gazebo.launch.py -> /home/user/Jina/install/dsr_bringup2/share/dsr_bringup2/launch
+[0.568s] creating /home/user/Jina/install/dsr_bringup2/share/dsr_bringup2/rviz
+[0.568s] copying rviz/default.rviz -> /home/user/Jina/install/dsr_bringup2/share/dsr_bringup2/rviz
+[0.568s] running install_egg_info
+[0.570s] Copying ../../../build/dsr_bringup2/dsr_bringup2.egg-info to /home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages/dsr_bringup2-0.1.2-py3.10.egg-info
+[0.571s] running install_scripts
+[0.586s] Installing gazebo_connection script to /home/user/Jina/install/dsr_bringup2/lib/dsr_bringup2
+[0.586s] Installing moveit_connection script to /home/user/Jina/install/dsr_bringup2/lib/dsr_bringup2
+[0.586s] Installing mujoco_bridge script to /home/user/Jina/install/dsr_bringup2/lib/dsr_bringup2
+[0.586s] Installing run_emulator script to /home/user/Jina/install/dsr_bringup2/lib/dsr_bringup2
+[0.586s] writing list of installed files to '/home/user/Jina/build/dsr_bringup2/install.log'
+[0.616s] Invoked command in '/home/user/Jina/src/doosan-robot2/dsr_bringup2' returned '0': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2 LD_LIBRARY_PATH=/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/build/dsr_bringup2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages:/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/dsr_bringup2 build --build-base /home/user/Jina/build/dsr_bringup2/build install --record /home/user/Jina/build/dsr_bringup2/install.log --single-version-externally-managed install_data

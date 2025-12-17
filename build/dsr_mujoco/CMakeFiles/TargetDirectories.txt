@@ -1,0 +1,11 @@
+/home/user/Jina/build/dsr_mujoco/CMakeFiles/uninstall.dir
+/home/user/Jina/build/dsr_mujoco/CMakeFiles/dsr_mujoco_uninstall.dir
+/home/user/Jina/build/dsr_mujoco/CMakeFiles/ament_cmake_python_copy_dsr_mujoco.dir
+/home/user/Jina/build/dsr_mujoco/CMakeFiles/ament_cmake_python_build_dsr_mujoco_egg.dir
+/home/user/Jina/build/dsr_mujoco/CMakeFiles/test.dir
+/home/user/Jina/build/dsr_mujoco/CMakeFiles/edit_cache.dir
+/home/user/Jina/build/dsr_mujoco/CMakeFiles/rebuild_cache.dir
+/home/user/Jina/build/dsr_mujoco/CMakeFiles/list_install_components.dir
+/home/user/Jina/build/dsr_mujoco/CMakeFiles/install.dir
+/home/user/Jina/build/dsr_mujoco/CMakeFiles/install/local.dir
+/home/user/Jina/build/dsr_mujoco/CMakeFiles/install/strip.dir

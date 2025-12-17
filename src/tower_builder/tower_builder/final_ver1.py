@@ -1,12 +1,11 @@
 """
-🏗️ Smart Tower Builder - ROS2 + Block Detection
-================================================
-기능:
-1. 자동 블록 검출 (적응형 이진화)
-2. 클릭으로 Pick & Place
-   - 1번째 클릭: 집을 블록 선택
-   - 2번째 클릭: 내려놓을 위치 선택
-3. 로봇 자동 제어
+🏗️ Smart Tower Builder - 긴급 패치 버전
+===========================================
+수정 사항:
+1. 블록 검출 파라미터 완화
+2. 그리퍼 값 수정 (550 → 800)
+3. depth_scale 문제 해결
+4. 디버깅 출력 추가
 """
 
 import cv2
@@ -19,7 +18,7 @@ from sensor_msgs.msg import Image, CameraInfo
 from cv_bridge import CvBridge, CvBridgeError
 import message_filters
 import DR_init
-from dsr_example.simple.gripper_drl_controller import GripperController
+from tower_builder.gripper_drl_controller import GripperController
 from dataclasses import dataclass, field
 from typing import Optional, List, Tuple
 from collections import deque
@@ -34,16 +33,14 @@ DR_init.__dsr__model = ROBOT_MODEL
 
 
 class RobotState(Enum):
-    """로봇 상태"""
-    IDLE = 0              # 대기 (블록 선택 대기)
-    BLOCK_SELECTED = 1    # 블록 선택됨 (목표 위치 대기)
-    PICKING = 2           # 집는 중
-    PLACING = 3           # 놓는 중
+    IDLE = 0
+    BLOCK_SELECTED = 1
+    PICKING = 2
+    PLACING = 3
 
 
 @dataclass
 class Block:
-    """블록 정보"""
     bbox: Tuple[int, int, int, int]
     center_2d: Tuple[int, int]
     contour: np.ndarray = field(compare=False)
@@ -63,51 +60,45 @@ class Block:
 
 
 class BlockDetector:
-    """블록 검출기"""
     def __init__(self):
-        # 적응형 이진화 설정
+        # 🔥 더 관대한 설정
         self.use_adaptive = True
-        self.adaptive_block_size = 21
-        self.adaptive_c = 2
+        self.adaptive_block_size = 15  # 21 → 15 (더 민감)
+        self.adaptive_c = 1  # 2 → 1 (더 밝게)
         self.use_inv = True
         
-        # 멀티스케일 블러
         self.multi_blur = True
         self.blur_sizes = [(3, 3), (5, 5)]
         
-        # 크기 필터
-        self.min_area = 100
-        self.max_area = 10000
+        # 🔥 크기 필터 더 완화
+        self.min_area = 50  # 100 → 50
+        self.max_area = 15000  # 10000 → 15000
         
-        # ROI
-        self.roi_x = 190
-        self.roi_y = 140
-        self.roi_w = 230
-        self.roi_h = 180
+        # 🔥 ROI 약간 조정 (화면에 맞게)
+        self.roi_x = 150  # 190 → 150
+        self.roi_y = 120  # 140 → 120
+        self.roi_w = 350  # 230 → 350 (더 넓게)
+        self.roi_h = 250  # 180 → 250 (더 높게)
         
-        # 형태 필터
-        self.min_aspect = 0.4
-        self.max_aspect = 2.5
-        self.min_solidity = 0.6
+        # 🔥 형태 필터 완화
+        self.min_aspect = 0.2
+        self.max_aspect = 6.0  # 2.5 → 6.0
+        self.min_solidity = 0.3  # 0.6 → 0.3
         
-        # 깊이 필터
         self.min_depth = 0.1
         self.max_depth = 2.0
         
-        # 크기 분류
         self.small_thresh = 30
         self.medium_thresh = 50
         
-        # 시간적 추적
         self.tracked_blocks = []
         self.max_track_distance = 50
-        self.stability_threshold = 3
-        self.max_missing_frames = 3
+        self.stability_threshold = 2  # 3 → 2 (더 빨리 안정)
+        self.max_missing_frames = 5  # 3 → 5 (더 오래 유지)
         
         self.binary_view = None
         
     def detect(self, frame, depth_image, intrinsics, depth_scale) -> List[Block]:
-        """블록 검출"""
         current_time = time.time()
         all_candidates = []
         
@@ -115,15 +106,17 @@ class BlockDetector:
         contours, binary = self._detect_with_adaptive(frame)
         self.binary_view = binary
         
+        print(f"🔍 검출된 윤곽선 수: {len(contours)}")  # 디버깅
+        
         for cnt in contours:
             candidate = self._process_contour(cnt, current_time)
             if candidate:
                 all_candidates.append(candidate)
         
-        # 중복 제거
+        print(f"✅ 필터 통과 후보: {len(all_candidates)}")  # 디버깅
+        
         unique_candidates = self._merge_duplicates(all_candidates)
         
-        # Block 객체로 변환 + 3D 정보
         blocks = []
         for cand in unique_candidates:
             block = Block(
@@ -137,25 +130,23 @@ class BlockDetector:
                 last_seen_time=current_time
             )
             
-            # 3D 정보 계산
             cx, cy = cand['center']
             depth = self._get_depth_from_image(cx, cy, depth_image, depth_scale)
             
+            print(f"  블록 중심({cx}, {cy}): depth={depth*1000:.1f}mm")  # 디버깅
+            
             if depth > 0:
-                # 3D 좌표 변환
                 point_3d = rs.rs2_deproject_pixel_to_point(intrinsics, [cx, cy], depth)
                 block.center_3d = point_3d
                 block.depth = depth
                 
                 if self.min_depth < block.depth < self.max_depth:
-                    # 크기 계산
                     real_w, real_h = self._calc_real_size(
                         cand['rect_w'], cand['rect_h'], depth, intrinsics
                     )
                     block.real_width_mm = real_w
                     block.real_height_mm = real_h
                     
-                    # 크기 분류
                     avg = (real_w + real_h) / 2
                     if avg < self.small_thresh:
                         block.size_class = "small"
@@ -166,13 +157,13 @@ class BlockDetector:
             
             blocks.append(block)
         
-        # 시간적 추적
         blocks = self._track_blocks(blocks, current_time)
+        
+        print(f"🎯 최종 블록 수: {len(blocks)}\n")  # 디버깅
         
         return blocks
     
     def _detect_with_adaptive(self, frame):
-        """적응형 이진화"""
         roi = frame[self.roi_y:self.roi_y+self.roi_h, self.roi_x:self.roi_x+self.roi_w]
         gray = cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
         
@@ -189,7 +180,6 @@ class BlockDetector:
                 self.adaptive_c
             )
             
-            # 큰 블록만 모폴로지 적용
             if blur_size == (5, 5):
                 kernel = np.ones((2, 2), np.uint8)
                 binary = cv2.morphologyEx(binary, cv2.MORPH_OPEN, kernel, iterations=1)
@@ -200,12 +190,11 @@ class BlockDetector:
         return all_contours, binary
     
     def _process_contour(self, cnt, current_time):
-        """윤곽선 처리"""
         area = cv2.contourArea(cnt)
-        is_small = area < 1500
+        is_small = area < 2000  # 1500 → 2000
         
         if is_small:
-            if area < 50:
+            if area < 30:  # 50 → 30
                 return None
         else:
             if not (self.min_area < area < self.max_area):
@@ -222,7 +211,7 @@ class BlockDetector:
         aspect = max(w, h) / min(w, h)
         
         if is_small:
-            if not (0.2 <= aspect <= 5.0):
+            if not (0.1 <= aspect <= 10.0):  # 더 완화
                 return None
         else:
             if not (self.min_aspect <= aspect <= self.max_aspect):
@@ -234,16 +223,15 @@ class BlockDetector:
             return None
         
         solidity = area / hull_area
-        min_sol = 0.4 if is_small else self.min_solidity
+        min_sol = 0.2 if is_small else self.min_solidity  # 0.4 → 0.2
         if solidity < min_sol:
             return None
         
         peri = cv2.arcLength(cnt, True)
         approx = cv2.approxPolyDP(cnt, 0.04 * peri, True)
-        if not (3 <= len(approx) <= 10):
+        if not (3 <= len(approx) <= 12):  # 10 → 12
             return None
         
-        # 전역 좌표로 변환
         box_global = box.copy()
         box_global[:, 0] += self.roi_x
         box_global[:, 1] += self.roi_y
@@ -273,7 +261,6 @@ class BlockDetector:
         }
     
     def _merge_duplicates(self, candidates):
-        """중복 제거"""
         if not candidates:
             return []
         
@@ -295,7 +282,7 @@ class BlockDetector:
                 cx2, cy2 = cand2['center']
                 dist = np.sqrt((cx1 - cx2)**2 + (cy1 - cy2)**2)
                 
-                if dist < 25:
+                if dist < 30:  # 25 → 30
                     group.append(cand2)
                     used[j] = True
             
@@ -305,7 +292,6 @@ class BlockDetector:
         return unique
     
     def _track_blocks(self, current_blocks, current_time):
-        """시간적 추적"""
         if not self.tracked_blocks:
             for block in current_blocks:
                 block.stability_score = 1
@@ -358,7 +344,6 @@ class BlockDetector:
         return updated_tracked
     
     def _get_depth_from_image(self, x, y, depth_image, depth_scale):
-        """깊이 값 가져오기"""
         h, w = depth_image.shape
         x, y = int(x), int(y)
         
@@ -371,10 +356,10 @@ class BlockDetector:
         if depth_m > 0.05:
             return depth_m
         
-        # 주변 샘플링
         sample_offsets = [
             (-5, 0), (5, 0), (0, -5), (0, 5),
             (-10, 0), (10, 0), (0, -10), (0, 10),
+            (-15, 0), (15, 0), (0, -15), (0, 15),
         ]
         
         valid_depths = []
@@ -393,7 +378,6 @@ class BlockDetector:
         return 0.0
     
     def _calc_real_size(self, w_px, h_px, depth, intrinsics):
-        """실제 크기 계산"""
         if depth <= 0:
             return 0, 0
         real_w = (w_px * depth * 1000) / intrinsics.fx
@@ -401,7 +385,6 @@ class BlockDetector:
         return real_w, real_h
     
     def find_block_at(self, blocks, x, y):
-        """좌표에서 블록 찾기"""
         for b in blocks:
             if b.is_interpolated:
                 continue
@@ -412,29 +395,23 @@ class BlockDetector:
 
 
 class RobotControllerNode(Node):
-    """ROS2 로봇 컨트롤러 노드"""
-    
     def __init__(self):
         super().__init__("robot_controller_node")
         self.bridge = CvBridge()
         self.get_logger().info("🤖 Smart Tower Builder 초기화 중...")
         
-        # 카메라 데이터
         self.intrinsics = None
-        self.depth_scale = 0.001  # 기본값
+        self.depth_scale = 0.001
         self.latest_cv_color = None
         self.latest_cv_depth_mm = None
         
-        # 블록 검출기
         self.detector = BlockDetector()
         self.detected_blocks = []
         
-        # 로봇 상태
         self.robot_state = RobotState.IDLE
         self.selected_block = None
         self.target_position = None
         
-        # ROS2 구독자 설정
         self.color_sub = message_filters.Subscriber(
             self, Image, '/camera/camera/color/image_raw'
         )
@@ -452,7 +429,6 @@ class RobotControllerNode(Node):
         )
         self.ts.registerCallback(self.synced_callback)
         
-        # 그리퍼 초기화
         self.gripper = None
         try:
             from DSR_ROBOT2 import wait
@@ -463,14 +439,18 @@ class RobotControllerNode(Node):
                 self.get_logger().error("❌ Gripper initialization failed")
                 raise Exception("Gripper initialization failed")
             self.get_logger().info("✅ 그리퍼 활성화 완료")
-            self.gripper.move(0)  # 그리퍼 열기
+            
+            # 🔥 그리퍼 초기 상태 확인
+            self.gripper.move(50)  # 완전히 열기
+            wait(1.0)
+            print("🔧 그리퍼 초기화: 50 (완전 열림)")
+            
         except Exception as e:
             self.get_logger().error(f"그리퍼 설정 오류: {e}")
         
         self.get_logger().info("✅ 초기화 완료!")
     
     def synced_callback(self, color_msg, depth_msg, info_msg):
-        """동기화된 카메라 콜백"""
         try:
             self.latest_cv_color = self.bridge.imgmsg_to_cv2(color_msg, "bgr8")
             self.latest_cv_depth_mm = self.bridge.imgmsg_to_cv2(depth_msg, "16UC1")
@@ -478,7 +458,6 @@ class RobotControllerNode(Node):
             self.get_logger().error(f"CV Bridge 오류: {e}")
             return
         
-        # Intrinsics 설정
         if self.intrinsics is None:
             self.intrinsics = rs.intrinsics()
             self.intrinsics.width = info_msg.width
@@ -494,13 +473,11 @@ class RobotControllerNode(Node):
                 self.intrinsics.model = rs.distortion.none
             
             self.intrinsics.coeffs = list(info_msg.d)
-            
-            # depth_scale 추정 (ROS2에서는 직접 제공 안 됨, 0.001 = 1mm)
             self.depth_scale = 0.001
             
             self.get_logger().info("✅ 카메라 파라미터 수신 완료")
+            print(f"📸 depth_scale: {self.depth_scale}")
         
-        # 블록 검출
         if self.latest_cv_color is not None and self.latest_cv_depth_mm is not None:
             self.detected_blocks = self.detector.detect(
                 self.latest_cv_color,
@@ -510,7 +487,6 @@ class RobotControllerNode(Node):
             )
     
     def mouse_callback(self, event, u, v, flags, param):
-        """마우스 클릭 처리"""
         if event != cv2.EVENT_LBUTTONDOWN:
             return
         
@@ -518,9 +494,7 @@ class RobotControllerNode(Node):
             self.get_logger().warn("⚠️ 카메라 데이터 대기 중...")
             return
         
-        # 상태에 따라 처리
         if self.robot_state == RobotState.IDLE:
-            # 블록 선택
             block = self.detector.find_block_at(self.detected_blocks, u, v)
             
             if block and block.center_3d:
@@ -541,7 +515,6 @@ class RobotControllerNode(Node):
                 print("⚠️ 블록을 클릭해주세요!")
         
         elif self.robot_state == RobotState.BLOCK_SELECTED:
-            # 목표 위치 선택
             try:
                 depth_mm = self.latest_cv_depth_mm[v, u]
             except IndexError:
@@ -565,11 +538,9 @@ class RobotControllerNode(Node):
             print(f"\n🤖 로봇 작동 시작...")
             print("="*60 + "\n")
             
-            # 픽앤플레이스 실행
             self.execute_pick_and_place()
     
     def execute_pick_and_place(self):
-        """픽앤플레이스 실행"""
         if not self.selected_block or not self.target_position:
             return
         
@@ -577,7 +548,7 @@ class RobotControllerNode(Node):
             from DSR_ROBOT2 import get_current_posx, movel, wait, movej
             from DR_common2 import posx, posj
             
-            # 1. 픽 좌표 변환
+            # 픽 좌표
             pick_rs_x = self.selected_block.center_3d[0] * 1000
             pick_rs_y = self.selected_block.center_3d[1] * 1000
             pick_rs_z = self.selected_block.depth * 1000
@@ -586,7 +557,7 @@ class RobotControllerNode(Node):
             pick_y = pick_rs_x + 20
             pick_z = max(811 - pick_rs_z, 150)
             
-            # 2. 플레이스 좌표 변환
+            # 플레이스 좌표
             place_rs_x = self.target_position[0] * 1000
             place_rs_y = self.target_position[1] * 1000
             place_rs_z = self.target_position[2] * 1000
@@ -598,7 +569,6 @@ class RobotControllerNode(Node):
             print(f"🎯 픽 위치: X={pick_x:.1f}, Y={pick_y:.1f}, Z={pick_z:.1f}")
             print(f"🎯 플레이스 위치: X={place_x:.1f}, Y={place_y:.1f}, Z={place_z:.1f}\n")
             
-            # 현재 자세
             current_pos = get_current_posx()[0]
             cur_Rx, cur_Ry, cur_Rz = current_pos[3], current_pos[4], current_pos[5]
             
@@ -608,39 +578,41 @@ class RobotControllerNode(Node):
             print("📌 1단계: 블록 접근...")
             pick_up = [pick_x, pick_y, pick_z + approach_lift, cur_Rx, cur_Ry, cur_Rz]
             movel(posx(pick_up), vel=VELOCITY, acc=ACC)
-            wait(0.3)
+            wait(0.5)
             
             print("📌 2단계: 블록 하강...")
             pick_at = [pick_x, pick_y, pick_z, cur_Rx, cur_Ry, cur_Rz]
             movel(posx(pick_at), vel=VELOCITY, acc=ACC)
-            wait(0.3)
+            wait(0.5)
             
-            print("📌 3단계: 그리퍼 닫기 (집기)...")
-            self.gripper.move(550)
-            wait(1.5)
+            # 🔥 그리퍼 값 수정 (550 → 800)
+            print("📌 3단계: 그리퍼 닫기 (집기)... [800]")
+            self.gripper.move(800)  # 🔥 550 → 800
+            wait(2.0)  # 1.5 → 2.0 (더 오래 대기)
             
             print("📌 4단계: 블록 들어올리기...")
             movel(posx(pick_up), vel=VELOCITY, acc=ACC)
-            wait(0.3)
+            wait(0.5)
             
             # === PLACE ===
             print("📌 5단계: 목표 위치 접근...")
             place_up = [place_x, place_y, place_z + approach_lift, cur_Rx, cur_Ry, cur_Rz]
             movel(posx(place_up), vel=VELOCITY, acc=ACC)
-            wait(0.3)
+            wait(0.5)
             
             print("📌 6단계: 목표 위치 하강...")
             place_at = [place_x, place_y, place_z, cur_Rx, cur_Ry, cur_Rz]
             movel(posx(place_at), vel=VELOCITY, acc=ACC)
-            wait(0.3)
+            wait(0.5)
             
-            print("📌 7단계: 그리퍼 열기 (놓기)...")
-            self.gripper.move(100)
-            wait(1.0)
+            # 🔥 그리퍼 값 수정 (100 → 50)
+            print("📌 7단계: 그리퍼 열기 (놓기)... [50]")
+            self.gripper.move(50)  # 🔥 100 → 50
+            wait(1.5)  # 1.0 → 1.5
             
             print("📌 8단계: 상승...")
             movel(posx(place_up), vel=VELOCITY, acc=ACC)
-            wait(0.3)
+            wait(0.5)
             
             print("📌 9단계: 홈 복귀...")
             home_pose = posj(0, 0, 90, 0, 90, 0)
@@ -651,21 +623,20 @@ class RobotControllerNode(Node):
             
         except Exception as e:
             self.get_logger().error(f"❌ 로봇 제어 오류: {e}")
+            import traceback
+            traceback.print_exc()
         finally:
-            # 상태 초기화
             self.selected_block = None
             self.target_position = None
             self.robot_state = RobotState.IDLE
             print("💡 다음 블록을 선택해주세요!\n")
     
     def terminate_gripper(self):
-        """그리퍼 종료"""
         if self.gripper:
             self.gripper.terminate()
 
 
 def main(args=None):
-    """메인 함수"""
     rclpy.init(args=args)
     
     dsr_node = rclpy.create_node("dsr_node", namespace=ROBOT_ID)
@@ -681,18 +652,21 @@ def main(args=None):
     
     robot_controller = RobotControllerNode()
     
-    # OpenCV 창 설정
     cv2.namedWindow("Smart Tower Builder", cv2.WINDOW_NORMAL)
     cv2.resizeWindow("Smart Tower Builder", 640, 480)
     cv2.setMouseCallback("Smart Tower Builder", robot_controller.mouse_callback)
     
     print("\n" + "="*70)
-    print("🏗️  SMART TOWER BUILDER")
+    print("🏗️  SMART TOWER BUILDER - 긴급 패치 버전")
     print("="*70)
+    print("\n🔧 수정 사항:")
+    print("  - 블록 검출 파라미터 완화 (더 민감하게)")
+    print("  - 그리퍼 값 수정: 닫기 800, 열기 50")
+    print("  - ROI 크기 확대")
+    print("  - 디버깅 출력 추가")
     print("\n📋 사용법:")
-    print("  1️⃣  첫 번째 클릭: 집을 블록 선택 (초록색 박스)")
+    print("  1️⃣  첫 번째 클릭: 집을 블록 선택")
     print("  2️⃣  두 번째 클릭: 내려놓을 위치 선택")
-    print("  🤖 로봇이 자동으로 픽앤플레이스 수행")
     print("  ❌ ESC 키: 종료")
     print("\n" + "="*70 + "\n")
     
@@ -705,7 +679,6 @@ def main(args=None):
                 display = robot_controller.latest_cv_color.copy()
                 h, w, _ = display.shape
                 
-                # ROI 표시
                 d = robot_controller.detector
                 cv2.rectangle(display, (d.roi_x, d.roi_y),
                             (d.roi_x + d.roi_w, d.roi_y + d.roi_h),
@@ -713,7 +686,6 @@ def main(args=None):
                 cv2.putText(display, "ROI", (d.roi_x, d.roi_y - 10),
                            cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
                 
-                # 블록 그리기
                 for block in robot_controller.detected_blocks:
                     if block.is_interpolated:
                         continue
@@ -721,31 +693,26 @@ def main(args=None):
                     is_selected = (block == robot_controller.selected_block)
                     is_stable = (block.stability_score >= d.stability_threshold)
                     
-                    # 색상 결정
                     if is_selected:
-                        color = (0, 255, 255)  # 노란색 (선택됨)
+                        color = (0, 255, 255)
                         thickness = 4
                     elif is_stable:
-                        color = (0, 255, 0)  # 초록색 (안정)
+                        color = (0, 255, 0)
                         thickness = 2
                     else:
-                        color = (0, 140, 255)  # 주황색 (새로움)
+                        color = (0, 140, 255)
                         thickness = 2
                     
-                    # 박스 그리기
                     cv2.drawContours(display, [block.rotated_box], 0, color, thickness)
                     
-                    # 중심점
                     cx, cy = block.center_2d
                     cv2.circle(display, (cx, cy), 5, (0, 0, 255), -1)
                     
-                    # 정보 표시
                     if block.depth > 0:
                         txt = f"{block.size_class} [{block.stability_score}]"
                         cv2.putText(display, txt, (cx - 30, cy - 10),
                                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
                 
-                # 상태 표시
                 status_text = {
                     RobotState.IDLE: "대기: 블록을 선택하세요",
                     RobotState.BLOCK_SELECTED: "블록 선택됨: 목표 위치 클릭",
@@ -757,7 +724,6 @@ def main(args=None):
                 cv2.putText(display, status, (10, 30),
                            cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
                 
-                # 블록 수
                 stable_count = len([b for b in robot_controller.detected_blocks 
                                   if b.stability_score >= d.stability_threshold and not b.is_interpolated])
                 cv2.putText(display, f"Blocks: {stable_count}", (10, 60),

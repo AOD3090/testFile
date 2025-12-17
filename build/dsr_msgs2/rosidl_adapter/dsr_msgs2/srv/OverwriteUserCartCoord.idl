@@ -1,0 +1,36 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/force/OverwriteUserCartCoord.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " overwrite_user_cart_coord   " "\n"
+      "____________________________________________________________________________________________" "\n"
+      " This service is only available in M2.50 or later")
+    struct OverwriteUserCartCoord_Request {
+      @verbatim (language="comment", text=
+        "ID of user coord")
+      int8 id;
+
+      @verbatim (language="comment", text=
+        "task pos(posx)")
+      double__6 pos;
+
+      @verbatim (language="comment", text=
+        "= 0   # DR_BASE(0), DR_WORLD(2)")
+      int8 ref;
+    };
+    struct OverwriteUserCartCoord_Response {
+      @verbatim (language="comment", text=
+        "Successful coordinate setting, Set user coordinate ID (101 - 200)" "\n"
+        "(-1) Failed coordinate setting")
+      int8 id;
+
+      boolean success;
+    };
+  };
+};

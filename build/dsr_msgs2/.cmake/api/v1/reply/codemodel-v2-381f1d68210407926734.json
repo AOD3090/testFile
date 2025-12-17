@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-252ba4f3efac12cf90fc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "dsr_msgs2__py",
+					"jsonFile" : "directory-dsr_msgs2__py-5b4d9d133a09cadd9d4a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/user/Jina/build/dsr_msgs2/dsr_msgs2__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "dsr_msgs2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_dsr_msgs2_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_dsr_msgs2_egg-8ef52b502d08fd387a91.json",
+					"name" : "ament_cmake_python_build_dsr_msgs2_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_dsr_msgs2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_dsr_msgs2-d637a062a7315311505d.json",
+					"name" : "ament_cmake_python_copy_dsr_msgs2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dsr_msgs2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dsr_msgs2-be8e20df4629532e0915.json",
+					"name" : "dsr_msgs2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dsr_msgs2__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dsr_msgs2__cpp-b8708ea4f46d3a00c224.json",
+					"name" : "dsr_msgs2__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "dsr_msgs2__py::@d516987e04a9e2a929ee",
+					"jsonFile" : "target-dsr_msgs2__py-e56c7332dd53aa49100a.json",
+					"name" : "dsr_msgs2__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dsr_msgs2__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dsr_msgs2__rosidl_generator_c-b34be7f860e67f8ff70f.json",
+					"name" : "dsr_msgs2__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dsr_msgs2__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dsr_msgs2__rosidl_generator_py-2f59b15d93986a1bc13e.json",
+					"name" : "dsr_msgs2__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dsr_msgs2__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dsr_msgs2__rosidl_typesupport_c-6c5b0d29a929673638c0.json",
+					"name" : "dsr_msgs2__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dsr_msgs2__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dsr_msgs2__rosidl_typesupport_c__pyext-f9bef37dad4e5d5284fd.json",
+					"name" : "dsr_msgs2__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dsr_msgs2__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dsr_msgs2__rosidl_typesupport_cpp-16f4a0d0464c044f34a0.json",
+					"name" : "dsr_msgs2__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dsr_msgs2__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dsr_msgs2__rosidl_typesupport_fastrtps_c-113b81f7dc12255fdd46.json",
+					"name" : "dsr_msgs2__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dsr_msgs2__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dsr_msgs2__rosidl_typesupport_fastrtps_c__pyext-d20568940fd43b01f3fe.json",
+					"name" : "dsr_msgs2__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dsr_msgs2__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dsr_msgs2__rosidl_typesupport_fastrtps_cpp-921ff770e58e07d272e1.json",
+					"name" : "dsr_msgs2__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dsr_msgs2__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dsr_msgs2__rosidl_typesupport_introspection_c-5f78bdd75577095a4392.json",
+					"name" : "dsr_msgs2__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dsr_msgs2__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dsr_msgs2__rosidl_typesupport_introspection_c__pyext-6afdfcde5ed5a8e7ed1f.json",
+					"name" : "dsr_msgs2__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dsr_msgs2__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dsr_msgs2__rosidl_typesupport_introspection_cpp-3e5f32a49a3a9687bb8f.json",
+					"name" : "dsr_msgs2__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dsr_msgs2_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dsr_msgs2_uninstall-d2bbe95dba59d8462464.json",
+					"name" : "dsr_msgs2_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-caf3a6d34892145d537f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/user/Jina/build/dsr_msgs2",
+		"source" : "/home/user/Jina/src/doosan-robot2/dsr_msgs2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

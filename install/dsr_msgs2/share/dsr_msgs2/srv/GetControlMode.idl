@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/aux_control/GetControlMode.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " get_control_mode()  " "\n"
+      "____________________________________________________________________________________________" "\n"
+      " This service returns the current control mode.")
+    struct GetControlMode_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetControlMode_Response {
+      @verbatim (language="comment", text=
+        "Control mode : Position control mode(3), Torque control mode(4)")
+      int8 control_mode;
+
+      boolean success;
+    };
+  };
+};

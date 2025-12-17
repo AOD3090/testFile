@@ -1,0 +1,11 @@
+/home/user/Jina/build/dsr_controller2/CMakeFiles/uninstall.dir
+/home/user/Jina/build/dsr_controller2/CMakeFiles/dsr_controller2_uninstall.dir
+/home/user/Jina/build/dsr_controller2/CMakeFiles/dsr_controller2.dir
+/home/user/Jina/build/dsr_controller2/CMakeFiles/dsr_joint_trajectory.dir
+/home/user/Jina/build/dsr_controller2/CMakeFiles/test.dir
+/home/user/Jina/build/dsr_controller2/CMakeFiles/edit_cache.dir
+/home/user/Jina/build/dsr_controller2/CMakeFiles/rebuild_cache.dir
+/home/user/Jina/build/dsr_controller2/CMakeFiles/list_install_components.dir
+/home/user/Jina/build/dsr_controller2/CMakeFiles/install.dir
+/home/user/Jina/build/dsr_controller2/CMakeFiles/install/local.dir
+/home/user/Jina/build/dsr_controller2/CMakeFiles/install/strip.dir

@@ -1,0 +1,62 @@
+[0.022s] Invoking command in '/home/user/Jina/build/dsr_common2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/Jina/src/doosan-robot2/dsr_common2 -DCMAKE_INSTALL_PREFIX=/home/user/Jina/install/dsr_common2
+[0.116s] -- The C compiler identification is GNU 11.4.0
+[0.200s] -- The CXX compiler identification is GNU 11.4.0
+[0.209s] -- Detecting C compiler ABI info
+[0.284s] -- Detecting C compiler ABI info - done
+[0.291s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.293s] -- Detecting C compile features
+[0.293s] -- Detecting C compile features - done
+[0.295s] -- Detecting CXX compiler ABI info
+[0.395s] -- Detecting CXX compiler ABI info - done
+[0.403s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.403s] -- Detecting CXX compile features
+[0.403s] -- Detecting CXX compile features - done
+[0.408s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.634s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.925s] -- Configuring done
+[0.925s] -- Generating done
+[0.925s] -- Build files have been written to: /home/user/Jina/build/dsr_common2
+[1.042s] Invoked command in '/home/user/Jina/build/dsr_common2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/Jina/src/doosan-robot2/dsr_common2 -DCMAKE_INSTALL_PREFIX=/home/user/Jina/install/dsr_common2
+[1.044s] Invoking command in '/home/user/Jina/build/dsr_common2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/Jina/build/dsr_common2 -- -j12 -l12
+[1.134s] Invoked command in '/home/user/Jina/build/dsr_common2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/Jina/build/dsr_common2 -- -j12 -l12
+[1.136s] Invoking command in '/home/user/Jina/build/dsr_common2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/Jina/build/dsr_common2
+[1.143s] -- Install configuration: ""
+[1.143s] -- Installing: /home/user/Jina/install/dsr_common2/lib/python3.10/site-packages/
+[1.143s] -- Installing: /home/user/Jina/install/dsr_common2/lib/python3.10/site-packages//DR_common2.py
+[1.143s] -- Installing: /home/user/Jina/install/dsr_common2/lib/python3.10/site-packages//DR_error2.py
+[1.143s] -- Installing: /home/user/Jina/install/dsr_common2/lib/python3.10/site-packages//DR_tcp_server2.py
+[1.143s] -- Installing: /home/user/Jina/install/dsr_common2/lib/python3.10/site-packages//DSR_ROBOT2.py
+[1.144s] -- Installing: /home/user/Jina/install/dsr_common2/lib/python3.10/site-packages//__init__.py
+[1.144s] -- Installing: /home/user/Jina/install/dsr_common2/lib/python3.10/site-packages//DSR_util2.py
+[1.144s] -- Installing: /home/user/Jina/install/dsr_common2/lib/python3.10/site-packages//DR_init.py
+[1.144s] -- Installing: /home/user/Jina/install/dsr_common2/lib/python3.10/site-packages//DRFC.py
+[1.144s] -- Installing: /home/user/Jina/install/dsr_common2/lib/python3.10/site-packages//DR_tcp_client2.py
+[1.144s] -- Installing: /home/user/Jina/install/dsr_common2/share/ament_index/resource_index/package_run_dependencies/dsr_common2
+[1.144s] -- Installing: /home/user/Jina/install/dsr_common2/share/ament_index/resource_index/parent_prefix_path/dsr_common2
+[1.144s] -- Installing: /home/user/Jina/install/dsr_common2/share/dsr_common2/environment/ament_prefix_path.sh
+[1.144s] -- Installing: /home/user/Jina/install/dsr_common2/share/dsr_common2/environment/ament_prefix_path.dsv
+[1.144s] -- Installing: /home/user/Jina/install/dsr_common2/share/dsr_common2/environment/path.sh
+[1.144s] -- Installing: /home/user/Jina/install/dsr_common2/share/dsr_common2/environment/path.dsv
+[1.145s] -- Installing: /home/user/Jina/install/dsr_common2/share/dsr_common2/local_setup.bash
+[1.145s] -- Installing: /home/user/Jina/install/dsr_common2/share/dsr_common2/local_setup.sh
+[1.145s] -- Installing: /home/user/Jina/install/dsr_common2/share/dsr_common2/local_setup.zsh
+[1.145s] -- Installing: /home/user/Jina/install/dsr_common2/share/dsr_common2/local_setup.dsv
+[1.145s] -- Installing: /home/user/Jina/install/dsr_common2/share/dsr_common2/package.dsv
+[1.145s] -- Installing: /home/user/Jina/install/dsr_common2/share/ament_index/resource_index/packages/dsr_common2
+[1.145s] -- Installing: /home/user/Jina/install/dsr_common2/share/dsr_common2/cmake/dsr_common2Config.cmake
+[1.145s] -- Installing: /home/user/Jina/install/dsr_common2/share/dsr_common2/cmake/dsr_common2Config-version.cmake
+[1.145s] -- Installing: /home/user/Jina/install/dsr_common2/share/dsr_common2/package.xml
+[1.145s] -- Installing: /home/user/Jina/install/dsr_common2/share/dsr_common2/bin
+[1.145s] -- Installing: /home/user/Jina/install/dsr_common2/share/dsr_common2/bin/run_drcf.sh
+[1.145s] -- Installing: /home/user/Jina/install/dsr_common2/share/dsr_common2/bin/common2
+[1.145s] -- Installing: /home/user/Jina/install/dsr_common2/lib/dsr_common2/imp
+[1.145s] -- Installing: /home/user/Jina/install/dsr_common2/lib/dsr_common2/imp/DR_common2.py
+[1.146s] -- Installing: /home/user/Jina/install/dsr_common2/lib/dsr_common2/imp/DR_error2.py
+[1.146s] -- Installing: /home/user/Jina/install/dsr_common2/lib/dsr_common2/imp/DR_tcp_server2.py
+[1.146s] -- Installing: /home/user/Jina/install/dsr_common2/lib/dsr_common2/imp/DSR_ROBOT2.py
+[1.146s] -- Installing: /home/user/Jina/install/dsr_common2/lib/dsr_common2/imp/__init__.py
+[1.146s] -- Installing: /home/user/Jina/install/dsr_common2/lib/dsr_common2/imp/DSR_util2.py
+[1.146s] -- Installing: /home/user/Jina/install/dsr_common2/lib/dsr_common2/imp/DR_init.py
+[1.146s] -- Installing: /home/user/Jina/install/dsr_common2/lib/dsr_common2/imp/DRFC.py
+[1.146s] -- Installing: /home/user/Jina/install/dsr_common2/lib/dsr_common2/imp/DR_tcp_client2.py
+[1.462s] Invoked command in '/home/user/Jina/build/dsr_common2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/Jina/build/dsr_common2

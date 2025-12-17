@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/motion/AlterMotion.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " alter_motion  " "\n"
+      "" "\n"
+      "____________________________________________________________________________________________")
+    struct AlterMotion_Request {
+      @verbatim (language="comment", text=
+        "position")
+      double__6 pos;
+    };
+    struct AlterMotion_Response {
+      boolean success;
+    };
+  };
+};

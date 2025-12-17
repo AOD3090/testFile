@@ -1,0 +1,63 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/motion/MoveJointx.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " move_jointx  " "\n"
+      "____________________________________________________________________________________________")
+    struct MoveJointx_Request {
+      @verbatim (language="comment", text=
+        "target")
+      double__6 pos;
+
+      @verbatim (language="comment", text=
+        "set velocity:")
+      @unit (value="deg/sec")
+      double vel;
+
+      @verbatim (language="comment", text=
+        "set acceleration:")
+      @unit (value="deg/sec2")
+      double acc;
+
+      @verbatim (language="comment", text=
+        "= 0.0      # Time")
+      @unit (value="sec")
+      double time;
+
+      @verbatim (language="comment", text=
+        "=0.0     # Radius under blending mode")
+      @unit (value="mm")
+      double radius;
+
+      @verbatim (language="comment", text=
+        "DR_BASE(0), DR_TOOL(1), DR_WORLD(2)" "\n"
+        "<DR_WORLD is only available in M2.40 or later>")
+      int8 ref;
+
+      @verbatim (language="comment", text=
+        "= 0        # MOVE_MODE_ABSOLUTE=0, MOVE_MODE_RELATIVE=1")
+      int8 mode;
+
+      @verbatim (language="comment", text=
+        "= 0   # BLENDING_SPEED_TYPE_DUPLICATE=0, BLENDING_SPEED_TYPE_OVERRIDE=1")
+      int8 blend_type;
+
+      @verbatim (language="comment", text=
+        "SolutionSpace : 0~7")
+      int8 sol;
+
+      @verbatim (language="comment", text=
+        "=0     # SYNC = 0, ASYNC = 1")
+      int8 sync_type;
+    };
+    struct MoveJointx_Response {
+      boolean success;
+    };
+  };
+};

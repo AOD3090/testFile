@@ -1,0 +1,40 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/motion/EnableAlterMotion.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__2[2];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " enable_alter_motion  " "\n"
+      "" "\n"
+      "____________________________________________________________________________________________")
+    struct EnableAlterMotion_Request {
+      @verbatim (language="comment", text=
+        "Cycle time number")
+      int32 n;
+
+      @verbatim (language="comment", text=
+        "DR_DPOS(0) : accumulation amount, DR_DVEL(1) : increment amount")
+      int8 mode;
+
+      @verbatim (language="comment", text=
+        "DR_BASE(0), DR_TOOL(1), DR_WORLD(2), user coord(101~200)" "\n"
+        "<ref is only available in M2.40 or later>")
+      int8 ref;
+
+      @verbatim (language="comment", text=
+        "First value : limitation of position[mm], Second value : limitation of orientation[deg]")
+      double__2 limit_dpos;
+
+      @verbatim (language="comment", text=
+        "First value : limitation of position[mm], Second value : limitation of orientation[deg]")
+      double__2 limit_dpos_per;
+    };
+    struct EnableAlterMotion_Response {
+      boolean success;
+    };
+  };
+};

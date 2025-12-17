@@ -1,0 +1,35 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/system/SetRobotControl.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " set_robot_control" "\n"
+      " 0 : CONTROL_INIT_CONFIG" "\n"
+      " executes the function to convert from STATE_NOT_READY to STATE_INITIALIZING, and only the T/P applicatiexecutes this function." "\n"
+      " 1 : CONTROL_ENABLE_OPERATION" "\n"
+      " executes the function to convert from STATE_INITIALIZING to STATE_STANDBY, and only the T/P applicatiexecutes this function." "\n"
+      " 2 : CONTROL_RESET_SAFET_STOP" "\n"
+      " executes the function to convert from STATE_SAFE_STOP to STATE_STANDBY. Program restart can be set in the case of automatic mode." "\n"
+      " 3 : CONTROL_RESET_SAFET_OFF" "\n"
+      " executes the function to convert from STATE_SAFE_OFF to STATE_STANDBY." "\n"
+      " 4 : CONTROL_RECOVERY_SAFE_STOP" "\n"
+      " executes the S/W-based function to convert from STATE_SAFE_STOP2 to STATE_RECOVERY." "\n"
+      " 5 : CONTROL_RECOVERY_SAFE_OFF" "\n"
+      " executes the S/W-based function to convert from STATE_SAFE_OFF2 to STATE_RECOVERY." "\n"
+      " 6 : CONTROL_RECOVERY_BACKDRIVE" "\n"
+      " executes the H/W-based function to convert from STATE_SAFE_OFF2 to STATE_RECOVERY. cannot be converted into STATE_STANDBY, and robot controller power should be rebooted." "\n"
+      " 7 : CONTROL_RESET_RECOVERY" "\n"
+      " executes the function to convert from STATE_RECOVERY to STATE_STANDBY." "\n"
+      "____________________________________________________________________________________________")
+    struct SetRobotControl_Request {
+      int8 robot_control;
+    };
+    struct SetRobotControl_Response {
+      boolean success;
+    };
+  };
+};

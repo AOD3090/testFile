@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from dsr_msgs2/msg/TorqueRtStream.msg
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module msg {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " torque_rt" "\n"
+      "" "\n"
+      "____________________________________________________________________________________________")
+    struct TorqueRtStream {
+      @verbatim (language="comment", text=
+        "motor torque")
+      double__6 tor;
+
+      @verbatim (language="comment", text=
+        "time")
+      double time;
+    };
+  };
+};

@@ -1,0 +1,45 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/force/CheckOrientationCondition2.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " check_orientation_condition(axis, min, max, ref, mod, pos)  " "\n"
+      "____________________________________________________________________________________________")
+    struct CheckOrientationCondition2_Request {
+      @verbatim (language="comment", text=
+        "DR_AXIS_A(10), DR_AXIS_B(11), DR_AXIS_C(12)")
+      int8 axis;
+
+      @verbatim (language="comment", text=
+        "minimum value")
+      double min;
+
+      @verbatim (language="comment", text=
+        "maximum value")
+      double max;
+
+      @verbatim (language="comment", text=
+        "= 0         # DR_BASE(0), DR_TOOL(1), DR_WORLD(2), user_coordinate(101~200)" "\n"
+        " <DR_WORLD is only available in M2.40 or later>")
+      int8 ref;
+
+      @verbatim (language="comment", text=
+        "= 1         # DR_MV_MOD_REL(1)")
+      int8 mode;
+
+      @verbatim (language="comment", text=
+        "task pos(pos)")
+      double__6 pos;
+    };
+    struct CheckOrientationCondition2_Response {
+      @verbatim (language="comment", text=
+        "True or False")
+      boolean success;
+    };
+  };
+};

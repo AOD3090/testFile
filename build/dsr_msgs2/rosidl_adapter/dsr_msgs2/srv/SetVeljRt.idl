@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/realtime/SetVeljRt.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " set_velj_rt" "\n"
+      "____________________________________________________________________________________________")
+    struct SetVeljRt_Request {
+      double__6 vel;
+    };
+    struct SetVeljRt_Response {
+      boolean success;
+    };
+  };
+};

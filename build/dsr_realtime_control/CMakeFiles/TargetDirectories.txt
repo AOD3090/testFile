@@ -1,0 +1,10 @@
+/home/user/Jina/build/dsr_realtime_control/CMakeFiles/uninstall.dir
+/home/user/Jina/build/dsr_realtime_control/CMakeFiles/dsr_realtime_control_uninstall.dir
+/home/user/Jina/build/dsr_realtime_control/CMakeFiles/dsr_realtime_control.dir
+/home/user/Jina/build/dsr_realtime_control/CMakeFiles/test.dir
+/home/user/Jina/build/dsr_realtime_control/CMakeFiles/edit_cache.dir
+/home/user/Jina/build/dsr_realtime_control/CMakeFiles/rebuild_cache.dir
+/home/user/Jina/build/dsr_realtime_control/CMakeFiles/list_install_components.dir
+/home/user/Jina/build/dsr_realtime_control/CMakeFiles/install.dir
+/home/user/Jina/build/dsr_realtime_control/CMakeFiles/install/local.dir
+/home/user/Jina/build/dsr_realtime_control/CMakeFiles/install/strip.dir

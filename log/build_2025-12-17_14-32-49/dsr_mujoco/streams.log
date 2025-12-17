@@ -1,0 +1,47 @@
+[0.160s] Invoking command in '/home/user/Jina/build/dsr_mujoco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/Jina/install/tower_builder:/home/user/Jina/install/dsr_visualservoing:/home/user/Jina/install/dsr_tests:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_example:/opt/ros/humble /usr/bin/cmake --build /home/user/Jina/build/dsr_mujoco -- -j12 -l12
+[0.257s] Built target ament_cmake_python_copy_dsr_mujoco
+[0.463s] running egg_info
+[0.464s] writing dsr_mujoco.egg-info/PKG-INFO
+[0.464s] writing dependency_links to dsr_mujoco.egg-info/dependency_links.txt
+[0.464s] writing top-level names to dsr_mujoco.egg-info/top_level.txt
+[0.466s] reading manifest file 'dsr_mujoco.egg-info/SOURCES.txt'
+[0.467s] writing manifest file 'dsr_mujoco.egg-info/SOURCES.txt'
+[0.503s] Built target ament_cmake_python_build_dsr_mujoco_egg
+[1.133s] Invoked command in '/home/user/Jina/build/dsr_mujoco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/Jina/install/tower_builder:/home/user/Jina/install/dsr_visualservoing:/home/user/Jina/install/dsr_tests:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_example:/opt/ros/humble /usr/bin/cmake --build /home/user/Jina/build/dsr_mujoco -- -j12 -l12
+[1.135s] Invoking command in '/home/user/Jina/build/dsr_mujoco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/Jina/install/tower_builder:/home/user/Jina/install/dsr_visualservoing:/home/user/Jina/install/dsr_tests:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_example:/opt/ros/humble /usr/bin/cmake --install /home/user/Jina/build/dsr_mujoco
+[1.211s] -- Install configuration: ""
+[1.211s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/dsr_mujoco/environment/pythonpath.sh
+[1.212s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/dsr_mujoco/environment/pythonpath.dsv
+[1.212s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/local/lib/python3.10/dist-packages/dsr_mujoco-0.1.0-py3.10.egg-info
+[1.212s] -- Installing: /home/user/Jina/install/dsr_mujoco/local/lib/python3.10/dist-packages/dsr_mujoco-0.1.0-py3.10.egg-info/dependency_links.txt
+[1.212s] -- Installing: /home/user/Jina/install/dsr_mujoco/local/lib/python3.10/dist-packages/dsr_mujoco-0.1.0-py3.10.egg-info/SOURCES.txt
+[1.212s] -- Installing: /home/user/Jina/install/dsr_mujoco/local/lib/python3.10/dist-packages/dsr_mujoco-0.1.0-py3.10.egg-info/PKG-INFO
+[1.212s] -- Installing: /home/user/Jina/install/dsr_mujoco/local/lib/python3.10/dist-packages/dsr_mujoco-0.1.0-py3.10.egg-info/top_level.txt
+[1.212s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/local/lib/python3.10/dist-packages/dsr_mujoco
+[1.212s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/local/lib/python3.10/dist-packages/dsr_mujoco/__init__.py
+[1.212s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/local/lib/python3.10/dist-packages/dsr_mujoco/dsr_merge_gripper.py
+[1.212s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/local/lib/python3.10/dist-packages/dsr_mujoco/dsr_build_scene.py
+[1.310s] Listing '/home/user/Jina/install/dsr_mujoco/local/lib/python3.10/dist-packages/dsr_mujoco'...
+[1.344s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/dsr_mujoco//launch
+[1.344s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/dsr_mujoco//launch/dsr_mujoco_default.launch.py
+[1.344s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/dsr_mujoco//launch/dsr_mujoco.launch.py
+[1.344s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/dsr_mujoco//config
+[1.345s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/dsr_mujoco//config/dsr_mujoco_controller_with_2f85.yaml
+[1.345s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/dsr_mujoco//config/2f85_controller.yaml
+[1.348s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/dsr_mujoco//config/dsr_mujoco_controller.yaml
+[1.348s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/ament_index/resource_index/package_run_dependencies/dsr_mujoco
+[1.348s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/ament_index/resource_index/parent_prefix_path/dsr_mujoco
+[1.349s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/dsr_mujoco/environment/ament_prefix_path.sh
+[1.349s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/dsr_mujoco/environment/ament_prefix_path.dsv
+[1.349s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/dsr_mujoco/environment/path.sh
+[1.349s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/dsr_mujoco/environment/path.dsv
+[1.349s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/dsr_mujoco/local_setup.bash
+[1.349s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/dsr_mujoco/local_setup.sh
+[1.349s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/dsr_mujoco/local_setup.zsh
+[1.349s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/dsr_mujoco/local_setup.dsv
+[1.349s] -- Installing: /home/user/Jina/install/dsr_mujoco/share/dsr_mujoco/package.dsv
+[1.349s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/ament_index/resource_index/packages/dsr_mujoco
+[1.350s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/dsr_mujoco/cmake/dsr_mujocoConfig.cmake
+[1.350s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/dsr_mujoco/cmake/dsr_mujocoConfig-version.cmake
+[1.350s] -- Up-to-date: /home/user/Jina/install/dsr_mujoco/share/dsr_mujoco/package.xml
+[1.403s] Invoked command in '/home/user/Jina/build/dsr_mujoco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/Jina/install/tower_builder:/home/user/Jina/install/dsr_visualservoing:/home/user/Jina/install/dsr_tests:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_example:/opt/ros/humble /usr/bin/cmake --install /home/user/Jina/build/dsr_mujoco

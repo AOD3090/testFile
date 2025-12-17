@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-6e7b08a7d931bf58ed57.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "dsr_mujoco",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_dsr_mujoco_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_dsr_mujoco_egg-4e1366768731e4816344.json",
+					"name" : "ament_cmake_python_build_dsr_mujoco_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_dsr_mujoco::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_dsr_mujoco-9afa53a1eb0c7190f8c8.json",
+					"name" : "ament_cmake_python_copy_dsr_mujoco",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dsr_mujoco_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dsr_mujoco_uninstall-b77dc58be271e8238186.json",
+					"name" : "dsr_mujoco_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-a89e6f826efcd22ca28a.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/user/Jina/build/dsr_mujoco",
+		"source" : "/home/user/Jina/src/doosan-robot2/dsr_mujoco"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

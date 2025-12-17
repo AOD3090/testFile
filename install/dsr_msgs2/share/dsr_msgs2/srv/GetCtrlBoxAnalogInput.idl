@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/io/GetCtrlBoxAnalogInput.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " get_analog_input " "\n"
+      "____________________________________________________________________________________________")
+    struct GetCtrlBoxAnalogInput_Request {
+      @verbatim (language="comment", text=
+        "1 = ch1, 2= ch2")
+      int8 channel;
+    };
+    struct GetCtrlBoxAnalogInput_Response {
+      double value;
+
+      boolean success;
+    };
+  };
+};

@@ -1,0 +1,32 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/motion/Jog.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " single jog" "\n"
+      " single jog speed = (250mm/s) x speed " "\n"
+      "____________________________________________________________________________________________")
+    struct Jog_Request {
+      @verbatim (language="comment", text=
+        "0 ~ 5 : JOINT 1 ~ 6" "\n"
+        "6 ~ 11: TASK 1 ~ 6 (X,Y,Z,rx,ry,rz)")
+      int8 jog_axis;
+
+      @verbatim (language="comment", text=
+        "0 : MOVE_REFERENCE_BASE, 1 : MOVE_REFERENCE_TOOL")
+      int8 move_reference;
+
+      @verbatim (language="comment", text=
+        "jog speed : + forward , 0=stop, - backward")
+      @unit (value="%")
+      double speed;
+    };
+    struct Jog_Response {
+      boolean success;
+    };
+  };
+};

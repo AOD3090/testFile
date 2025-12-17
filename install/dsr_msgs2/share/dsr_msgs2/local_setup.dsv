@@ -1,0 +1,4 @@
+source;share/dsr_msgs2/environment/ament_prefix_path.sh
+source;share/dsr_msgs2/environment/library_path.sh
+source;share/dsr_msgs2/environment/path.sh
+source;share/dsr_msgs2/environment/pythonpath.sh

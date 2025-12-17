@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/motion/ChangeOperationSpeed.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " change_operation_speed" "\n"
+      "____________________________________________________________________________________________")
+    struct ChangeOperationSpeed_Request {
+      @verbatim (language="comment", text=
+        "operation speed: (1~100)")
+      int8 speed;
+    };
+    struct ChangeOperationSpeed_Response {
+      boolean success;
+    };
+  };
+};

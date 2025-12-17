@@ -1,0 +1,6 @@
+Invoking command in '/home/user/Jina/build/dsr_moveit_config_p3020': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/Jina/src/doosan-robot2/dsr_moveit2/dsr_moveit_config_p3020 -DCMAKE_INSTALL_PREFIX=/home/user/Jina/install/dsr_moveit_config_p3020
+Invoked command in '/home/user/Jina/build/dsr_moveit_config_p3020' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/Jina/src/doosan-robot2/dsr_moveit2/dsr_moveit_config_p3020 -DCMAKE_INSTALL_PREFIX=/home/user/Jina/install/dsr_moveit_config_p3020
+Invoking command in '/home/user/Jina/build/dsr_moveit_config_p3020': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/Jina/build/dsr_moveit_config_p3020 -- -j12 -l12
+Invoked command in '/home/user/Jina/build/dsr_moveit_config_p3020' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/Jina/build/dsr_moveit_config_p3020 -- -j12 -l12
+Invoking command in '/home/user/Jina/build/dsr_moveit_config_p3020': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/Jina/build/dsr_moveit_config_p3020
+Invoked command in '/home/user/Jina/build/dsr_moveit_config_p3020' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/Jina/build/dsr_moveit_config_p3020

@@ -1,0 +1,4 @@
+Invoking command in '/home/user/Jina/build/dsr_moveit_config_m0609': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/Jina/build/dsr_moveit_config_m0609 -- -j12 -l12
+Invoked command in '/home/user/Jina/build/dsr_moveit_config_m0609' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/Jina/build/dsr_moveit_config_m0609 -- -j12 -l12
+Invoking command in '/home/user/Jina/build/dsr_moveit_config_m0609': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/Jina/build/dsr_moveit_config_m0609
+Invoked command in '/home/user/Jina/build/dsr_moveit_config_m0609' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/Jina/build/dsr_moveit_config_m0609

@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from dsr_msgs2/msg/RobotStop.msg
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module msg {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " [ robot stop mode ] " "\n"
+      " 0 : STOP_TYPE_QUICK_STO" "\n"
+      " 1 : STOP_TYPE_QUICK" "\n"
+      " 2 : STOP_TYPE_SLOW" "\n"
+      " 3 : STOP_TYPE_HOLD = STOP_TYPE_EMERGENCY" "\n"
+      "" "\n"
+      "____________________________________________________________________________________________")
+    struct RobotStop {
+      int32 stop_mode;
+    };
+  };
+};

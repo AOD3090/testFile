@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/tcp/GetCurrentTcp.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " get_current_tcp  " "\n"
+      " It is the service to get the currently set TCP information from the robot controller" "\n"
+      "____________________________________________________________________________________________")
+    struct GetCurrentTcp_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetCurrentTcp_Response {
+      @verbatim (language="comment", text=
+        "tcp name")
+      string info;
+
+      boolean success;
+    };
+  };
+};

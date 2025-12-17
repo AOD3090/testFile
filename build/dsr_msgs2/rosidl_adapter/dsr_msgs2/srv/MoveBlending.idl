@@ -1,0 +1,58 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/motion/MoveBlending.srv
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Float64MultiArray.idl"
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__2[2];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " move_blending  " "\n"
+      "float64[50][6] pos              # target" "\n"
+      "std_msgs/Float64MultiArray[] pos1   # target1 [50][6]" "\n"
+      "std_msgs/Float64MultiArray[] pos2   # target2 [50][6]" "\n"
+      "int8[50]       segment              # LINE=0 , CIRCLE=1" "\n"
+      "float64[50]    radius               # Radius of segment " "\n"
+      "____________________________________________________________________________________________")
+    struct MoveBlending_Request {
+      @verbatim (language="comment", text=
+        "50 x (pos1[6]:pos2[6]:type[1]:radius[1])")
+      sequence<std_msgs::msg::Float64MultiArray> segment;
+
+      @verbatim (language="comment", text=
+        "target cnt")
+      int8 pos_cnt;
+
+      @verbatim (language="comment", text=
+        "set velocity: [mm/sec], [deg/sec]")
+      double__2 vel;
+
+      @verbatim (language="comment", text=
+        "set acceleration: [mm/sec2], [deg/sec2]")
+      double__2 acc;
+
+      @verbatim (language="comment", text=
+        "= 0.0          # Time")
+      @unit (value="sec")
+      double time;
+
+      @verbatim (language="comment", text=
+        "DR_BASE(0), DR_TOOL(1), DR_WORLD(2)" "\n"
+        "<DR_WORLD is only available in M2.40 or later")
+      int8 ref;
+
+      @verbatim (language="comment", text=
+        "= 0            # MOVE_MODE_ABSOLUTE=0, MOVE_MODE_RELATIVE=1")
+      int8 mode;
+
+      @verbatim (language="comment", text=
+        "=0         # SYNC = 0, ASYNC = 1")
+      int8 sync_type;
+    };
+    struct MoveBlending_Response {
+      boolean success;
+    };
+  };
+};

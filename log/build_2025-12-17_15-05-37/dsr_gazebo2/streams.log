@@ -1,0 +1,167 @@
+[0.379s] Invoking command in '/home/user/Jina/build/dsr_gazebo2': CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_description2:/home/user/Jina/install/dsr_realtime_control:/home/user/Jina/install/dsr_mujoco:/home/user/Jina/install/dsr_controller2:/home/user/Jina/install/dsr_msgs2:/home/user/Jina/install/dsr_moveit_config_p3020:/home/user/Jina/install/dsr_moveit_config_m1509:/home/user/Jina/install/dsr_moveit_config_m1013:/home/user/Jina/install/dsr_moveit_config_m0617:/home/user/Jina/install/dsr_moveit_config_m0609:/home/user/Jina/install/dsr_moveit_config_h2515:/home/user/Jina/install/dsr_moveit_config_h2017:/home/user/Jina/install/dsr_moveit_config_e0509:/home/user/Jina/install/dsr_moveit_config_a0912:/home/user/Jina/install/dsr_moveit_config_a0509:/home/user/Jina/install/dsr_hardware2:/home/user/Jina/install/dsr_gazebo2:/home/user/Jina/install/dsr_common2:/home/user/Jina/install/tower_builder:/home/user/Jina/install/dsr_visualservoing:/home/user/Jina/install/dsr_tests:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_example:/opt/ros/humble /usr/bin/cmake --build /home/user/Jina/build/dsr_gazebo2 -- -j12 -l12
+[0.422s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.619s] -- Found gazebo_ros_pkgs: 3.9.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+[0.619s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.656s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.658s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.670s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.681s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.699s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.751s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.772s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.802s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.805s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.935s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.966s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.983s] -- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)
+[0.989s] -- Found dsr_description2: 1.1.0 (/home/user/Jina/install/dsr_description2/share/dsr_description2/cmake)
+[1.061s] -- Configuring done
+[1.066s] -- Generating done
+[1.070s] -- Build files have been written to: /home/user/Jina/build/dsr_gazebo2
+[1.123s] Invoked command in '/home/user/Jina/build/dsr_gazebo2' returned '0': CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_description2:/home/user/Jina/install/dsr_realtime_control:/home/user/Jina/install/dsr_mujoco:/home/user/Jina/install/dsr_controller2:/home/user/Jina/install/dsr_msgs2:/home/user/Jina/install/dsr_moveit_config_p3020:/home/user/Jina/install/dsr_moveit_config_m1509:/home/user/Jina/install/dsr_moveit_config_m1013:/home/user/Jina/install/dsr_moveit_config_m0617:/home/user/Jina/install/dsr_moveit_config_m0609:/home/user/Jina/install/dsr_moveit_config_h2515:/home/user/Jina/install/dsr_moveit_config_h2017:/home/user/Jina/install/dsr_moveit_config_e0509:/home/user/Jina/install/dsr_moveit_config_a0912:/home/user/Jina/install/dsr_moveit_config_a0509:/home/user/Jina/install/dsr_hardware2:/home/user/Jina/install/dsr_gazebo2:/home/user/Jina/install/dsr_common2:/home/user/Jina/install/tower_builder:/home/user/Jina/install/dsr_visualservoing:/home/user/Jina/install/dsr_tests:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_example:/opt/ros/humble /usr/bin/cmake --build /home/user/Jina/build/dsr_gazebo2 -- -j12 -l12
+[1.125s] Invoking command in '/home/user/Jina/build/dsr_gazebo2': CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_description2:/home/user/Jina/install/dsr_realtime_control:/home/user/Jina/install/dsr_mujoco:/home/user/Jina/install/dsr_controller2:/home/user/Jina/install/dsr_msgs2:/home/user/Jina/install/dsr_moveit_config_p3020:/home/user/Jina/install/dsr_moveit_config_m1509:/home/user/Jina/install/dsr_moveit_config_m1013:/home/user/Jina/install/dsr_moveit_config_m0617:/home/user/Jina/install/dsr_moveit_config_m0609:/home/user/Jina/install/dsr_moveit_config_h2515:/home/user/Jina/install/dsr_moveit_config_h2017:/home/user/Jina/install/dsr_moveit_config_e0509:/home/user/Jina/install/dsr_moveit_config_a0912:/home/user/Jina/install/dsr_moveit_config_a0509:/home/user/Jina/install/dsr_hardware2:/home/user/Jina/install/dsr_gazebo2:/home/user/Jina/install/dsr_common2:/home/user/Jina/install/tower_builder:/home/user/Jina/install/dsr_visualservoing:/home/user/Jina/install/dsr_tests:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_example:/opt/ros/humble /usr/bin/cmake --install /home/user/Jina/build/dsr_gazebo2
+[1.132s] -- Install configuration: ""
+[1.132s] -- Up-to-date: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/launch
+[1.132s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/launch/dsr_spawn_on_gazebo.launch.py
+[1.132s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/launch/dsr_gazebo.launch.py
+[1.132s] -- Up-to-date: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model
+[1.132s] -- Up-to-date: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0617
+[1.133s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0617/m0617.sdf
+[1.133s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0617/model.config
+[1.133s] -- Up-to-date: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0617/meshes
+[1.133s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0617/meshes/MF0617_6_0.dae
+[1.133s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0617/meshes/MF0617_5_0.dae
+[1.134s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0617/meshes/MF0617_0_0.dae
+[1.136s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0617/meshes/MF0617_4_0.dae
+[1.137s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0617/meshes/MF0617_2_0.dae
+[1.137s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0617/meshes/MF0617_1_0.dae
+[1.138s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0617/meshes/MF0617_2_2.dae
+[1.139s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0617/meshes/MF0617_4_1.dae
+[1.140s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0617/meshes/MF0617_2_1.dae
+[1.144s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0617/meshes/MF0617_3_0.dae
+[1.144s] -- Up-to-date: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0509
+[1.145s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0509/a0509.sdf
+[1.145s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0509/model.config
+[1.145s] -- Up-to-date: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0509/meshes
+[1.145s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0509/meshes/A0509_1_1.dae
+[1.146s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0509/meshes/A0509_4_0.dae
+[1.147s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0509/meshes/A0509_3_0.dae
+[1.147s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0509/meshes/A0509_0_0.dae
+[1.148s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0509/meshes/A0509_1_0.dae
+[1.148s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0509/meshes/A0509_2_0.dae
+[1.149s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0509/meshes/A0509_3_1.dae
+[1.149s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0509/meshes/A0509_5_0.dae
+[1.149s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0509/meshes/A0509_2_2.dae
+[1.150s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0509/meshes/A0509_1_2.dae
+[1.150s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0509/meshes/A0509_2_1.dae
+[1.153s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0509/meshes/A0509_4_1.dae
+[1.153s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0509/meshes/A0509_5_1.dae
+[1.155s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0509/meshes/A0509_6_0.dae
+[1.155s] -- Up-to-date: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0609
+[1.156s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0609/m0609.sdf
+[1.156s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0609/model.config
+[1.156s] -- Up-to-date: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0609/meshes
+[1.156s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0609/meshes/MF0609_4_1.dae
+[1.156s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0609/meshes/MF0609_2_2.dae
+[1.156s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0609/meshes/MF0609_5_0.dae
+[1.157s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0609/meshes/MF0609_0_0.dae
+[1.157s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0609/meshes/MF0609_1_0.dae
+[1.157s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0609/meshes/MF0609_2_0.dae
+[1.158s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0609/meshes/MF0609_3_0.dae
+[1.158s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0609/meshes/MF0609_2_1.dae
+[1.159s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0609/meshes/MF0609_4_0.dae
+[1.160s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m0609/meshes/MF0609_6_0.dae
+[1.160s] -- Up-to-date: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1509
+[1.160s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1509/m1509.sdf
+[1.160s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1509/model.config
+[1.160s] -- Up-to-date: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1509/meshes
+[1.160s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1509/meshes/MF1509_5_0.dae
+[1.160s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1509/meshes/MF1509_6_0.dae
+[1.161s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1509/meshes/MF1509_2_2.dae
+[1.161s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1509/meshes/MF1509_4_1.dae
+[1.161s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1509/meshes/MF1509_0_0.dae
+[1.162s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1509/meshes/MF1509_1_0.dae
+[1.162s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1509/meshes/MF1509_4_0.dae
+[1.162s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1509/meshes/MF1509_2_1.dae
+[1.163s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1509/meshes/MF1509_3_0.dae
+[1.163s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1509/meshes/MF1509_2_0.dae
+[1.164s] -- Up-to-date: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1013
+[1.164s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1013/m1013.sdf
+[1.164s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1013/model.config
+[1.164s] -- Up-to-date: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1013/meshes
+[1.164s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1013/meshes/MF1013_6_0.dae
+[1.164s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1013/meshes/MF1013_5_0.dae
+[1.165s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1013/meshes/MF1013_2_1.dae
+[1.169s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1013/meshes/MF1013_4_0.dae
+[1.170s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1013/meshes/MF1013_2_2.dae
+[1.172s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1013/meshes/MF1013_3_0.dae
+[1.174s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1013/meshes/MF1013_1_0.dae
+[1.176s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1013/meshes/MF1013_2_0.dae
+[1.178s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1013/meshes/MF1013_0_0.dae
+[1.180s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/m1013/meshes/MF1013_4_1.dae
+[1.181s] -- Up-to-date: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2515
+[1.181s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2515/model.config
+[1.182s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2515/h2515.sdf
+[1.182s] -- Up-to-date: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2515/meshes
+[1.182s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2515/meshes/H2515_0_0.dae
+[1.183s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2515/meshes/H2515_2_1.dae
+[1.186s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2515/meshes/H2515_2_2.dae
+[1.187s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2515/meshes/H2515_2_0.dae
+[1.189s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2515/meshes/H2515_4_1.dae
+[1.190s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2515/meshes/H2515_5_0.dae
+[1.192s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2515/meshes/H2515_6_0.dae
+[1.192s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2515/meshes/H2515_3_0.dae
+[1.194s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2515/meshes/H2515_1_0.dae
+[1.196s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2515/meshes/H2515_4_0.dae
+[1.197s] -- Up-to-date: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2017
+[1.197s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2017/h2017.sdf
+[1.197s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2017/model.config
+[1.198s] -- Up-to-date: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2017/meshes
+[1.198s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2017/meshes/H2017_0_0.dae
+[1.199s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2017/meshes/H2017_1_0.dae
+[1.200s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2017/meshes/H2017_4_0.dae
+[1.201s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2017/meshes/H2017_2_1.dae
+[1.204s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2017/meshes/H2017_5_0.dae
+[1.206s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2017/meshes/H2017_3_0.dae
+[1.208s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2017/meshes/H2017_6_0.dae
+[1.208s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2017/meshes/H2017_2_2.dae
+[1.209s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2017/meshes/H2017_2_0.dae
+[1.210s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/h2017/meshes/H2017_4_1.dae
+[1.212s] -- Up-to-date: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0912
+[1.212s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0912/a0912.sdf
+[1.212s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0912/model.config
+[1.213s] -- Up-to-date: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0912/meshes
+[1.213s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0912/meshes/A0912_4_0.dae
+[1.213s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0912/meshes/A0912_6_0.dae
+[1.214s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0912/meshes/A0912_5_1.dae
+[1.216s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0912/meshes/A0912_4_1.dae
+[1.219s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0912/meshes/A0912_1_1.dae
+[1.220s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0912/meshes/A0912_2_0.dae
+[1.222s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0912/meshes/A0912_5_0.dae
+[1.222s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0912/meshes/A0912_2_1.dae
+[1.225s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0912/meshes/A0912_3_1.dae
+[1.226s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0912/meshes/A0912_2_2.dae
+[1.227s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0912/meshes/A0912_1_0.dae
+[1.227s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0912/meshes/A0912_1_2.dae
+[1.228s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0912/meshes/A0912_0_0.dae
+[1.229s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/model/a0912/meshes/A0912_3_0.dae
+[1.229s] -- Up-to-date: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/worlds
+[1.229s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/worlds/empty_world.model
+[1.229s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/worlds/empty_world.world
+[1.229s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/ament_index/resource_index/package_run_dependencies/dsr_gazebo2
+[1.229s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/ament_index/resource_index/parent_prefix_path/dsr_gazebo2
+[1.230s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/environment/ament_prefix_path.sh
+[1.230s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/environment/ament_prefix_path.dsv
+[1.230s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/environment/path.sh
+[1.230s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/environment/path.dsv
+[1.230s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/local_setup.bash
+[1.230s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/local_setup.sh
+[1.230s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/local_setup.zsh
+[1.231s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/local_setup.dsv
+[1.231s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/package.dsv
+[1.231s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/ament_index/resource_index/packages/dsr_gazebo2
+[1.231s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.231s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/cmake/dsr_gazebo2Config.cmake
+[1.232s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/cmake/dsr_gazebo2Config-version.cmake
+[1.232s] -- Installing: /home/user/Jina/install/dsr_gazebo2/share/dsr_gazebo2/package.xml
+[1.240s] Invoked command in '/home/user/Jina/build/dsr_gazebo2' returned '0': CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_description2:/home/user/Jina/install/dsr_realtime_control:/home/user/Jina/install/dsr_mujoco:/home/user/Jina/install/dsr_controller2:/home/user/Jina/install/dsr_msgs2:/home/user/Jina/install/dsr_moveit_config_p3020:/home/user/Jina/install/dsr_moveit_config_m1509:/home/user/Jina/install/dsr_moveit_config_m1013:/home/user/Jina/install/dsr_moveit_config_m0617:/home/user/Jina/install/dsr_moveit_config_m0609:/home/user/Jina/install/dsr_moveit_config_h2515:/home/user/Jina/install/dsr_moveit_config_h2017:/home/user/Jina/install/dsr_moveit_config_e0509:/home/user/Jina/install/dsr_moveit_config_a0912:/home/user/Jina/install/dsr_moveit_config_a0509:/home/user/Jina/install/dsr_hardware2:/home/user/Jina/install/dsr_gazebo2:/home/user/Jina/install/dsr_common2:/home/user/Jina/install/tower_builder:/home/user/Jina/install/dsr_visualservoing:/home/user/Jina/install/dsr_tests:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_example:/opt/ros/humble /usr/bin/cmake --install /home/user/Jina/build/dsr_gazebo2

@@ -1,0 +1,25 @@
+[1.465s] Invoking command in '/home/user/Jina/src/doosan-robot2/dsr_example2/dsr_example': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_common2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_common2 PYTHONPATH=/home/user/Jina/build/dsr_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/dsr_example/lib/python3.10/site-packages:/home/user/Jina/install/dsr_common2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/dsr_example build --build-base /home/user/Jina/build/dsr_example/build install --record /home/user/Jina/build/dsr_example/install.log --single-version-externally-managed install_data
+[1.628s] running egg_info
+[1.629s] writing ../../../../build/dsr_example/dsr_example.egg-info/PKG-INFO
+[1.629s] writing dependency_links to ../../../../build/dsr_example/dsr_example.egg-info/dependency_links.txt
+[1.630s] writing entry points to ../../../../build/dsr_example/dsr_example.egg-info/entry_points.txt
+[1.630s] writing requirements to ../../../../build/dsr_example/dsr_example.egg-info/requires.txt
+[1.631s] writing top-level names to ../../../../build/dsr_example/dsr_example.egg-info/top_level.txt
+[1.631s] reading manifest file '../../../../build/dsr_example/dsr_example.egg-info/SOURCES.txt'
+[1.633s] writing manifest file '../../../../build/dsr_example/dsr_example.egg-info/SOURCES.txt'
+[1.634s] running build
+[1.634s] running build_py
+[1.634s] running install
+[1.634s] running install_lib
+[1.634s] running install_data
+[1.635s] running install_egg_info
+[1.635s] removing '/home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example-0.0.0-py3.10.egg-info' (and everything under it)
+[1.635s] Copying ../../../../build/dsr_example/dsr_example.egg-info to /home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example-0.0.0-py3.10.egg-info
+[1.635s] running install_scripts
+[1.647s] Installing dance script to /home/user/Jina/install/dsr_example/lib/dsr_example
+[1.647s] Installing single_robot_simple script to /home/user/Jina/install/dsr_example/lib/dsr_example
+[1.647s] Installing slope_demo script to /home/user/Jina/install/dsr_example/lib/dsr_example
+[1.647s] Installing test script to /home/user/Jina/install/dsr_example/lib/dsr_example
+[1.647s] Installing test2 script to /home/user/Jina/install/dsr_example/lib/dsr_example
+[1.648s] writing list of installed files to '/home/user/Jina/build/dsr_example/install.log'
+[1.676s] Invoked command in '/home/user/Jina/src/doosan-robot2/dsr_example2/dsr_example' returned '0': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_common2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_common2 PYTHONPATH=/home/user/Jina/build/dsr_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/dsr_example/lib/python3.10/site-packages:/home/user/Jina/install/dsr_common2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/dsr_example build --build-base /home/user/Jina/build/dsr_example/build install --record /home/user/Jina/build/dsr_example/install.log --single-version-externally-managed install_data

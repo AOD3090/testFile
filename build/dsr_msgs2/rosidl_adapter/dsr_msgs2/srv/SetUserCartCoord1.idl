@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/force/SetUserCartCoord1.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " set_user_cart_coord(pos, ref)   " "\n"
+      "____________________________________________________________________________________________")
+    struct SetUserCartCoord1_Request {
+      @verbatim (language="comment", text=
+        "task pos(posx)")
+      double__6 pos;
+
+      @verbatim (language="comment", text=
+        "DR_BASE(0), DR_WORLD(2)" "\n"
+        "<ref is only available in M2.40 or later>")
+      int8 ref;
+    };
+    struct SetUserCartCoord1_Response {
+      @verbatim (language="comment", text=
+        "set user coord (101~120) or fail(-1)")
+      int8 id;
+
+      boolean success;
+    };
+  };
+};

@@ -1,0 +1,52 @@
+[0.009s] Invoking command in '/home/user/Jina/build/dsr_controller2': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_hardware2:/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_hardware2:/home/user/Jina/install/dsr_msgs2:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_hardware2/lib:/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/Jina/build/dsr_controller2 -- -j12 -l12
+[0.084s] [ 50%] Built target dsr_joint_trajectory
+[0.091s] [100%] Built target dsr_controller2
+[0.102s] Invoked command in '/home/user/Jina/build/dsr_controller2' returned '0': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_hardware2:/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_hardware2:/home/user/Jina/install/dsr_msgs2:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_hardware2/lib:/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/Jina/build/dsr_controller2 -- -j12 -l12
+[0.103s] Invoking command in '/home/user/Jina/build/dsr_controller2': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_hardware2:/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_hardware2:/home/user/Jina/install/dsr_msgs2:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_hardware2/lib:/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/Jina/build/dsr_controller2
+[0.115s] -- Install configuration: ""
+[0.115s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/dsr_controller2_plugins.xml
+[0.115s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/dsr_joint_trajectory_plugin.xml
+[0.115s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/include/dsr_controller2
+[0.115s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/include/dsr_controller2/dsr_controller2
+[0.115s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/include/dsr_controller2/dsr_controller2/dsr_joint_trajectory.hpp
+[0.115s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/include/dsr_controller2/dsr_controller2/visibility_control.h
+[0.116s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/include/dsr_controller2/dsr_controller2/dsr_controller2.hpp
+[0.116s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/config
+[0.116s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/config/console.conf
+[0.116s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/config/dsr_controller2_gz.yaml
+[0.116s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/config/dsr_controller2_p3020.yaml
+[0.116s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/config/dsr_controller2_gz_p3020.yaml
+[0.116s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/config/dsr_controller2.yaml
+[0.116s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/config/default.yaml
+[0.116s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/config/dsr_controller2_ex.yaml
+[0.116s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/launch
+[0.116s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/launch/dsr_control2.launch.py
+[0.116s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/launch/dsr_controller2.launch.py
+[0.116s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/launch/dsr_moveit2.launch.py
+[0.117s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/lib/libdsr_controller2.so
+[0.117s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/lib/libdsr_joint_trajectory.so
+[0.117s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/environment/library_path.sh
+[0.117s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/environment/library_path.dsv
+[0.117s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/ament_index/resource_index/package_run_dependencies/dsr_controller2
+[0.117s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/ament_index/resource_index/parent_prefix_path/dsr_controller2
+[0.117s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/environment/ament_prefix_path.sh
+[0.117s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/environment/ament_prefix_path.dsv
+[0.117s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/environment/path.sh
+[0.117s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/environment/path.dsv
+[0.117s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/local_setup.bash
+[0.117s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/local_setup.sh
+[0.117s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/local_setup.zsh
+[0.118s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/local_setup.dsv
+[0.118s] -- Installing: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/package.dsv
+[0.118s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/ament_index/resource_index/packages/dsr_controller2
+[0.118s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/ament_index/resource_index/controller_interface__pluginlib__plugin/dsr_controller2
+[0.118s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/cmake/export_dsr_controller2Export.cmake
+[0.118s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/cmake/export_dsr_controller2Export-noconfig.cmake
+[0.118s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/cmake/export_dsr_joint_trajectoryExport.cmake
+[0.118s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/cmake/export_dsr_joint_trajectoryExport-noconfig.cmake
+[0.118s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/cmake/ament_cmake_export_targets-extras.cmake
+[0.118s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.118s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/cmake/dsr_controller2Config.cmake
+[0.118s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/cmake/dsr_controller2Config-version.cmake
+[0.118s] -- Up-to-date: /home/user/Jina/install/dsr_controller2/share/dsr_controller2/package.xml
+[0.120s] Invoked command in '/home/user/Jina/build/dsr_controller2' returned '0': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_hardware2:/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_hardware2:/home/user/Jina/install/dsr_msgs2:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_hardware2/lib:/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/Jina/build/dsr_controller2

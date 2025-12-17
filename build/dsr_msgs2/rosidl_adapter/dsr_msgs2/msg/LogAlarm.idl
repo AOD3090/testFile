@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from dsr_msgs2/msg/LogAlarm.msg
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module msg {
+    typedef string string__3[3];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " log of alarm" "\n"
+      "____________________________________________________________________________________________")
+    struct LogAlarm {
+      int32 level;
+
+      int32 group;
+
+      int32 index;
+
+      string__3 param;
+    };
+  };
+};

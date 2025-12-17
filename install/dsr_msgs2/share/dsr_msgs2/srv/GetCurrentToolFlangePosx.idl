@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/aux_control/GetCurrentToolFlangePosx.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " get_current_tool_flange_posx()  " "\n"
+      "____________________________________________________________________________________________" "\n"
+      " This service returns the pose of the current tool flange based on the ref coordinate. In other words, it means the return to tcp=(0,0,0,0,0,0).")
+    struct GetCurrentToolFlangePosx_Request {
+      @verbatim (language="comment", text=
+        "DR_BASE(0), DR_WORLD(2)")
+      int8 ref;
+    };
+    typedef double double__6[6];
+    struct GetCurrentToolFlangePosx_Response {
+      @verbatim (language="comment", text=
+        "Pose of tool flange(posx)")
+      double__6 pos;
+
+      boolean success;
+    };
+  };
+};

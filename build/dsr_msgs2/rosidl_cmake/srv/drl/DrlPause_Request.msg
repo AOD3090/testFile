@@ -1,0 +1,5 @@
+#____________________________________________________________________________________________
+# drl_script_pause  
+# This service is used to stop the currently executing DRL program from the robot controller.
+#____________________________________________________________________________________________
+

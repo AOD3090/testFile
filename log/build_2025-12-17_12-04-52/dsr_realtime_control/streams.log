@@ -1,0 +1,69 @@
+[0.167s] Invoking command in '/home/user/Jina/build/dsr_realtime_control': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/user/Jina/src/doosan-robot2/dsr_example2/dsr_realtime_control -DCMAKE_INSTALL_PREFIX=/home/user/Jina/install/dsr_realtime_control
+[0.205s] -- The C compiler identification is GNU 11.4.0
+[0.249s] -- The CXX compiler identification is GNU 11.4.0
+[0.254s] -- Detecting C compiler ABI info
+[0.306s] -- Detecting C compiler ABI info - done
+[0.313s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.313s] -- Detecting C compile features
+[0.313s] -- Detecting C compile features - done
+[0.316s] -- Detecting CXX compiler ABI info
+[0.370s] -- Detecting CXX compiler ABI info - done
+[0.376s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.376s] -- Detecting CXX compile features
+[0.376s] -- Detecting CXX compile features - done
+[0.377s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.502s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.574s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.600s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.603s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.608s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.616s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.625s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.652s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.654s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.715s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.738s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.767s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.772s] -- Looking for pthread.h
+[0.845s] -- Looking for pthread.h - found
+[0.845s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.910s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.910s] -- Found Threads: TRUE  
+[0.941s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[0.965s] -- Found dsr_msgs2: 1.1.0 (/home/user/Jina/install/dsr_msgs2/share/dsr_msgs2/cmake)
+[1.039s] -- Configuring done
+[1.050s] -- Generating done
+[1.056s] -- Build files have been written to: /home/user/Jina/build/dsr_realtime_control
+[1.072s] Invoked command in '/home/user/Jina/build/dsr_realtime_control' returned '0': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/user/Jina/src/doosan-robot2/dsr_example2/dsr_realtime_control -DCMAKE_INSTALL_PREFIX=/home/user/Jina/install/dsr_realtime_control
+[1.074s] Invoking command in '/home/user/Jina/build/dsr_realtime_control': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/Jina/build/dsr_realtime_control -- -j12 -l12
+[1.137s] [ 50%] [32mBuilding CXX object CMakeFiles/dsr_realtime_control.dir/src/realtime_control.cpp.o[0m
+[5.599s] [100%] [32m[1mLinking CXX executable dsr_realtime_control[0m
+[5.837s] [100%] Built target dsr_realtime_control
+[5.845s] Invoked command in '/home/user/Jina/build/dsr_realtime_control' returned '0': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/Jina/build/dsr_realtime_control -- -j12 -l12
+[5.846s] Invoking command in '/home/user/Jina/build/dsr_realtime_control': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/Jina/build/dsr_realtime_control
+[5.855s] -- Install configuration: ""
+[5.855s] -- Installing: /home/user/Jina/install/dsr_realtime_control/lib/dsr_realtime_control/dsr_realtime_control
+[5.857s] -- Set runtime path of "/home/user/Jina/install/dsr_realtime_control/lib/dsr_realtime_control/dsr_realtime_control" to ""
+[5.857s] -- Installing: /home/user/Jina/install/dsr_realtime_control/include/dsr_realtime_control
+[5.857s] -- Installing: /home/user/Jina/install/dsr_realtime_control/include/dsr_realtime_control/dsr_realtime_control
+[5.857s] -- Installing: /home/user/Jina/install/dsr_realtime_control/include/dsr_realtime_control/dsr_realtime_control/command_line_options.hpp
+[5.857s] -- Installing: /home/user/Jina/install/dsr_realtime_control/include/dsr_realtime_control/dsr_realtime_control/rusage_utils.hpp
+[5.857s] -- Installing: /home/user/Jina/install/dsr_realtime_control/include/dsr_realtime_control/dsr_realtime_control/sched_utils.hpp
+[5.857s] -- Installing: /home/user/Jina/install/dsr_realtime_control/include/dsr_realtime_control/dsr_realtime_control/burn_cpu_cycles.hpp
+[5.857s] -- Installing: /home/user/Jina/install/dsr_realtime_control/include/dsr_realtime_control/dsr_realtime_control/realtime_control.hpp
+[5.857s] -- Installing: /home/user/Jina/install/dsr_realtime_control/share/ament_index/resource_index/package_run_dependencies/dsr_realtime_control
+[5.858s] -- Installing: /home/user/Jina/install/dsr_realtime_control/share/ament_index/resource_index/parent_prefix_path/dsr_realtime_control
+[5.858s] -- Installing: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/environment/ament_prefix_path.sh
+[5.858s] -- Installing: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/environment/ament_prefix_path.dsv
+[5.858s] -- Installing: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/environment/path.sh
+[5.858s] -- Installing: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/environment/path.dsv
+[5.858s] -- Installing: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/local_setup.bash
+[5.858s] -- Installing: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/local_setup.sh
+[5.858s] -- Installing: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/local_setup.zsh
+[5.859s] -- Installing: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/local_setup.dsv
+[5.859s] -- Installing: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/package.dsv
+[5.859s] -- Installing: /home/user/Jina/install/dsr_realtime_control/share/ament_index/resource_index/packages/dsr_realtime_control
+[5.859s] -- Installing: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/cmake/dsr_realtime_controlConfig.cmake
+[5.861s] -- Installing: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/cmake/dsr_realtime_controlConfig-version.cmake
+[5.861s] -- Installing: /home/user/Jina/install/dsr_realtime_control/share/dsr_realtime_control/package.xml
+[5.862s] Invoked command in '/home/user/Jina/build/dsr_realtime_control' returned '0': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/Jina/build/dsr_realtime_control

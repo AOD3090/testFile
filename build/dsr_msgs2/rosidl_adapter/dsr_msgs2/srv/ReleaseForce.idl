@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/force/ReleaseForce.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " release_force  " "\n"
+      "____________________________________________________________________________________________")
+    struct ReleaseForce_Request {
+      @verbatim (language="comment", text=
+        "0          # Time needed to reduce the force (0 ~ 1.0)")
+      double time;
+    };
+    struct ReleaseForce_Response {
+      boolean success;
+    };
+  };
+};

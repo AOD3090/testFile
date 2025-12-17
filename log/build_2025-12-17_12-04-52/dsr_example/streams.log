@@ -1,0 +1,63 @@
+[0.459s] Invoking command in '/home/user/Jina/src/doosan-robot2/dsr_example2/dsr_example': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_common2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_common2 PYTHONPATH=/home/user/Jina/build/dsr_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/dsr_example/lib/python3.10/site-packages:/home/user/Jina/install/dsr_common2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/dsr_example build --build-base /home/user/Jina/build/dsr_example/build install --record /home/user/Jina/build/dsr_example/install.log --single-version-externally-managed install_data
+[0.719s] running egg_info
+[0.720s] creating ../../../../build/dsr_example/dsr_example.egg-info
+[0.720s] writing ../../../../build/dsr_example/dsr_example.egg-info/PKG-INFO
+[0.720s] writing dependency_links to ../../../../build/dsr_example/dsr_example.egg-info/dependency_links.txt
+[0.720s] writing entry points to ../../../../build/dsr_example/dsr_example.egg-info/entry_points.txt
+[0.721s] writing requirements to ../../../../build/dsr_example/dsr_example.egg-info/requires.txt
+[0.721s] writing top-level names to ../../../../build/dsr_example/dsr_example.egg-info/top_level.txt
+[0.721s] writing manifest file '../../../../build/dsr_example/dsr_example.egg-info/SOURCES.txt'
+[0.722s] reading manifest file '../../../../build/dsr_example/dsr_example.egg-info/SOURCES.txt'
+[0.723s] writing manifest file '../../../../build/dsr_example/dsr_example.egg-info/SOURCES.txt'
+[0.723s] running build
+[0.723s] running build_py
+[0.723s] creating /home/user/Jina/build/dsr_example/build
+[0.723s] creating /home/user/Jina/build/dsr_example/build/lib
+[0.723s] creating /home/user/Jina/build/dsr_example/build/lib/dsr_example
+[0.723s] copying dsr_example/__init__.py -> /home/user/Jina/build/dsr_example/build/lib/dsr_example
+[0.723s] creating /home/user/Jina/build/dsr_example/build/lib/dsr_example/simple
+[0.724s] copying dsr_example/simple/test.py -> /home/user/Jina/build/dsr_example/build/lib/dsr_example/simple
+[0.724s] copying dsr_example/simple/single_robot_simple.py -> /home/user/Jina/build/dsr_example/build/lib/dsr_example/simple
+[0.724s] copying dsr_example/simple/__init__.py -> /home/user/Jina/build/dsr_example/build/lib/dsr_example/simple
+[0.724s] copying dsr_example/simple/test2.py -> /home/user/Jina/build/dsr_example/build/lib/dsr_example/simple
+[0.724s] creating /home/user/Jina/build/dsr_example/build/lib/dsr_example/demo
+[0.724s] copying dsr_example/demo/dance_m1013.py -> /home/user/Jina/build/dsr_example/build/lib/dsr_example/demo
+[0.724s] copying dsr_example/demo/__init__.py -> /home/user/Jina/build/dsr_example/build/lib/dsr_example/demo
+[0.724s] copying dsr_example/demo/slope_demo.py -> /home/user/Jina/build/dsr_example/build/lib/dsr_example/demo
+[0.725s] running install
+[0.725s] running install_lib
+[0.726s] creating /home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example
+[0.726s] copying /home/user/Jina/build/dsr_example/build/lib/dsr_example/__init__.py -> /home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example
+[0.726s] creating /home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example/simple
+[0.726s] copying /home/user/Jina/build/dsr_example/build/lib/dsr_example/simple/test.py -> /home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example/simple
+[0.726s] copying /home/user/Jina/build/dsr_example/build/lib/dsr_example/simple/single_robot_simple.py -> /home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example/simple
+[0.726s] copying /home/user/Jina/build/dsr_example/build/lib/dsr_example/simple/__init__.py -> /home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example/simple
+[0.726s] copying /home/user/Jina/build/dsr_example/build/lib/dsr_example/simple/test2.py -> /home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example/simple
+[0.726s] creating /home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example/demo
+[0.727s] copying /home/user/Jina/build/dsr_example/build/lib/dsr_example/demo/dance_m1013.py -> /home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example/demo
+[0.727s] copying /home/user/Jina/build/dsr_example/build/lib/dsr_example/demo/__init__.py -> /home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example/demo
+[0.727s] copying /home/user/Jina/build/dsr_example/build/lib/dsr_example/demo/slope_demo.py -> /home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example/demo
+[0.727s] byte-compiling /home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example/__init__.py to __init__.cpython-310.pyc
+[0.728s] byte-compiling /home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example/simple/test.py to test.cpython-310.pyc
+[0.728s] byte-compiling /home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example/simple/single_robot_simple.py to single_robot_simple.cpython-310.pyc
+[0.730s] byte-compiling /home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example/simple/__init__.py to __init__.cpython-310.pyc
+[0.730s] byte-compiling /home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example/simple/test2.py to test2.cpython-310.pyc
+[0.730s] byte-compiling /home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example/demo/dance_m1013.py to dance_m1013.cpython-310.pyc
+[0.731s] byte-compiling /home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example/demo/__init__.py to __init__.cpython-310.pyc
+[0.732s] byte-compiling /home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example/demo/slope_demo.py to slope_demo.cpython-310.pyc
+[0.732s] running install_data
+[0.732s] creating /home/user/Jina/install/dsr_example/share/ament_index
+[0.732s] creating /home/user/Jina/install/dsr_example/share/ament_index/resource_index
+[0.732s] creating /home/user/Jina/install/dsr_example/share/ament_index/resource_index/packages
+[0.732s] copying resource/dsr_example -> /home/user/Jina/install/dsr_example/share/ament_index/resource_index/packages
+[0.732s] copying package.xml -> /home/user/Jina/install/dsr_example/share/dsr_example
+[0.733s] running install_egg_info
+[0.734s] Copying ../../../../build/dsr_example/dsr_example.egg-info to /home/user/Jina/install/dsr_example/lib/python3.10/site-packages/dsr_example-0.0.0-py3.10.egg-info
+[0.735s] running install_scripts
+[0.760s] Installing dance script to /home/user/Jina/install/dsr_example/lib/dsr_example
+[0.761s] Installing single_robot_simple script to /home/user/Jina/install/dsr_example/lib/dsr_example
+[0.761s] Installing slope_demo script to /home/user/Jina/install/dsr_example/lib/dsr_example
+[0.761s] Installing test script to /home/user/Jina/install/dsr_example/lib/dsr_example
+[0.761s] Installing test2 script to /home/user/Jina/install/dsr_example/lib/dsr_example
+[0.761s] writing list of installed files to '/home/user/Jina/build/dsr_example/install.log'
+[0.790s] Invoked command in '/home/user/Jina/src/doosan-robot2/dsr_example2/dsr_example' returned '0': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_common2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_common2 PYTHONPATH=/home/user/Jina/build/dsr_example/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/dsr_example/lib/python3.10/site-packages:/home/user/Jina/install/dsr_common2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/dsr_example build --build-base /home/user/Jina/build/dsr_example/build install --record /home/user/Jina/build/dsr_example/install.log --single-version-externally-managed install_data

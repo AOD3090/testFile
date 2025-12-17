@@ -1,0 +1,35 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/aux_control/GetOrientationError.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " get_orientation_error  " "\n"
+      "____________________________________________________________________________________________" "\n"
+      " This service returns the orientation error value between the arbitrary poses xd and xc of the axis.")
+    struct GetOrientationError_Request {
+      @verbatim (language="comment", text=
+        "task pos(posx)")
+      double__6 xd;
+
+      @verbatim (language="comment", text=
+        "task pos(posx)")
+      double__6 xc;
+
+      @verbatim (language="comment", text=
+        "DR_AXIS_X(0), DR_AXIS_Y(1), DR_AXIS_Z(2)")
+      int8 axis;
+    };
+    struct GetOrientationError_Response {
+      @verbatim (language="comment", text=
+        "orientation error")
+      float ori_error;
+
+      boolean success;
+    };
+  };
+};

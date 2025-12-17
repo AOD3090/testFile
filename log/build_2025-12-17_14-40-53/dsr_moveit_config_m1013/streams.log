@@ -1,0 +1,39 @@
+[0.065s] Invoking command in '/home/user/Jina/build/dsr_moveit_config_m1013': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/Jina/install/tower_builder:/home/user/Jina/install/dsr_visualservoing:/home/user/Jina/install/dsr_tests:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_example:/opt/ros/humble /usr/bin/cmake --build /home/user/Jina/build/dsr_moveit_config_m1013 -- -j12 -l12
+[0.337s] Invoked command in '/home/user/Jina/build/dsr_moveit_config_m1013' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/Jina/install/tower_builder:/home/user/Jina/install/dsr_visualservoing:/home/user/Jina/install/dsr_tests:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_example:/opt/ros/humble /usr/bin/cmake --build /home/user/Jina/build/dsr_moveit_config_m1013 -- -j12 -l12
+[0.353s] Invoking command in '/home/user/Jina/build/dsr_moveit_config_m1013': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/Jina/install/tower_builder:/home/user/Jina/install/dsr_visualservoing:/home/user/Jina/install/dsr_tests:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_example:/opt/ros/humble /usr/bin/cmake --install /home/user/Jina/build/dsr_moveit_config_m1013
+[0.364s] -- Install configuration: ""
+[0.364s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/ament_index/resource_index/package_run_dependencies/dsr_moveit_config_m1013
+[0.364s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/ament_index/resource_index/parent_prefix_path/dsr_moveit_config_m1013
+[0.365s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/environment/ament_prefix_path.sh
+[0.365s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/environment/ament_prefix_path.dsv
+[0.366s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/environment/path.sh
+[0.366s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/environment/path.dsv
+[0.367s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/local_setup.bash
+[0.367s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/local_setup.sh
+[0.368s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/local_setup.zsh
+[0.370s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/local_setup.dsv
+[0.370s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/package.dsv
+[0.370s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/ament_index/resource_index/packages/dsr_moveit_config_m1013
+[0.370s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/cmake/dsr_moveit_config_m1013Config.cmake
+[0.370s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/cmake/dsr_moveit_config_m1013Config-version.cmake
+[0.370s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/package.xml
+[0.370s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/launch
+[0.370s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/launch/start.launch.py
+[0.370s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/launch/moveit.rviz
+[0.370s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/launch/demo.launch.py
+[0.370s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/config
+[0.370s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/config/initial_positions.yaml
+[0.370s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/config/moveit_controllers.yaml
+[0.372s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/config/joint_limits.yaml
+[0.373s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/config/sensors_3d.yaml
+[0.373s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/config/dsr.ros2_control.xacro
+[0.373s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/config/chomp_planning.yaml
+[0.373s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/config/m1013.urdf.xacro
+[0.373s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/config/kinematics.yaml
+[0.373s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/config/dsr.srdf
+[0.374s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/config/pilz_cartesian_limits.yaml
+[0.374s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/config/pilz_industrial_motion_planner_planning.yaml
+[0.375s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/config/ompl_planning.yaml
+[0.375s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/config/ros2_controllers.yaml
+[0.376s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_m1013/share/dsr_moveit_config_m1013/.setup_assistant
+[0.613s] Invoked command in '/home/user/Jina/build/dsr_moveit_config_m1013' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/Jina/install/tower_builder:/home/user/Jina/install/dsr_visualservoing:/home/user/Jina/install/dsr_tests:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_example:/opt/ros/humble /usr/bin/cmake --install /home/user/Jina/build/dsr_moveit_config_m1013

@@ -1,0 +1,38 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/system/GetRobotState.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " get_robot_state" "\n"
+      "____________________________________________________________________________________________")
+    struct GetRobotState_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetRobotState_Response {
+      @verbatim (language="comment", text=
+        "0 : STATE_INITIALIZING" "\n"
+        "1 : STATE_STANDBY" "\n"
+        "2 : STATE_MOVING" "\n"
+        "3 : STATE_SAFE_OFF" "\n"
+        "4 : STATE_TEACHING" "\n"
+        "5 : STATE_SAFE_STOP" "\n"
+        "6 : STATE_EMERGENCY_STOP:" "\n"
+        "7 : STATE_HOMMING" "\n"
+        "8 : STATE_RECOVERY" "\n"
+        "9 : eSTATE_SAFE_STOP2" "\n"
+        "10: STATE_SAFE_OFF2" "\n"
+        "11: STATE_RESERVED1" "\n"
+        "12: STATE_RESERVED2" "\n"
+        "13: STATE_RESERVED3" "\n"
+        "14: STATE_RESERVED4" "\n"
+        "15: STATE_NOT_READY")
+      int8 robot_state;
+
+      boolean success;
+    };
+  };
+};

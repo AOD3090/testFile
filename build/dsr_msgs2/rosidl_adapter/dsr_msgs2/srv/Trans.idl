@@ -1,0 +1,41 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/motion/Trans.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " trans  " "\n"
+      "____________________________________________________________________________________________")
+    struct Trans_Request {
+      @verbatim (language="comment", text=
+        "task pos(posx)")
+      double__6 pos;
+
+      @verbatim (language="comment", text=
+        "delta (posx)")
+      double__6 delta;
+
+      @verbatim (language="comment", text=
+        "= 0      # DR_BASE(0), DR_TOOL(1), DR_WORLD(2)" "\n"
+        " <DR_WORLD is only available in M2.40 or later>")
+      int8 ref;
+
+      @verbatim (language="comment", text=
+        "= 0      # DR_BASE(0), DR_WORLD(2)" "\n"
+        " <ref_out is only available in M2.40 or later>")
+      int8 ref_out;
+    };
+    typedef double double__6[6];
+    struct Trans_Response {
+      @verbatim (language="comment", text=
+        "trans pos(posx)")
+      double__6 trans_pos;
+
+      boolean success;
+    };
+  };
+};

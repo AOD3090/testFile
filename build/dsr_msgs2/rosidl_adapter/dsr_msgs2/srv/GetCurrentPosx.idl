@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/aux_control/GetCurrentPosx.srv
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Float64MultiArray.idl"
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " get_current_posx()  " "\n"
+      "____________________________________________________________________________________________" "\n"
+      " This service returns the current task position.")
+    struct GetCurrentPosx_Request {
+      @verbatim (language="comment", text=
+        "DR_BASE(0), DR_WORLD(2), user coord(101~200)" "\n"
+        "<ref is only available in M2.40 or later>")
+      int8 ref;
+    };
+    struct GetCurrentPosx_Response {
+      @verbatim (language="comment", text=
+        "task pos = task_pos_info[0][0:5], solution sapce = task_pos_info[0][6]")
+      sequence<std_msgs::msg::Float64MultiArray> task_pos_info;
+
+      boolean success;
+    };
+  };
+};

@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/aux_control/GetSolutionSpace.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " get_solution_space(pos)  " "\n"
+      "____________________________________________________________________________________________" "\n"
+      " This service obtains the solution space value.")
+    struct GetSolutionSpace_Request {
+      @verbatim (language="comment", text=
+        "joint angle list")
+      @unit (value="degree")
+      double__6 pos;
+    };
+    struct GetSolutionSpace_Response {
+      @verbatim (language="comment", text=
+        "solution space : 0 ~ 7")
+      int8 sol_space;
+
+      boolean success;
+    };
+  };
+};

@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/modbus/SetModbusOutput.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " set_modbus_output  " "\n"
+      " This service sends the signal to an external Modbus system. " "\n"
+      "____________________________________________________________________________________________")
+    struct SetModbusOutput_Request {
+      @verbatim (language="comment", text=
+        "modbus signal symbol")
+      string name;
+
+      @verbatim (language="comment", text=
+        "modbus register value")
+      int32 value;
+    };
+    struct SetModbusOutput_Response {
+      boolean success;
+    };
+  };
+};

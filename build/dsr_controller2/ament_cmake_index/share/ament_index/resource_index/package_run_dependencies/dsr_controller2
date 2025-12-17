@@ -1,0 +1,1 @@
+backward_ros;forward_command_controller;pluginlib;controller_interface;rclcpp_lifecycle;hardware_interface;rclcpp;rclcpp_components;dsr_msgs2;moveit_msgs;trajectory_msgs;control_msgs;std_msgs;dsr_hardware2;yaml-cpp;ament_index_cpp;libpoco-dev;ament_cmake_gmock;controller_manager;hardware_interface_testing;ros2_control_test_assets

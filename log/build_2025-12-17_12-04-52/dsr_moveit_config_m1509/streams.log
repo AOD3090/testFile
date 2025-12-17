@@ -1,0 +1,58 @@
+[0.037s] Invoking command in '/home/user/Jina/build/dsr_moveit_config_m1509': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/Jina/src/doosan-robot2/dsr_moveit2/dsr_moveit_config_m1509 -DCMAKE_INSTALL_PREFIX=/home/user/Jina/install/dsr_moveit_config_m1509
+[0.837s] -- The C compiler identification is GNU 11.4.0
+[0.838s] -- The CXX compiler identification is GNU 11.4.0
+[0.843s] -- Detecting C compiler ABI info
+[0.844s] -- Detecting C compiler ABI info - done
+[0.845s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.845s] -- Detecting C compile features
+[0.845s] -- Detecting C compile features - done
+[0.845s] -- Detecting CXX compiler ABI info
+[0.845s] -- Detecting CXX compiler ABI info - done
+[0.845s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.845s] -- Detecting CXX compile features
+[0.845s] -- Detecting CXX compile features - done
+[0.845s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.845s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.846s] -- Configuring done
+[0.846s] -- Generating done
+[0.846s] -- Build files have been written to: /home/user/Jina/build/dsr_moveit_config_m1509
+[0.857s] Invoked command in '/home/user/Jina/build/dsr_moveit_config_m1509' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/Jina/src/doosan-robot2/dsr_moveit2/dsr_moveit_config_m1509 -DCMAKE_INSTALL_PREFIX=/home/user/Jina/install/dsr_moveit_config_m1509
+[0.858s] Invoking command in '/home/user/Jina/build/dsr_moveit_config_m1509': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/Jina/build/dsr_moveit_config_m1509 -- -j12 -l12
+[0.972s] Invoked command in '/home/user/Jina/build/dsr_moveit_config_m1509' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/Jina/build/dsr_moveit_config_m1509 -- -j12 -l12
+[0.973s] Invoking command in '/home/user/Jina/build/dsr_moveit_config_m1509': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/Jina/build/dsr_moveit_config_m1509
+[0.978s] -- Install configuration: ""
+[0.978s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/ament_index/resource_index/package_run_dependencies/dsr_moveit_config_m1509
+[0.978s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/ament_index/resource_index/parent_prefix_path/dsr_moveit_config_m1509
+[0.979s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/environment/ament_prefix_path.sh
+[0.979s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/environment/ament_prefix_path.dsv
+[0.979s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/environment/path.sh
+[0.979s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/environment/path.dsv
+[0.979s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/local_setup.bash
+[0.979s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/local_setup.sh
+[0.979s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/local_setup.zsh
+[0.979s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/local_setup.dsv
+[0.979s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/package.dsv
+[0.979s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/ament_index/resource_index/packages/dsr_moveit_config_m1509
+[0.979s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/cmake/dsr_moveit_config_m1509Config.cmake
+[0.980s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/cmake/dsr_moveit_config_m1509Config-version.cmake
+[0.980s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/package.xml
+[0.980s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/launch
+[0.980s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/launch/start.launch.py
+[0.980s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/launch/moveit.rviz
+[0.980s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/launch/demo.launch.py
+[0.980s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/config
+[0.981s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/config/m1509.urdf.xacro
+[0.981s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/config/initial_positions.yaml
+[0.981s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/config/moveit_controllers.yaml
+[0.981s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/config/joint_limits.yaml
+[0.982s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/config/sensors_3d.yaml
+[0.982s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/config/dsr.ros2_control.xacro
+[0.982s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/config/chomp_planning.yaml
+[0.982s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/config/kinematics.yaml
+[0.982s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/config/dsr.srdf
+[0.983s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/config/pilz_cartesian_limits.yaml
+[0.983s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/config/pilz_industrial_motion_planner_planning.yaml
+[0.983s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/config/ompl_planning.yaml
+[0.984s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/config/ros2_controllers.yaml
+[0.984s] -- Installing: /home/user/Jina/install/dsr_moveit_config_m1509/share/dsr_moveit_config_m1509/.setup_assistant
+[1.090s] Invoked command in '/home/user/Jina/build/dsr_moveit_config_m1509' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/Jina/build/dsr_moveit_config_m1509

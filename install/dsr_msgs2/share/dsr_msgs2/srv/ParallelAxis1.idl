@@ -1,0 +1,39 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/force/ParallelAxis1.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " parallel_axis(x1, x2, x3, axis, ref)  " "\n"
+      "____________________________________________________________________________________________")
+    struct ParallelAxis1_Request {
+      @verbatim (language="comment", text=
+        "task pos(posx)")
+      double__6 x1;
+
+      @verbatim (language="comment", text=
+        "task pos(posx)")
+      double__6 x2;
+
+      @verbatim (language="comment", text=
+        "task pos(posx)")
+      double__6 x3;
+
+      @verbatim (language="comment", text=
+        "DR_AXIS_X(0), DR_AXIS_Y(1), DR_AXIS_Z(2)")
+      int8 axis;
+
+      @verbatim (language="comment", text=
+        "= 0   # DR_BASE(0), DR_WORLD(2), user coord(101~200)" "\n"
+        " <ref is only available in M2.40 or later>")
+      int8 ref;
+    };
+    struct ParallelAxis1_Response {
+      boolean success;
+    };
+  };
+};

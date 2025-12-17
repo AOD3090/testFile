@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/realtime/WriteDataRt.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " write_data_rt" "\n"
+      "____________________________________________________________________________________________")
+    struct WriteDataRt_Request {
+      double__6 external_force_torque;
+
+      int32 external_digital_input;
+
+      int32 external_digital_output;
+
+      double__6 external_analog_input;
+
+      double__6 external_analog_output;
+    };
+    struct WriteDataRt_Response {
+      boolean success;
+    };
+  };
+};

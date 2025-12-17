@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/system/SetRobotSpeedMode.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " set_robot_speed_mode" "\n"
+      "____________________________________________________________________________________________")
+    struct SetRobotSpeedMode_Request {
+      @verbatim (language="comment", text=
+        "0 : SPEED_NORMAL_MODE, 1 : SPEED_REDUCED_MODE")
+      int8 speed_mode;
+    };
+    struct SetRobotSpeedMode_Response {
+      boolean success;
+    };
+  };
+};

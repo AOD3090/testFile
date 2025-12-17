@@ -1,0 +1,9 @@
+/home/user/Jina/build/dsr_common2/CMakeFiles/uninstall.dir
+/home/user/Jina/build/dsr_common2/CMakeFiles/dsr_common2_uninstall.dir
+/home/user/Jina/build/dsr_common2/CMakeFiles/test.dir
+/home/user/Jina/build/dsr_common2/CMakeFiles/edit_cache.dir
+/home/user/Jina/build/dsr_common2/CMakeFiles/rebuild_cache.dir
+/home/user/Jina/build/dsr_common2/CMakeFiles/list_install_components.dir
+/home/user/Jina/build/dsr_common2/CMakeFiles/install.dir
+/home/user/Jina/build/dsr_common2/CMakeFiles/install/local.dir
+/home/user/Jina/build/dsr_common2/CMakeFiles/install/strip.dir

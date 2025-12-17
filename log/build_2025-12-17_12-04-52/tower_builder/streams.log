@@ -1,0 +1,37 @@
+[0.780s] Invoking command in '/home/user/Jina/src/tower_builder': PYTHONPATH=/home/user/Jina/build/tower_builder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/tower_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tower_builder build --build-base /home/user/Jina/build/tower_builder/build install --record /home/user/Jina/build/tower_builder/install.log --single-version-externally-managed install_data
+[0.990s] running egg_info
+[0.990s] creating ../../build/tower_builder/tower_builder.egg-info
+[0.990s] writing ../../build/tower_builder/tower_builder.egg-info/PKG-INFO
+[0.991s] writing dependency_links to ../../build/tower_builder/tower_builder.egg-info/dependency_links.txt
+[0.991s] writing entry points to ../../build/tower_builder/tower_builder.egg-info/entry_points.txt
+[0.992s] writing requirements to ../../build/tower_builder/tower_builder.egg-info/requires.txt
+[0.992s] writing top-level names to ../../build/tower_builder/tower_builder.egg-info/top_level.txt
+[0.993s] writing manifest file '../../build/tower_builder/tower_builder.egg-info/SOURCES.txt'
+[0.994s] reading manifest file '../../build/tower_builder/tower_builder.egg-info/SOURCES.txt'
+[0.995s] writing manifest file '../../build/tower_builder/tower_builder.egg-info/SOURCES.txt'
+[0.995s] running build
+[0.995s] running build_py
+[0.995s] creating /home/user/Jina/build/tower_builder/build
+[0.995s] creating /home/user/Jina/build/tower_builder/build/lib
+[0.995s] creating /home/user/Jina/build/tower_builder/build/lib/tower_builder
+[0.995s] copying tower_builder/final_ver1.py -> /home/user/Jina/build/tower_builder/build/lib/tower_builder
+[0.995s] copying tower_builder/__init__.py -> /home/user/Jina/build/tower_builder/build/lib/tower_builder
+[0.995s] running install
+[0.996s] running install_lib
+[0.996s] creating /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder
+[0.996s] copying /home/user/Jina/build/tower_builder/build/lib/tower_builder/final_ver1.py -> /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder
+[0.996s] copying /home/user/Jina/build/tower_builder/build/lib/tower_builder/__init__.py -> /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder
+[0.998s] byte-compiling /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/final_ver1.py to final_ver1.cpython-310.pyc
+[1.000s] byte-compiling /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder/__init__.py to __init__.cpython-310.pyc
+[1.001s] running install_data
+[1.001s] creating /home/user/Jina/install/tower_builder/share/ament_index
+[1.001s] creating /home/user/Jina/install/tower_builder/share/ament_index/resource_index
+[1.001s] creating /home/user/Jina/install/tower_builder/share/ament_index/resource_index/packages
+[1.001s] copying resource/tower_builder -> /home/user/Jina/install/tower_builder/share/ament_index/resource_index/packages
+[1.001s] copying package.xml -> /home/user/Jina/install/tower_builder/share/tower_builder
+[1.001s] running install_egg_info
+[1.003s] Copying ../../build/tower_builder/tower_builder.egg-info to /home/user/Jina/install/tower_builder/lib/python3.10/site-packages/tower_builder-0.0.0-py3.10.egg-info
+[1.004s] running install_scripts
+[1.019s] Installing stb script to /home/user/Jina/install/tower_builder/lib/tower_builder
+[1.019s] writing list of installed files to '/home/user/Jina/build/tower_builder/install.log'
+[1.047s] Invoked command in '/home/user/Jina/src/tower_builder' returned '0': PYTHONPATH=/home/user/Jina/build/tower_builder/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/tower_builder/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/tower_builder build --build-base /home/user/Jina/build/tower_builder/build install --record /home/user/Jina/build/tower_builder/install.log --single-version-externally-managed install_data

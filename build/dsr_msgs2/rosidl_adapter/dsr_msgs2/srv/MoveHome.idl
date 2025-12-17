@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/motion/MoveHome.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " move_home" "\n"
+      " Homing is performed by moving to the joint motion to the mechanical or user defined home position." "\n"
+      " According to the input parameter, it moves to the mechanical home defined in the system or the home set by the user." "\n"
+      "____________________________________________________________________________________________")
+    struct MoveHome_Request {
+      @verbatim (language="comment", text=
+        "DR_HOME_TARGET_MECHANIC(0) : Mechanical home, joint angle (0,0,0,0,0,0)" "\n"
+        "DR_HOME_TARGET_USER(1)     : user home")
+      int8 target;
+    };
+    struct MoveHome_Response {
+      @verbatim (language="comment", text=
+        "0=success, otherwise fail")
+      int8 res;
+
+      boolean success;
+    };
+  };
+};

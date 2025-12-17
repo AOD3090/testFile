@@ -1,0 +1,45 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/motion/MovePeriodic.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " move_periodic  " "\n"
+      "____________________________________________________________________________________________")
+    struct MovePeriodic_Request {
+      @verbatim (language="comment", text=
+        "Amplitude (motion between -amp and +amp) [mm] or [deg]")
+      double__6 amp;
+
+      @verbatim (language="comment", text=
+        "Period (time for 1 cycle)")
+      @unit (value="sec")
+      double__6 periodic;
+
+      @verbatim (language="comment", text=
+        "Acc-, dec- time")
+      @unit (value="sec")
+      double acc;
+
+      @verbatim (language="comment", text=
+        "Repetition count")
+      int8 repeat;
+
+      @verbatim (language="comment", text=
+        "= 1        # DR_BASE(0), DR_TOOL(1), DR_WORLD(2)" "\n"
+        " <DR_WORLD is only available in M2.40 or later")
+      int8 ref;
+
+      @verbatim (language="comment", text=
+        "=0     # SYNC = 0, ASYNC = 1")
+      int8 sync_type;
+    };
+    struct MovePeriodic_Response {
+      boolean success;
+    };
+  };
+};

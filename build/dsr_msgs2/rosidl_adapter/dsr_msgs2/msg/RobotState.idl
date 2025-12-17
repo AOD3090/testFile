@@ -1,0 +1,273 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from dsr_msgs2/msg/RobotState.msg
+// generated code does not contain a copyright notice
+
+#include "dsr_msgs2/msg/ModbusState.idl"
+#include "std_msgs/msg/Float64MultiArray.idl"
+
+module dsr_msgs2 {
+  module msg {
+    typedef double double__6[6];
+    typedef int8 int8__6[6];
+    typedef int8 int8__5[5];
+    typedef int8 int8__16[16];
+    typedef boolean boolean__3[3];
+    typedef boolean boolean__2[2];
+    typedef int8 int8__2[2];
+    typedef double double__2[2];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " state of robot" "\n"
+      "____________________________________________________________________________________________")
+    struct RobotState {
+      @verbatim (language="comment", text=
+        "0 : STATE_INITIALIZING,   1 : STATE_STANDBY,   2 : STATE_MOVING,    3 : STATE_SAFE_OFF" "\n"
+        "4 : STATE_TEACHING,       5 : STATE_SAFE_STOP, 6 : STATE_EMERGENCY_STOP," "\n"
+        "7 : STATE_EMERGENCY_STOP, 8 : STATE_HOMMING,   9 : STATE_RECOVERY,  10: STATE_SAFE_STOP2," "\n"
+        "11: STATE_SAFE_OFF2,      12: STATE_RESERVED1, 13: STATE_RESERVED2, 14: STATE_RESERVED3," "\n"
+        "15: STATE_NOT_READY       16: STATE_LAST")
+      int32 robot_state;
+
+      @verbatim (language="comment", text=
+        "Convert robot_state id to string")
+      string robot_state_str;
+
+      @verbatim (language="comment", text=
+        "position control: 0, torque control: 1")
+      int8 actual_mode;
+
+      @verbatim (language="comment", text=
+        "joint space: 0, task space: 1")
+      int8 actual_space;
+
+      @verbatim (language="comment", text=
+        "current joint angle list")
+      @unit (value="degree")
+      double__6 current_posj;
+
+      @verbatim (language="comment", text=
+        "current joint velocity list []")
+      double__6 current_velj;
+
+      @verbatim (language="comment", text=
+        "Position Actual Value in ABS")
+      double__6 joint_abs;
+
+      @verbatim (language="comment", text=
+        "Joint Error")
+      double__6 joint_err;
+
+      @verbatim (language="comment", text=
+        "target joint angle list")
+      @unit (value="degree")
+      double__6 target_posj;
+
+      @verbatim (language="comment", text=
+        "target joint velocity list []")
+      double__6 target_velj;
+
+      @verbatim (language="comment", text=
+        "current task angle list []")
+      double__6 current_posx;
+
+      @verbatim (language="comment", text=
+        "current task tool angle list []")
+      double__6 current_tool_posx;
+
+      @verbatim (language="comment", text=
+        "current task velocity list []")
+      double__6 current_velx;
+
+      @verbatim (language="comment", text=
+        "Task Error")
+      double__6 task_err;
+
+      @verbatim (language="comment", text=
+        "target task velocity list []")
+      double__6 target_velx;
+
+      @verbatim (language="comment", text=
+        "target task position list []")
+      double__6 target_posx;
+
+      @verbatim (language="comment", text=
+        "dynamic torque")
+      double__6 dynamic_tor;
+
+      @verbatim (language="comment", text=
+        "joint torque sensor")
+      double__6 actual_jts;
+
+      @verbatim (language="comment", text=
+        "external joint torque")
+      double__6 actual_ejt;
+
+      @verbatim (language="comment", text=
+        "external tool torque")
+      double__6 actual_ett;
+
+      @verbatim (language="comment", text=
+        "brake status")
+      int8__6 actual_bk;
+
+      @verbatim (language="comment", text=
+        "motor current")
+      double__6 actual_mc;
+
+      @verbatim (language="comment", text=
+        "motor temperature")
+      double__6 actual_mt;
+
+      @verbatim (language="comment", text=
+        "Solution Space (0 ~ 7)")
+      int8 solution_space;
+
+      @verbatim (language="comment", text=
+        "internal clock counter")
+      double sync_time;
+
+      @verbatim (language="comment", text=
+        "cockpit(robot button) info.")
+      int8__5 actual_bt;
+
+      @verbatim (language="comment", text=
+        "Rotation Matrix [3][3]")
+      sequence<std_msgs::msg::Float64MultiArray> rotation_matrix;
+
+      @verbatim (language="comment", text=
+        "Digital Input in Control Box(0 ~ 15 ; 0 : ON, 1 : OFF)")
+      int8__16 ctrlbox_digital_input;
+
+      @verbatim (language="comment", text=
+        "Digital Output in Control Box(0 ~ 15 ; 0 : ON, 1 : OFF)")
+      int8__16 ctrlbox_digital_output;
+
+      @verbatim (language="comment", text=
+        "Digital Input in Flange(0 ~ 5 ; 0 : ON, 1 : OFF) x1 port : 0 ~ 2, x2 port : 3 ~ 5")
+      int8__6 flange_digital_input;
+
+      @verbatim (language="comment", text=
+        "Digital Output in Flange(0 ~ 5 ; 0 : ON, 1 : OFF)")
+      int8__6 flange_digital_output;
+
+      @verbatim (language="comment", text=
+        "Custom msg for modbus state(refer to ModbusState.msg)")
+      sequence<dsr_msgs2::msg::ModbusState> modbus_state;
+
+      int32 access_control;
+
+      boolean homming_completed;
+
+      boolean tp_initialized;
+
+      int8 mastering_need;
+
+      boolean drl_stopped;
+
+      boolean disconnected;
+
+      @verbatim (language="comment", text=
+        "____________________________________________________________________________________________" "\n"
+        " The following messages have been updated since version M2.50 or higher." "\n"
+        "____________________________________________________________________________________________" "\n"
+        " world to base releation")
+      double__6 f_actual_w2b;
+
+      @verbatim (language="comment", text=
+        "Wolrd position actual value [2][6] : (0: tool, 1: flange) [mm, degree]")
+      sequence<std_msgs::msg::Float64MultiArray> f_current_pos_world;
+
+      @verbatim (language="comment", text=
+        "World velocity Actual Value [mm/sec, degree/sec]")
+      double__6 f_current_vel_world;
+
+      @verbatim (language="comment", text=
+        "External Task Force/Torque [N, Nm]")
+      double__6 f_world_ext_target_torque;
+
+      @verbatim (language="comment", text=
+        "World target Position [mm, degree]")
+      double__6 f_target_pos_world;
+
+      @verbatim (language="comment", text=
+        "World target Velocity [mm/sec, degree/sec]")
+      double__6 f_target_vel_world;
+
+      @verbatim (language="comment", text=
+        "World rotation matrix [3][3]")
+      sequence<std_msgs::msg::Float64MultiArray> f_rotation_matrix_world;
+
+      @verbatim (language="comment", text=
+        "Actual user coord number ## 101 ~ 120")
+      int8 i_actual_user_coord_num;
+
+      @verbatim (language="comment", text=
+        "Coordinate Reference(base : 0  world : 2)")
+      int8 i_coord_ref;
+
+      @verbatim (language="comment", text=
+        "User position Actual Value [2][6] : (0:tool, 1:flange) [mm, degree]")
+      sequence<std_msgs::msg::Float64MultiArray> f_current_pos_user;
+
+      @verbatim (language="comment", text=
+        "User velocity Actual Value [mm/sec, degree/sec]")
+      double__6 f_current_vel_user;
+
+      @verbatim (language="comment", text=
+        "External Task Force/Torque [N, Nm]")
+      double__6 f_user_ext_task_torque;
+
+      @verbatim (language="comment", text=
+        "User target Position [mm, degree]")
+      double__6 f_target_pos_user;
+
+      @verbatim (language="comment", text=
+        "User target Velocity [mm/sec, degree/sec]")
+      double__6 f_target_vel_user;
+
+      @verbatim (language="comment", text=
+        "User rotation matrix [3][3]")
+      sequence<std_msgs::msg::Float64MultiArray> f_rotation_matrix_user;
+
+      @verbatim (language="comment", text=
+        "Analog input data ## Current mode : 0~20.0[mA] , Voltage mode : 0~10.0[V]")
+      double__6 f_actual_analog_input;
+
+      @verbatim (language="comment", text=
+        "Switch input data")
+      @unit (value="3")
+      boolean__3 b_actual_switch_input;
+
+      @verbatim (language="comment", text=
+        "Safety input data")
+      @unit (value="2")
+      boolean__2 b_actual_safety_input;
+
+      @verbatim (language="comment", text=
+        "Analog input type  index = channel, type: current(0), voltage(1)")
+      @unit (value="2")
+      int8__2 i_actual_analog_input_type;
+
+      @verbatim (language="comment", text=
+        "Analog output data ## Current mode : 0~20.0[mA] , Voltage mode : 0~10.0[V]")
+      double__2 f_target_analog_output;
+
+      @verbatim (language="comment", text=
+        "Analog output type index = channel, type: current(0), voltage(1)")
+      @unit (value="2")
+      int8__2 i_target_analog_output_type;
+
+      @verbatim (language="comment", text=
+        "Encorder strove signal")
+      boolean__2 b_actual_encorder_strove_signal;
+
+      @verbatim (language="comment", text=
+        "Encorder raw data")
+      int8__2 i_actual_encorder_raw_data;
+
+      @verbatim (language="comment", text=
+        "Encorder reset signal")
+      boolean__2 b_actual_encorder_reset_signal;
+    };
+  };
+};

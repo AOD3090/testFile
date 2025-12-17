@@ -1,0 +1,99 @@
+[0.007s] Invoking command in '/home/user/Jina/build/dsr_hardware2': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/user/Jina/src/doosan-robot2/dsr_hardware2 -DCMAKE_INSTALL_PREFIX=/home/user/Jina/install/dsr_hardware2
+[0.061s] -- The CXX compiler identification is GNU 11.4.0
+[0.068s] -- Detecting CXX compiler ABI info
+[0.139s] -- Detecting CXX compiler ABI info - done
+[0.147s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.147s] -- Detecting CXX compile features
+[0.147s] -- Detecting CXX compile features - done
+[0.148s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.285s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.348s] -- Found pluginlib: 5.1.2 (/opt/ros/humble/share/pluginlib/cmake)
+[0.391s] -- Found hardware_interface: 2.52.2 (/opt/ros/humble/share/hardware_interface/cmake)
+[0.417s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.421s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.429s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.440s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.451s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.628s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.630s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.649s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.698s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.700s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.718s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.722s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.731s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.740s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.747s] -- Looking for C++ include pthread.h
+[0.828s] -- Looking for C++ include pthread.h - found
+[0.828s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.914s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.915s] -- Found Threads: TRUE  
+[0.944s] -- Found dsr_msgs2: 1.1.0 (/home/user/Jina/install/dsr_msgs2/share/dsr_msgs2/cmake)
+[0.953s] -- Found moveit_msgs: 2.2.1 (/opt/ros/humble/share/moveit_msgs/cmake)
+[1.012s] -- Found controller_manager: 2.52.2 (/opt/ros/humble/share/controller_manager/cmake)
+[1.056s] -- Found kdl_parser: 2.6.4 (/opt/ros/humble/share/kdl_parser/cmake)
+[1.072s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.074s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.074s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.080s] [0mDRCF_VERSION:2[0m
+[1.085s] -- Found ament_cmake_pytest: 1.3.12 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+[1.158s] -- Configuring done
+[1.183s] -- Generating done
+[1.189s] -- Build files have been written to: /home/user/Jina/build/dsr_hardware2
+[1.213s] Invoked command in '/home/user/Jina/build/dsr_hardware2' returned '0': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/user/Jina/src/doosan-robot2/dsr_hardware2 -DCMAKE_INSTALL_PREFIX=/home/user/Jina/install/dsr_hardware2
+[1.214s] Invoking command in '/home/user/Jina/build/dsr_hardware2': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/Jina/build/dsr_hardware2 -- -j12 -l12
+[1.277s] [ 50%] [32mBuilding CXX object CMakeFiles/dsr_hardware2.dir/src/dsr_hw_interface2.cpp.o[0m
+[2.390s] In file included from [01m[K/usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22[m[K,
+[2.390s]                  from [01m[K/usr/include/boost/smart_ptr/detail/yield_k.hpp:23[m[K,
+[2.390s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14[m[K,
+[2.390s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock.hpp:42[m[K,
+[2.390s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25[m[K,
+[2.390s]                  from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:29[m[K,
+[2.390s]                  from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+[2.390s]                  from [01m[K/usr/include/boost/date_time/time_clock.hpp:17[m[K,
+[2.390s]                  from [01m[K/usr/include/boost/thread/thread_time.hpp:9[m[K,
+[2.390s]                  from [01m[K/usr/include/boost/thread/lock_types.hpp:18[m[K,
+[2.390s]                  from [01m[K/usr/include/boost/thread/pthread/thread_data.hpp:12[m[K,
+[2.390s]                  from [01m[K/usr/include/boost/thread/thread_only.hpp:17[m[K,
+[2.390s]                  from [01m[K/usr/include/boost/thread/thread.hpp:12[m[K,
+[2.390s]                  from [01m[K/home/user/Jina/src/doosan-robot2/dsr_hardware2/src/dsr_hw_interface2.cpp:8[m[K:
+[2.390s] [01m[K/usr/include/boost/bind.hpp:36:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.[m[K’
+[2.390s]    36 | [01;36m[KBOOST_PRAGMA_MESSAGE[m[K(
+[2.390s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[4.855s] [100%] [32m[1mLinking CXX shared library libdsr_hardware2.so[0m
+[5.177s] [100%] Built target dsr_hardware2
+[5.186s] Invoked command in '/home/user/Jina/build/dsr_hardware2' returned '0': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/Jina/build/dsr_hardware2 -- -j12 -l12
+[5.187s] Invoking command in '/home/user/Jina/build/dsr_hardware2': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/Jina/build/dsr_hardware2
+[5.194s] -- Install configuration: ""
+[5.194s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/dsr_hardware2/dsr_hardware2.xml
+[5.194s] -- Up-to-date: /home/user/Jina/install/dsr_hardware2/share/dsr_hardware2/dsr_hardware2.xml
+[5.195s] -- Installing: /home/user/Jina/install/dsr_hardware2/include/dsr_hardware2
+[5.195s] -- Installing: /home/user/Jina/install/dsr_hardware2/include/dsr_hardware2/dsr_hardware2
+[5.195s] -- Installing: /home/user/Jina/install/dsr_hardware2/include/dsr_hardware2/dsr_hardware2/util.hpp
+[5.195s] -- Installing: /home/user/Jina/install/dsr_hardware2/include/dsr_hardware2/dsr_hardware2/dsr_hw_interface2.h
+[5.195s] -- Installing: /home/user/Jina/install/dsr_hardware2/lib/libdsr_hardware2.so
+[5.196s] -- Set runtime path of "/home/user/Jina/install/dsr_hardware2/lib/libdsr_hardware2.so" to ""
+[5.196s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/dsr_hardware2/environment/library_path.sh
+[5.196s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/dsr_hardware2/environment/library_path.dsv
+[5.196s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/ament_index/resource_index/package_run_dependencies/dsr_hardware2
+[5.196s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/ament_index/resource_index/parent_prefix_path/dsr_hardware2
+[5.196s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/dsr_hardware2/environment/ament_prefix_path.sh
+[5.196s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/dsr_hardware2/environment/ament_prefix_path.dsv
+[5.196s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/dsr_hardware2/environment/path.sh
+[5.196s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/dsr_hardware2/environment/path.dsv
+[5.196s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/dsr_hardware2/local_setup.bash
+[5.196s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/dsr_hardware2/local_setup.sh
+[5.196s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/dsr_hardware2/local_setup.zsh
+[5.196s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/dsr_hardware2/local_setup.dsv
+[5.196s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/dsr_hardware2/package.dsv
+[5.196s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/ament_index/resource_index/packages/dsr_hardware2
+[5.196s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/dsr_hardware2
+[5.197s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/ament_index/resource_index/controller_interface__pluginlib__plugin/dsr_hardware2
+[5.197s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/dsr_hardware2/cmake/export_dsr_hardware2Export.cmake
+[5.197s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/dsr_hardware2/cmake/export_dsr_hardware2Export-noconfig.cmake
+[5.197s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/dsr_hardware2/cmake/ament_cmake_export_targets-extras.cmake
+[5.197s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/dsr_hardware2/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.197s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/dsr_hardware2/cmake/dsr_hardware2Config.cmake
+[5.197s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/dsr_hardware2/cmake/dsr_hardware2Config-version.cmake
+[5.197s] -- Installing: /home/user/Jina/install/dsr_hardware2/share/dsr_hardware2/package.xml
+[5.198s] Invoked command in '/home/user/Jina/build/dsr_hardware2' returned '0': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_msgs2:/opt/ros/humble LD_LIBRARY_PATH=/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/Jina/build/dsr_hardware2

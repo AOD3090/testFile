@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/aux_control/GetCurrentRotm.srv
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Float64MultiArray.idl"
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " get_current_rotm(ref)  " "\n"
+      "____________________________________________________________________________________________" "\n"
+      " This service returns the direction and matrix of the current tool based on the ref coordinate.")
+    struct GetCurrentRotm_Request {
+      @verbatim (language="comment", text=
+        "DR_BASE(0), DR_WORLD(2)")
+      int8 ref;
+    };
+    struct GetCurrentRotm_Response {
+      @verbatim (language="comment", text=
+        "target[3][3] Rotation matrix")
+      sequence<std_msgs::msg::Float64MultiArray> rot_matrix;
+
+      boolean success;
+    };
+  };
+};

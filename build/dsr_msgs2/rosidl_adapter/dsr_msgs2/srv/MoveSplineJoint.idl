@@ -1,0 +1,51 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/motion/MoveSplineJoint.srv
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Float64MultiArray.idl"
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " move_spline_joint  " "\n"
+      "float64[100][6] pos         # target" "\n"
+      "____________________________________________________________________________________________")
+    struct MoveSplineJoint_Request {
+      @verbatim (language="comment", text=
+        "target [100][6] pos")
+      sequence<std_msgs::msg::Float64MultiArray> pos;
+
+      @verbatim (language="comment", text=
+        "target cnt")
+      int8 pos_cnt;
+
+      @verbatim (language="comment", text=
+        "set joint velocity:")
+      @unit (value="deg/sec")
+      double__6 vel;
+
+      @verbatim (language="comment", text=
+        "set joint acceleration:")
+      @unit (value="deg/sec2")
+      double__6 acc;
+
+      @verbatim (language="comment", text=
+        "= 0.0                   # Time")
+      @unit (value="sec")
+      double time;
+
+      @verbatim (language="comment", text=
+        "= 0                     # MOVE_MODE_ABSOLUTE=0, MOVE_MODE_RELATIVE=1")
+      int8 mode;
+
+      @verbatim (language="comment", text=
+        "=0                 # SYNC = 0, ASYNC = 1")
+      int8 sync_type;
+    };
+    struct MoveSplineJoint_Response {
+      boolean success;
+    };
+  };
+};

@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/io/SetCtrlBoxDigitalOutput.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " set_digital_output  " "\n"
+      "____________________________________________________________________________________________")
+    struct SetCtrlBoxDigitalOutput_Request {
+      @verbatim (language="comment", text=
+        "ctrlbox digital output port(1 ~ 16)")
+      int8 index;
+
+      @verbatim (language="comment", text=
+        "0 : ON, 1 : OFF")
+      int8 value;
+    };
+    struct SetCtrlBoxDigitalOutput_Response {
+      boolean success;
+    };
+  };
+};

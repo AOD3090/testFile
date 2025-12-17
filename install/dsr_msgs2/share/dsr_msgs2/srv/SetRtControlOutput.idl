@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/realtime/SetRtControlOutput.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " set_rt_control_output" "\n"
+      "____________________________________________________________________________________________")
+    struct SetRtControlOutput_Request {
+      string version;
+
+      double period;
+
+      int32 loss;
+    };
+    struct SetRtControlOutput_Response {
+      boolean success;
+    };
+  };
+};

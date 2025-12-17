@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/motion/SetRefCoord.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " set_ref_coord " "\n"
+      "____________________________________________________________________________________________")
+    struct SetRefCoord_Request {
+      @verbatim (language="comment", text=
+        "DR_BASE(0), DR_TOOL(1), DR_WORLD(2), user coord(101~200)" "\n"
+        "<DR_WORLD is only available in M2.40 or later>")
+      int8 coord;
+    };
+    struct SetRefCoord_Response {
+      boolean success;
+    };
+  };
+};

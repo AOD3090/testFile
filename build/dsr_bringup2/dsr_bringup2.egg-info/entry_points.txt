@@ -1,0 +1,6 @@
+[console_scripts]
+gazebo_connection = dsr_bringup2.gazebo_connection:main
+moveit_connection = dsr_bringup2.moveit_connection:main
+mujoco_bridge = dsr_bringup2.dsr_mujoco_bridge:main
+run_emulator = dsr_bringup2.run_emulator:main
+

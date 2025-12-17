@@ -1,0 +1,214 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from dsr_msgs2/msg/RobotStateRt.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Float64MultiArray.idl"
+
+module dsr_msgs2 {
+  module msg {
+    typedef double double__6[6];
+    typedef uint8 uint8__2[2];
+    typedef double double__2[2];
+    typedef double double__4[4];
+    typedef uint16 uint16__2[2];
+    typedef uint8 uint8__256[256];
+    @verbatim (language="comment", text=
+      "timestamp at the data of data acquisition")
+    struct RobotStateRt {
+      double time_stamp;
+
+      @verbatim (language="comment", text=
+        "actual joint position from incremental encoder at motor side(used for control)")
+      @unit (value="deg")
+      double__6 actual_joint_position;
+
+      @verbatim (language="comment", text=
+        "actual joint position from absolute encoder at link side (used for exact link position)")
+      @unit (value="deg")
+      double__6 actual_joint_position_abs;
+
+      @verbatim (language="comment", text=
+        "actual joint velocity from incremental encoder at motor side")
+      @unit (value="deg/s")
+      double__6 actual_joint_velocity;
+
+      @verbatim (language="comment", text=
+        "actual joint velocity from absolute encoder at link side")
+      @unit (value="deg/s")
+      double__6 actual_joint_velocity_abs;
+
+      @verbatim (language="comment", text=
+        "actual robot tcp position w.r.t. base coordinates: (x, y, z, a, b, c), where (a, b, c) follows Euler ZYZ notation [mm, deg]")
+      double__6 actual_tcp_position;
+
+      @verbatim (language="comment", text=
+        "actual robot tcp velocity w.r.t. base coordinates [mm, deg/s]")
+      double__6 actual_tcp_velocity;
+
+      @verbatim (language="comment", text=
+        "actual robot flange position w.r.t. base coordinates: (x, y, z, a, b, c), where (a, b, c) follows Euler ZYZ notation [mm, deg]")
+      double__6 actual_flange_position;
+
+      @verbatim (language="comment", text=
+        "robot flange velocity w.r.t. base coordinates [mm, deg/s]")
+      double__6 actual_flange_velocity;
+
+      @verbatim (language="comment", text=
+        "actual motor torque applying gear ratio = gear_ratio * current2torque_constant * motor current")
+      @unit (value="Nm")
+      double__6 actual_motor_torque;
+
+      @verbatim (language="comment", text=
+        "estimated joint torque by robot controller")
+      @unit (value="Nm")
+      double__6 actual_joint_torque;
+
+      @verbatim (language="comment", text=
+        "calibrated joint torque sensor data")
+      @unit (value="Nm")
+      double__6 raw_joint_torque;
+
+      @verbatim (language="comment", text=
+        "calibrated force torque sensor data w.r.t. flange coordinates [N, Nm]")
+      double__6 raw_force_torque;
+
+      @verbatim (language="comment", text=
+        "estimated external joint torque")
+      @unit (value="Nm")
+      double__6 external_joint_torque;
+
+      @verbatim (language="comment", text=
+        "estimated tcp force w.r.t. base coordinates [N, Nm]")
+      double__6 external_tcp_force;
+
+      @verbatim (language="comment", text=
+        "target joint position")
+      @unit (value="deg")
+      double__6 target_joint_position;
+
+      @verbatim (language="comment", text=
+        "target joint velocity")
+      @unit (value="deg/s")
+      double__6 target_joint_velocity;
+
+      @verbatim (language="comment", text=
+        "target joint acceleration")
+      @unit (value="deg/s^2")
+      double__6 target_joint_acceleration;
+
+      @verbatim (language="comment", text=
+        "target motor torque")
+      @unit (value="Nm")
+      double__6 target_motor_torque;
+
+      @verbatim (language="comment", text=
+        "target tcp position w.r.t. base coordinates: (x, y, z, a, b, c), where (a, b, c) follows Euler ZYZ notation [mm, deg]")
+      double__6 target_tcp_position;
+
+      @verbatim (language="comment", text=
+        "target tcp velocity w.r.t. base coordinates [mm, deg/s]")
+      double__6 target_tcp_velocity;
+
+      @verbatim (language="comment", text=
+        "jacobian matrix=J(q) w.r.t. base coordinates")
+      sequence<std_msgs::msg::Float64MultiArray> jacobian_matrix;
+
+      @verbatim (language="comment", text=
+        "gravity torque=g(q)")
+      @unit (value="Nm")
+      double__6 gravity_torque;
+
+      @verbatim (language="comment", text=
+        "coriolis matrix=C(q,q_dot)  [6][6]")
+      sequence<std_msgs::msg::Float64MultiArray> coriolis_matrix;
+
+      @verbatim (language="comment", text=
+        "mass matrix=M(q) [6][6]")
+      sequence<std_msgs::msg::Float64MultiArray> mass_matrix;
+
+      @verbatim (language="comment", text=
+        "robot configuration")
+      uint16 solution_space;
+
+      @verbatim (language="comment", text=
+        "minimum singular value")
+      double singularity;
+
+      @verbatim (language="comment", text=
+        "current operation speed rate(1~100 %)")
+      double operation_speed_rate;
+
+      @verbatim (language="comment", text=
+        "joint temperature(celsius)")
+      double__6 joint_temperature;
+
+      @verbatim (language="comment", text=
+        "controller digital input(16 channel)")
+      uint16 controller_digital_input;
+
+      @verbatim (language="comment", text=
+        "controller digital output(16 channel)")
+      uint16 controller_digital_output;
+
+      @verbatim (language="comment", text=
+        "controller analog input type(2 channel)")
+      uint8__2 controller_analog_input_type;
+
+      @verbatim (language="comment", text=
+        "controller analog input(2 channel)")
+      double__2 controller_analog_input;
+
+      @verbatim (language="comment", text=
+        "controller analog output type(2 channel)")
+      uint8__2 controller_analog_output_type;
+
+      @verbatim (language="comment", text=
+        "controller analog output(2 channel)")
+      double__2 controller_analog_output;
+
+      @verbatim (language="comment", text=
+        "flange digital input(A-Series: 2 channel, M/H-Series: 6 channel)")
+      uint8 flange_digital_input;
+
+      @verbatim (language="comment", text=
+        "flange digital output(A-Series: 2 channel, M/H-Series: 6 channel)")
+      uint8 flange_digital_output;
+
+      @verbatim (language="comment", text=
+        "flange analog input(A-Series: 2 channel, M/H-Series: 4 channel)")
+      double__4 flange_analog_input;
+
+      @verbatim (language="comment", text=
+        "strobe count(increased by 1 when detecting setting edge)")
+      uint8__2 external_encoder_strobe_count;
+
+      @verbatim (language="comment", text=
+        "external encoder count")
+      uint16__2 external_encoder_count;
+
+      @verbatim (language="comment", text=
+        "final goal joint position (reserved)")
+      double__6 goal_joint_position;
+
+      @verbatim (language="comment", text=
+        "final goal tcp position (reserved)")
+      double__6 goal_tcp_position;
+
+      @verbatim (language="comment", text=
+        "ROBOT_MODE_MANUAL(0), ROBOT_MODE_AUTONOMOUS(1), ROBOT_MODE_MEASURE(2)")
+      uint8 robot_mode;
+
+      @verbatim (language="comment", text=
+        "STATE_INITIALIZING(0), STATE_STANDBY(1), STATE_MOVING(2), STATE_SAFE_OFF(3), STATE_TEACHING(4), STATE_SAFE_STOP(5), STATE_EMERGENCY_STOP, STATE_HOMMING, STATE_RECOVERY, STATE_SAFE_STOP2, STATE_SAFE_OFF2,")
+      uint8 robot_state;
+
+      @verbatim (language="comment", text=
+        "position control mode, torque mode")
+      uint16 control_mode;
+
+      @verbatim (language="comment", text=
+        "Reserved")
+      uint8__256 reserved;
+    };
+  };
+};

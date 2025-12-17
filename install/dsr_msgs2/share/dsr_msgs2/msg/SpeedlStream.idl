@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from dsr_msgs2/msg/SpeedlStream.msg
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module msg {
+    typedef double double__6[6];
+    typedef double double__2[2];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " speedl" "\n"
+      "" "\n"
+      "____________________________________________________________________________________________")
+    struct SpeedlStream {
+      @verbatim (language="comment", text=
+        "velocity")
+      double__6 vel;
+
+      @verbatim (language="comment", text=
+        "acceleration")
+      double__2 acc;
+
+      @verbatim (language="comment", text=
+        "time")
+      double time;
+    };
+  };
+};

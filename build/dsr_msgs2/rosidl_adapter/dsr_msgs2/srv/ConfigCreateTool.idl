@@ -1,0 +1,36 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/tool/ConfigCreateTool.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__3[3];
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " config_create_tool " "\n"
+      " It is a service for registering and using robot Tool information in advance for safety " "\n"
+      "____________________________________________________________________________________________")
+    struct ConfigCreateTool_Request {
+      @verbatim (language="comment", text=
+        "tool name")
+      string name;
+
+      @verbatim (language="comment", text=
+        "tool weight")
+      double weight;
+
+      @verbatim (language="comment", text=
+        "Center of gravity")
+      double__3 cog;
+
+      @verbatim (language="comment", text=
+        "tool inertia")
+      double__6 inertia;
+    };
+    struct ConfigCreateTool_Response {
+      boolean success;
+    };
+  };
+};

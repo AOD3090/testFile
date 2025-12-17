@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/tool/SetCurrentTool.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " set_current_tool" "\n"
+      " It is a service to set information about currently installed tool.  " "\n"
+      "____________________________________________________________________________________________")
+    struct SetCurrentTool_Request {
+      @verbatim (language="comment", text=
+        "tool name")
+      string name;
+    };
+    struct SetCurrentTool_Response {
+      boolean success;
+    };
+  };
+};

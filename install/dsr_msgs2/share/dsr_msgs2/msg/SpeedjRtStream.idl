@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from dsr_msgs2/msg/SpeedjRtStream.msg
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module msg {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " speedj_rt" "\n"
+      "" "\n"
+      "____________________________________________________________________________________________")
+    struct SpeedjRtStream {
+      @verbatim (language="comment", text=
+        "velocity")
+      double__6 vel;
+
+      @verbatim (language="comment", text=
+        "acceleration")
+      double__6 acc;
+
+      @verbatim (language="comment", text=
+        "time")
+      double time;
+    };
+  };
+};

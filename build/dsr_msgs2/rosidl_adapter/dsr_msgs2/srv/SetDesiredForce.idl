@@ -1,0 +1,40 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/force/SetDesiredForce.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__6[6];
+    typedef int8 int8__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " set_desired_force  " "\n"
+      "____________________________________________________________________________________________")
+    struct SetDesiredForce_Request {
+      @verbatim (language="comment", text=
+        "Three translational target forces + Three rotational target moments")
+      double__6 fd;
+
+      @verbatim (language="comment", text=
+        "Force control in the corresponding direction if 1, Compliance control in the corresponding direction if 0")
+      int8__6 dir;
+
+      @verbatim (language="comment", text=
+        "Reference coordinate of the coordinate to get")
+      int8 ref;
+
+      @verbatim (language="comment", text=
+        "0          # Transition time of target force to take effect (0 ~ 1.0 sec)")
+      double time;
+
+      @verbatim (language="comment", text=
+        "DR_FC_MOD_ABS(0): force control with absolute value," "\n"
+        "DR_FC_MOD_REL(1): force control with relative value to initial state (the instance when this function is called)")
+      int8 mod;
+    };
+    struct SetDesiredForce_Response {
+      boolean success;
+    };
+  };
+};

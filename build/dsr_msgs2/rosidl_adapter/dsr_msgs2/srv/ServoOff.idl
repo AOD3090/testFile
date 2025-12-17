@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/system/ServoOff.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    module ServoOff_Request_Constants {
+      const int8 STOP_TYPE_QUICK_STO = 0;
+      const int8 STOP_TYPE_QUICK = 1;
+      const int8 STOP_TYPE_SLOW = 2;
+      const int8 STOP_TYPE_HOLD = 3;
+      const int8 STOP_TYPE_EMERGENCY = 3;
+    };
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " servo off" "\n"
+      " STOP_TYPE_QUICK_STO = 0," "\n"
+      " STOP_TYPE_QUICK," "\n"
+      " STOP_TYPE_SLOW," "\n"
+      " STOP_TYPE_HOLD," "\n"
+      " STOP_TYPE_EMERGENCY = STOP_TYPE_HOLD," "\n"
+      "____________________________________________________________________________________________")
+    struct ServoOff_Request {
+      int8 stop_type;
+    };
+    struct ServoOff_Response {
+      boolean success;
+    };
+  };
+};

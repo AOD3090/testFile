@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/realtime/SetAccjRt.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " set_accj_rt" "\n"
+      "____________________________________________________________________________________________")
+    struct SetAccjRt_Request {
+      double__6 acc;
+    };
+    struct SetAccjRt_Response {
+      boolean success;
+    };
+  };
+};

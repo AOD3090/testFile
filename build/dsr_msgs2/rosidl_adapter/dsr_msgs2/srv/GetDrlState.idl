@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/drl/GetDrlState.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " get_drl_state" "\n"
+      " Get DRL Program State" "\n"
+      " 0 : DRL_PROGRAM_STATE_PLAY" "\n"
+      " 1 : DRL_PROGRAM_STATE_STOP" "\n"
+      " 2 : DRL_PROGRAM_STATE_HOLD" "\n"
+      " 3 : DRL_PROGRAM_STATE_LAST" "\n"
+      " drfl.GetProgramState()" "\n"
+      "____________________________________________________________________________________________")
+    struct GetDrlState_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetDrlState_Response {
+      @verbatim (language="comment", text=
+        "<DRL_PROGRAM_STATE>")
+      int8 drl_state;
+
+      boolean success;
+    };
+  };
+};

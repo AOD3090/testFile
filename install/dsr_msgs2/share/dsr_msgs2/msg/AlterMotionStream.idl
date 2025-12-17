@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from dsr_msgs2/msg/AlterMotionStream.msg
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module msg {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " alter_motion  " "\n"
+      "" "\n"
+      "____________________________________________________________________________________________")
+    struct AlterMotionStream {
+      @verbatim (language="comment", text=
+        "position")
+      double__6 pos;
+    };
+  };
+};

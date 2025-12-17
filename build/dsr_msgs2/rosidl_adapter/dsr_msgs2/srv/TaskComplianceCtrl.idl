@@ -1,0 +1,32 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/force/TaskComplianceCtrl.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " task_compliance_ctrl  " "\n"
+      "____________________________________________________________________________________________")
+    struct TaskComplianceCtrl_Request {
+      @verbatim (language="comment", text=
+        "Three translational stiffnesses + Three rotational stiffnesses" "\n"
+        "default  [3000, 3000, 3000, 200, 200, 200]")
+      double__6 stx;
+
+      @verbatim (language="comment", text=
+        "the preset reference coordinate system.")
+      int8 ref;
+
+      @verbatim (language="comment", text=
+        "Stiffness varying time, Linear transition during the specified time")
+      @unit (value=" 0 ~ 1.0 sec")
+      double time;
+    };
+    struct TaskComplianceCtrl_Response {
+      boolean success;
+    };
+  };
+};

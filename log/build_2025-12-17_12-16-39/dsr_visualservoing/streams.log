@@ -1,0 +1,24 @@
+[0.921s] Invoking command in '/home/user/Jina/src/doosan-robot2/dsr_example2/dsr_visualservoing': PYTHONPATH=/home/user/Jina/build/dsr_visualservoing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/dsr_visualservoing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/dsr_visualservoing build --build-base /home/user/Jina/build/dsr_visualservoing/build install --record /home/user/Jina/build/dsr_visualservoing/install.log --single-version-externally-managed install_data
+[1.100s] running egg_info
+[1.100s] writing ../../../../build/dsr_visualservoing/dsr_visualservoing.egg-info/PKG-INFO
+[1.100s] writing dependency_links to ../../../../build/dsr_visualservoing/dsr_visualservoing.egg-info/dependency_links.txt
+[1.100s] writing entry points to ../../../../build/dsr_visualservoing/dsr_visualservoing.egg-info/entry_points.txt
+[1.100s] writing requirements to ../../../../build/dsr_visualservoing/dsr_visualservoing.egg-info/requires.txt
+[1.100s] writing top-level names to ../../../../build/dsr_visualservoing/dsr_visualservoing.egg-info/top_level.txt
+[1.103s] reading manifest file '../../../../build/dsr_visualservoing/dsr_visualservoing.egg-info/SOURCES.txt'
+[1.104s] writing manifest file '../../../../build/dsr_visualservoing/dsr_visualservoing.egg-info/SOURCES.txt'
+[1.104s] running build
+[1.104s] running build_py
+[1.104s] running install
+[1.105s] running install_lib
+[1.106s] running install_data
+[1.106s] running install_egg_info
+[1.108s] removing '/home/user/Jina/install/dsr_visualservoing/lib/python3.10/site-packages/dsr_visualservoing-0.0.0-py3.10.egg-info' (and everything under it)
+[1.108s] Copying ../../../../build/dsr_visualservoing/dsr_visualservoing.egg-info to /home/user/Jina/install/dsr_visualservoing/lib/python3.10/site-packages/dsr_visualservoing-0.0.0-py3.10.egg-info
+[1.108s] running install_scripts
+[1.120s] Installing camera_publisher script to /home/user/Jina/install/dsr_visualservoing/lib/dsr_visualservoing
+[1.120s] Installing detect_marker_gz script to /home/user/Jina/install/dsr_visualservoing/lib/dsr_visualservoing
+[1.121s] Installing joint90 script to /home/user/Jina/install/dsr_visualservoing/lib/dsr_visualservoing
+[1.121s] Installing send_pose_servol_gz script to /home/user/Jina/install/dsr_visualservoing/lib/dsr_visualservoing
+[1.121s] writing list of installed files to '/home/user/Jina/build/dsr_visualservoing/install.log'
+[1.162s] Invoked command in '/home/user/Jina/src/doosan-robot2/dsr_example2/dsr_visualservoing' returned '0': PYTHONPATH=/home/user/Jina/build/dsr_visualservoing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/dsr_visualservoing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/dsr_visualservoing build --build-base /home/user/Jina/build/dsr_visualservoing/build install --record /home/user/Jina/build/dsr_visualservoing/install.log --single-version-externally-managed install_data

@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/gripper/SerialSendData.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " serial_send_data" "\n"
+      " send byte data to other device " "\n"
+      " you can operate the real-robotiq gripper by modbus rtu" "\n"
+      "____________________________________________________________________________________________")
+    struct SerialSendData_Request {
+      string data;
+    };
+    struct SerialSendData_Response {
+      boolean success;
+    };
+  };
+};

@@ -1,0 +1,58 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/motion/MoveSplineTask.srv
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Float64MultiArray.idl"
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__2[2];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " move_spline_task  " "\n"
+      "float64[100][6] pos            # target" "\n"
+      "____________________________________________________________________________________________")
+    struct MoveSplineTask_Request {
+      @verbatim (language="comment", text=
+        "target")
+      sequence<std_msgs::msg::Float64MultiArray> pos;
+
+      @verbatim (language="comment", text=
+        "target cnt")
+      int8 pos_cnt;
+
+      @verbatim (language="comment", text=
+        "set velocity: [mm/sec], [deg/sec]")
+      double__2 vel;
+
+      @verbatim (language="comment", text=
+        "set acceleration: [mm/sec2], [deg/sec2]")
+      double__2 acc;
+
+      @verbatim (language="comment", text=
+        "= 0.0       # Time")
+      @unit (value="sec")
+      double time;
+
+      @verbatim (language="comment", text=
+        "DR_BASE(0), DR_TOOL(1), DR_WORLD(2)" "\n"
+        "<DR_WORLD is only available in M2.40 or later")
+      int8 ref;
+
+      @verbatim (language="comment", text=
+        "= 0         # MOVE_MODE_ABSOLUTE=0, MOVE_MODE_RELATIVE=1")
+      int8 mode;
+
+      @verbatim (language="comment", text=
+        "= 0         # SPLINE_VELOCITY_OPTION_DEFAULT=0, SPLINE_VELOCITY_OPTION_CONST=1")
+      int8 opt;
+
+      @verbatim (language="comment", text=
+        "=0      # SYNC = 0, ASYNC = 1")
+      int8 sync_type;
+    };
+    struct MoveSplineTask_Response {
+      boolean success;
+    };
+  };
+};

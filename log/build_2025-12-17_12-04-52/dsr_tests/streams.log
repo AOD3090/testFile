@@ -1,0 +1,35 @@
+[0.343s] Invoking command in '/home/user/Jina/src/doosan-robot2/dsr_tests': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_controller2:/home/user/Jina/install/dsr_hardware2:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_msgs2:/home/user/Jina/install/dsr_description2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_controller2:/home/user/Jina/install/dsr_hardware2:/home/user/Jina/install/dsr_msgs2:/home/user/Jina/install/dsr_description2 LD_LIBRARY_PATH=/home/user/Jina/install/dsr_controller2/lib:/home/user/Jina/install/dsr_hardware2/lib:/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/build/dsr_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/dsr_tests/lib/python3.10/site-packages:/home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages:/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/dsr_tests build --build-base /home/user/Jina/build/dsr_tests/build install --record /home/user/Jina/build/dsr_tests/install.log --single-version-externally-managed install_data
+[0.460s] running egg_info
+[0.461s] creating ../../../build/dsr_tests/dsr_tests.egg-info
+[0.461s] writing ../../../build/dsr_tests/dsr_tests.egg-info/PKG-INFO
+[0.461s] writing dependency_links to ../../../build/dsr_tests/dsr_tests.egg-info/dependency_links.txt
+[0.461s] writing entry points to ../../../build/dsr_tests/dsr_tests.egg-info/entry_points.txt
+[0.461s] writing requirements to ../../../build/dsr_tests/dsr_tests.egg-info/requires.txt
+[0.461s] writing top-level names to ../../../build/dsr_tests/dsr_tests.egg-info/top_level.txt
+[0.461s] writing manifest file '../../../build/dsr_tests/dsr_tests.egg-info/SOURCES.txt'
+[0.462s] reading manifest file '../../../build/dsr_tests/dsr_tests.egg-info/SOURCES.txt'
+[0.462s] writing manifest file '../../../build/dsr_tests/dsr_tests.egg-info/SOURCES.txt'
+[0.462s] running build
+[0.462s] running build_py
+[0.462s] creating /home/user/Jina/build/dsr_tests/build
+[0.462s] creating /home/user/Jina/build/dsr_tests/build/lib
+[0.462s] creating /home/user/Jina/build/dsr_tests/build/lib/dsr_tests
+[0.462s] copying dsr_tests/__init__.py -> /home/user/Jina/build/dsr_tests/build/lib/dsr_tests
+[0.462s] running install
+[0.462s] running install_lib
+[0.463s] creating /home/user/Jina/install/dsr_tests/lib/python3.10/site-packages/dsr_tests
+[0.463s] copying /home/user/Jina/build/dsr_tests/build/lib/dsr_tests/__init__.py -> /home/user/Jina/install/dsr_tests/lib/python3.10/site-packages/dsr_tests
+[0.463s] byte-compiling /home/user/Jina/install/dsr_tests/lib/python3.10/site-packages/dsr_tests/__init__.py to __init__.cpython-310.pyc
+[0.463s] running install_data
+[0.463s] creating /home/user/Jina/install/dsr_tests/share/ament_index
+[0.463s] creating /home/user/Jina/install/dsr_tests/share/ament_index/resource_index
+[0.463s] creating /home/user/Jina/install/dsr_tests/share/ament_index/resource_index/packages
+[0.463s] copying resource/dsr_tests -> /home/user/Jina/install/dsr_tests/share/ament_index/resource_index/packages
+[0.463s] copying package.xml -> /home/user/Jina/install/dsr_tests/share/dsr_tests
+[0.463s] copying launch/dsr_bringup_without_spawner_test.launch.py -> /home/user/Jina/install/dsr_tests/share/dsr_tests
+[0.463s] copying launch/dsr_spawner_cli_test.launch.py -> /home/user/Jina/install/dsr_tests/share/dsr_tests
+[0.463s] running install_egg_info
+[0.464s] Copying ../../../build/dsr_tests/dsr_tests.egg-info to /home/user/Jina/install/dsr_tests/lib/python3.10/site-packages/dsr_tests-0.0.0-py3.10.egg-info
+[0.464s] running install_scripts
+[0.475s] writing list of installed files to '/home/user/Jina/build/dsr_tests/install.log'
+[0.488s] Invoked command in '/home/user/Jina/src/doosan-robot2/dsr_tests' returned '0': AMENT_PREFIX_PATH=/home/user/Jina/install/dsr_controller2:/home/user/Jina/install/dsr_hardware2:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_msgs2:/home/user/Jina/install/dsr_description2:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/Jina/install/dsr_controller2:/home/user/Jina/install/dsr_hardware2:/home/user/Jina/install/dsr_msgs2:/home/user/Jina/install/dsr_description2 LD_LIBRARY_PATH=/home/user/Jina/install/dsr_controller2/lib:/home/user/Jina/install/dsr_hardware2/lib:/home/user/Jina/install/dsr_msgs2/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/Jina/build/dsr_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/Jina/install/dsr_tests/lib/python3.10/site-packages:/home/user/Jina/install/dsr_bringup2/lib/python3.10/site-packages:/home/user/Jina/install/dsr_msgs2/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/dsr_tests build --build-base /home/user/Jina/build/dsr_tests/build install --record /home/user/Jina/build/dsr_tests/install.log --single-version-externally-managed install_data

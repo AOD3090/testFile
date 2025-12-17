@@ -1,0 +1,32 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/motion/Fkin.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " fkin  " "\n"
+      "____________________________________________________________________________________________")
+    struct Fkin_Request {
+      @verbatim (language="comment", text=
+        "joint pos(posj)")
+      double__6 pos;
+
+      @verbatim (language="comment", text=
+        "= 0      # DR_BASE(0), DR_WORLD(2)" "\n"
+        " <ref is only available in M2.40 or later>")
+      int8 ref;
+    };
+    typedef double double__6[6];
+    struct Fkin_Response {
+      @verbatim (language="comment", text=
+        "task pos(posx)")
+      double__6 conv_posx;
+
+      boolean success;
+    };
+  };
+};

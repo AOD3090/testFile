@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/aux_control/GetCurrentVelj.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " get_current_velj()  " "\n"
+      "____________________________________________________________________________________________" "\n"
+      " This service returns the current target joint velocity. It cannot be used in the movel, movec, movesx, moveb, move_spiral, or move_periodic command.")
+    struct GetCurrentVelj_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    typedef double double__6[6];
+    struct GetCurrentVelj_Response {
+      @verbatim (language="comment", text=
+        "joint speed")
+      double__6 joint_speed;
+
+      boolean success;
+    };
+  };
+};

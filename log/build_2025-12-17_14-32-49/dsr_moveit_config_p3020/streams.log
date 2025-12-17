@@ -1,0 +1,38 @@
+[0.162s] Invoking command in '/home/user/Jina/build/dsr_moveit_config_p3020': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/Jina/install/tower_builder:/home/user/Jina/install/dsr_visualservoing:/home/user/Jina/install/dsr_tests:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_example:/opt/ros/humble /usr/bin/cmake --build /home/user/Jina/build/dsr_moveit_config_p3020 -- -j12 -l12
+[1.148s] Invoked command in '/home/user/Jina/build/dsr_moveit_config_p3020' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/Jina/install/tower_builder:/home/user/Jina/install/dsr_visualservoing:/home/user/Jina/install/dsr_tests:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_example:/opt/ros/humble /usr/bin/cmake --build /home/user/Jina/build/dsr_moveit_config_p3020 -- -j12 -l12
+[1.149s] Invoking command in '/home/user/Jina/build/dsr_moveit_config_p3020': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/Jina/install/tower_builder:/home/user/Jina/install/dsr_visualservoing:/home/user/Jina/install/dsr_tests:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_example:/opt/ros/humble /usr/bin/cmake --install /home/user/Jina/build/dsr_moveit_config_p3020
+[1.162s] -- Install configuration: ""
+[1.163s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/ament_index/resource_index/package_run_dependencies/dsr_moveit_config_p3020
+[1.163s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/ament_index/resource_index/parent_prefix_path/dsr_moveit_config_p3020
+[1.163s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/environment/ament_prefix_path.sh
+[1.163s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/environment/ament_prefix_path.dsv
+[1.163s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/environment/path.sh
+[1.163s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/environment/path.dsv
+[1.163s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/local_setup.bash
+[1.163s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/local_setup.sh
+[1.163s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/local_setup.zsh
+[1.163s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/local_setup.dsv
+[1.163s] -- Installing: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/package.dsv
+[1.164s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/ament_index/resource_index/packages/dsr_moveit_config_p3020
+[1.164s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/cmake/dsr_moveit_config_p3020Config.cmake
+[1.164s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/cmake/dsr_moveit_config_p3020Config-version.cmake
+[1.164s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/package.xml
+[1.164s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/launch
+[1.165s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/launch/start.launch.py
+[1.165s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/launch/moveit.rviz
+[1.165s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/config
+[1.166s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/config/initial_positions.yaml
+[1.166s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/config/moveit_controllers.yaml
+[1.166s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/config/joint_limits.yaml
+[1.175s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/config/sensors_3d.yaml
+[1.176s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/config/dsr.ros2_control.xacro
+[1.176s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/config/chomp_planning.yaml
+[1.176s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/config/kinematics.yaml
+[1.178s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/config/dsr.srdf
+[1.178s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/config/pilz_cartesian_limits.yaml
+[1.178s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/config/pilz_industrial_motion_planner_planning.yaml
+[1.178s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/config/ompl_planning.yaml
+[1.178s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/config/p3020.urdf.xacro
+[1.178s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/config/ros2_controllers.yaml
+[1.178s] -- Up-to-date: /home/user/Jina/install/dsr_moveit_config_p3020/share/dsr_moveit_config_p3020/.setup_assistant
+[1.232s] Invoked command in '/home/user/Jina/build/dsr_moveit_config_p3020' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/Jina/install/tower_builder:/home/user/Jina/install/dsr_visualservoing:/home/user/Jina/install/dsr_tests:/home/user/Jina/install/dsr_bringup2:/home/user/Jina/install/dsr_example:/opt/ros/humble /usr/bin/cmake --install /home/user/Jina/build/dsr_moveit_config_p3020

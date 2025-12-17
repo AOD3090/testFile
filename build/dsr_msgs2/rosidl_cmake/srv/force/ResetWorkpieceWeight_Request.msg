@@ -1,0 +1,5 @@
+#____________________________________________________________________________________________
+# reset_workpiece_weight
+# Initializes the weight data of the material to initialize the algorithm before measuring the weight of the material.
+# ____________________________________________________________________________________________
+

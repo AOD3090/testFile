@@ -1,0 +1,37 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/force/CoordTransform.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " coord_transform   " "\n"
+      "____________________________________________________________________________________________")
+    struct CoordTransform_Request {
+      @verbatim (language="comment", text=
+        "task pos(posx)")
+      double__6 pos_in;
+
+      @verbatim (language="comment", text=
+        "DR_BASE(0), DR_TOOL(1), DR_WORLD(2), user coord(101~200)" "\n"
+        "<ref is only available in M2.40 or later>")
+      int8 ref_in;
+
+      @verbatim (language="comment", text=
+        "DR_BASE(0), DR_TOOL(1), DR_WORLD(2), user coord(101~200)" "\n"
+        "<ref is only available in M2.40 or later>")
+      int8 ref_out;
+    };
+    typedef double double__6[6];
+    struct CoordTransform_Response {
+      @verbatim (language="comment", text=
+        "task pos(posx)")
+      double__6 conv_posx;
+
+      boolean success;
+    };
+  };
+};

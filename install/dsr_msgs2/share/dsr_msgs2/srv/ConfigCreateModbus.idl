@@ -1,0 +1,47 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/modbus/ConfigCreateModbus.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " config_create_modbus  " "\n"
+      " This service registers the Modbus signal. " "\n"
+      "____________________________________________________________________________________________")
+    struct ConfigCreateModbus_Request {
+      @verbatim (language="comment", text=
+        "modbus signal symbol")
+      string name;
+
+      @verbatim (language="comment", text=
+        "external device ip")
+      string ip;
+
+      @verbatim (language="comment", text=
+        "external device port")
+      int32 port;
+
+      @verbatim (language="comment", text=
+        "<MODBUS_REGISTER_TYPE>(0: discrete input, 1: coil, 2: input register, 3: holding register)")
+      int8 reg_type;
+
+      @verbatim (language="comment", text=
+        "modbus signal index(0 ~ 9999)")
+      int8 index;
+
+      @verbatim (language="comment", text=
+        "modbus singla value(unsigned value ; 0 ~ 65535)")
+      int8 value;
+
+      @verbatim (language="comment", text=
+        "Slave ID of the ModbusTCP(0: Broadcase address or 1-247 or 255: Default value for ModbusTCP)" "\n"
+        "<slave_id is only available in M2.40 or later versions>")
+      int32 slave_id;
+    };
+    struct ConfigCreateModbus_Response {
+      boolean success;
+    };
+  };
+};

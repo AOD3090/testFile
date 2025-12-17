@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/aux_control/GetDesiredPosx.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " get_desired_posx(ref)  " "\n"
+      "____________________________________________________________________________________________" "\n"
+      " This service returns the target pose of the current tool. The pose is based on the ref coordinate.")
+    struct GetDesiredPosx_Request {
+      @verbatim (language="comment", text=
+        "= 0   # DR_BASE(0), DR_WORLD(2), user coord(101~200)" "\n"
+        " <ref is only available in M2.40 or later>")
+      int8 ref;
+    };
+    typedef double double__6[6];
+    struct GetDesiredPosx_Response {
+      @verbatim (language="comment", text=
+        "task pos(posx)")
+      double__6 pos;
+
+      boolean success;
+    };
+  };
+};

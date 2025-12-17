@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/tool/GetCurrentTool.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " get_current_tool  " "\n"
+      " It is a service to fetch the currently set tool information from the robot controller" "\n"
+      "____________________________________________________________________________________________")
+    struct GetCurrentTool_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetCurrentTool_Response {
+      @verbatim (language="comment", text=
+        "tool name")
+      string info;
+
+      boolean success;
+    };
+  };
+};

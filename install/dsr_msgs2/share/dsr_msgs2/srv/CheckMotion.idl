@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/motion/CheckMotion.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " check_motion" "\n"
+      " return status of the currently active motion." "\n"
+      " Homing is performed by moving to the joint motion to the mechanical or user defined home position." "\n"
+      " According to the input parameter, it moves to the mechanical home defined in the system or the home set by the user." "\n"
+      "____________________________________________________________________________________________")
+    struct CheckMotion_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct CheckMotion_Response {
+      @verbatim (language="comment", text=
+        "DR_STATE_IDLE(0) : no motion in action" "\n"
+        "DR_STATE_INIT(1) : motion being calculated" "\n"
+        "DR_STATE_BUSY(2) : motion in operation")
+      int8 status;
+
+      boolean success;
+    };
+  };
+};

@@ -1,0 +1,54 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/force/CalcCoord.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " calc_coord   " "\n"
+      "____________________________________________________________________________________________" "\n"
+      " This service is only available in M2.50 or later")
+    struct CalcCoord_Request {
+      @verbatim (language="comment", text=
+        "input_pos_cnt")
+      int8 input_pos_cnt;
+
+      @verbatim (language="comment", text=
+        "task pos(posx)")
+      double__6 x1;
+
+      @verbatim (language="comment", text=
+        "task pos(posx)")
+      double__6 x2;
+
+      @verbatim (language="comment", text=
+        "task pos(posx)")
+      double__6 x3;
+
+      @verbatim (language="comment", text=
+        "task pos(posx)")
+      double__6 x4;
+
+      @verbatim (language="comment", text=
+        "DR_BASE(0), DR_WORLD(2)")
+      int8 ref;
+
+      @verbatim (language="comment", text=
+        "input mode(only valid when the number of input poses is 2)" "\n"
+        "0: defining z-axis based on the current Tool-z direction" "\n"
+        "1: defining z-axis based on the z direction of x1")
+      int8 mod;
+    };
+    typedef double double__6[6];
+    struct CalcCoord_Response {
+      @verbatim (language="comment", text=
+        "task pos(posx)")
+      double__6 conv_posx;
+
+      boolean success;
+    };
+  };
+};

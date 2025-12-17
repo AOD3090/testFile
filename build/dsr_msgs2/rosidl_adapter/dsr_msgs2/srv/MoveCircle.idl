@@ -1,0 +1,68 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/motion/MoveCircle.srv
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Float64MultiArray.idl"
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__2[2];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " move_circle  " "\n"
+      "____________________________________________________________________________________________")
+    struct MoveCircle_Request {
+      @verbatim (language="comment", text=
+        "target[2][6]")
+      sequence<std_msgs::msg::Float64MultiArray> pos;
+
+      @verbatim (language="comment", text=
+        "set velocity: [mm/sec], [deg/sec]")
+      double__2 vel;
+
+      @verbatim (language="comment", text=
+        "set acceleration: [mm/sec2], [deg/sec2]")
+      double__2 acc;
+
+      @verbatim (language="comment", text=
+        "= 0.0       # Time")
+      @unit (value="sec")
+      double time;
+
+      @verbatim (language="comment", text=
+        "=0.0      # Radius under blending mode")
+      @unit (value="mm")
+      double radius;
+
+      @verbatim (language="comment", text=
+        "DR_BASE(0), DR_TOOL(1), DR_WORLD(2)" "\n"
+        "<DR_WORLD is only available in M2.40 or later>")
+      int8 ref;
+
+      @verbatim (language="comment", text=
+        "= 0         # MOVE_MODE_ABSOLUTE=0, MOVE_MODE_RELATIVE=1")
+      int8 mode;
+
+      @verbatim (language="comment", text=
+        "= 0.0     # angle1")
+      @unit (value="degree")
+      double angle1;
+
+      @verbatim (language="comment", text=
+        "= 0.0     # angle2")
+      @unit (value="degree")
+      double angle2;
+
+      @verbatim (language="comment", text=
+        "= 0    # BLENDING_SPEED_TYPE_DUPLICATE=0, BLENDING_SPEED_TYPE_OVERRIDE=1")
+      int8 blend_type;
+
+      @verbatim (language="comment", text=
+        "=0      # SYNC = 0, ASYNC = 1")
+      int8 sync_type;
+    };
+    struct MoveCircle_Response {
+      boolean success;
+    };
+  };
+};

@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/system/GetRobotMode.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " get_robot_mode" "\n"
+      " Return to current robot-mode" "\n"
+      " 0 : ROBOT_MODE_MANUAL" "\n"
+      " 1 : ROBOT_MODE_AUTONOMOUS" "\n"
+      " 2 : ROBOT_MODE_MEASURE" "\n"
+      " drfl.GetRobotMode()" "\n"
+      "____________________________________________________________________________________________")
+    struct GetRobotMode_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetRobotMode_Response {
+      int8 robot_mode;
+
+      boolean success;
+    };
+  };
+};

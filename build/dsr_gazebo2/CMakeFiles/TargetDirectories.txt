@@ -1,0 +1,9 @@
+/home/user/Jina/build/dsr_gazebo2/CMakeFiles/uninstall.dir
+/home/user/Jina/build/dsr_gazebo2/CMakeFiles/dsr_gazebo2_uninstall.dir
+/home/user/Jina/build/dsr_gazebo2/CMakeFiles/test.dir
+/home/user/Jina/build/dsr_gazebo2/CMakeFiles/edit_cache.dir
+/home/user/Jina/build/dsr_gazebo2/CMakeFiles/rebuild_cache.dir
+/home/user/Jina/build/dsr_gazebo2/CMakeFiles/list_install_components.dir
+/home/user/Jina/build/dsr_gazebo2/CMakeFiles/install.dir
+/home/user/Jina/build/dsr_gazebo2/CMakeFiles/install/local.dir
+/home/user/Jina/build/dsr_gazebo2/CMakeFiles/install/strip.dir

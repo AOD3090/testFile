@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/motion/MoveWait.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " move_wait" "\n"
+      " This Service sets the waiting time between the previous motion command " "\n"
+      " and the motion command in the next line." "\n"
+      "____________________________________________________________________________________________")
+    struct MoveWait_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct MoveWait_Response {
+      boolean success;
+    };
+  };
+};

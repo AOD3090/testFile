@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/aux_control/GetToolForce.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " get_tool_force(ref)" "\n"
+      " returns the external force applied to the current tool" "\n"
+      "____________________________________________________________________________________________" "\n"
+      " This service returns the external force applied to the current tool based on the ref coordinate. " "\n"
+      " The force is based on the base coordinate while the moment is based on the tool coordinate.")
+    struct GetToolForce_Request {
+      @verbatim (language="comment", text=
+        "DR_BASE(0), DR_TOOL(1), DR_WORLD(2)")
+      int8 ref;
+    };
+    typedef double double__6[6];
+    struct GetToolForce_Response {
+      @verbatim (language="comment", text=
+        "External force applied to the tool")
+      double__6 tool_force;
+
+      boolean success;
+    };
+  };
+};

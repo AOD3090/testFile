@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/modbus/GetModbusInput.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " get_modbus_input  " "\n"
+      " This service reads the signal from the Modbus system." "\n"
+      "____________________________________________________________________________________________")
+    struct GetModbusInput_Request {
+      @verbatim (language="comment", text=
+        "modbus signal symbol")
+      string name;
+    };
+    struct GetModbusInput_Response {
+      @verbatim (language="comment", text=
+        "modbus signal value")
+      int32 value;
+
+      boolean success;
+    };
+  };
+};

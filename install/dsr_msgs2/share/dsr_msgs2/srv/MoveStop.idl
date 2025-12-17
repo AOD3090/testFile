@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/motion/MoveStop.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " stop()" "\n"
+      " 인자 설명 추가 필요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" "\n"
+      "____________________________________________________________________________________________")
+    struct MoveStop_Request {
+      @verbatim (language="comment", text=
+        "DR_QSTOP_STO(0) : Quick stop (Stop Category 1 without STO(Safe Torque Off)" "\n"
+        "DR_QSTOP(1)     : Quick stop (Stop Category 2)" "\n"
+        "DR_SSTO(2)      : Soft Stop" "\n"
+        "DR_HOLD(3)      : HOLD stop")
+      int32 stop_mode;
+    };
+    struct MoveStop_Response {
+      boolean success;
+    };
+  };
+};

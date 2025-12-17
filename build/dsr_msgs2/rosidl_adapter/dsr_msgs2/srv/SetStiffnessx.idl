@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/force/SetStiffnessx.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    typedef double double__6[6];
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " set_stiffnessx  " "\n"
+      "____________________________________________________________________________________________")
+    struct SetStiffnessx_Request {
+      @verbatim (language="comment", text=
+        "default[500, 500, 500, 100, 100, 100], Three translational stiffnesses + Three rotational stiffnesses")
+      double__6 stx;
+
+      @verbatim (language="comment", text=
+        "the preset reference coordinate system.")
+      int8 ref;
+
+      @verbatim (language="comment", text=
+        "Stiffness varying time(0 ~ 1.0), Linear transition during the specified time")
+      @unit (value="sec")
+      double time;
+    };
+    struct SetStiffnessx_Response {
+      boolean success;
+    };
+  };
+};

@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from dsr_msgs2/srv/drl/DrlStart.srv
+// generated code does not contain a copyright notice
+
+
+module dsr_msgs2 {
+  module srv {
+    @verbatim (language="comment", text=
+      "____________________________________________________________________________________________" "\n"
+      " drl_script_run  " "\n"
+      " This is a service to execute a program configured in the DRL language in the robot controller." "\n"
+      "____________________________________________________________________________________________")
+    struct DrlStart_Request {
+      @verbatim (language="comment", text=
+        "Robot System Mode 0 : Real, 1 : virtual")
+      int8 robot_system;
+
+      @verbatim (language="comment", text=
+        "drl code")
+      string code;
+    };
+    struct DrlStart_Response {
+      boolean success;
+    };
+  };
+};
