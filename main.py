@@ -20,8 +20,8 @@ import rclpy
 import numpy as np
 from typing import Optional
 
-from block_detection_system import BlockDetectionSystem, Block, DetectorConfig
-from robot_controller import RobotController, RobotConfig
+from camera import BlockDetectionSystem, Block, DetectorConfig
+from controller import RobotController, RobotConfig
 
 import DR_init
 
