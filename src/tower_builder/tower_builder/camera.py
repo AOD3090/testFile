@@ -640,12 +640,20 @@ class BlockDetectionSystem:
     
     def find_block_at(self, x: int, y: int, 
                       update: bool = False) -> Optional[Block]:
-        """특정 픽셀 위치의 블록 반환"""
+        """
+        특정 픽셀 위치의 블록 반환 (회전된 영역 기준)
+        
+        rotated_box를 사용해서 실제 블록 영역 내부인지 판별
+        """
         blocks = self.get_blocks(update)
+        point = (x, y)
+        
         for block in blocks:
-            bx, by, bw, bh = block.bbox
-            if bx <= x <= bx + bw and by <= y <= by + bh:
+            # rotated_box (4개 꼭지점)로 실제 영역 체크
+            result = cv2.pointPolygonTest(block.rotated_box, point, False)
+            if result >= 0:  # 0: 경계선 위, 양수: 내부
                 return block
+        
         return None
     
     # -------------------- 프레임 접근 --------------------
