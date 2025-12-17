@@ -4,6 +4,8 @@
 
 ## Rule
 
-- 기본적으로 
+1. 개인폴더 만들어주시고 그 안에 workspace를 만들어서 작업해주세요.
+
+2. branch 생성시에는 "<본인 이름>_<브랜치 이름>" 이렇게 이름을 지어주세요.
 
 - 전역 package와 venv를 따로 이용해야할 경우 "python -m venv venv --system-site-packages"를 사용하면 됩니다
